@@ -1,0 +1,9 @@
+[
+{
+"id": "e-aks-to-sinterco",
+"source": "n-aks-dunkerque",
+"target": "n-sinterco-augsburg",
+"relation": "NdPr oxide → alloy",
+"active_years": [2018, 2020, 2024]
+}
+]

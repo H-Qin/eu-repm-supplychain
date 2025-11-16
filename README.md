@@ -1,16 +1,33 @@
-# React + Vite
+# EU Rare-Earth Permanent Magnet (REPM) Supply Chain Map
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project visualizes the rare-earth permanent-magnet (REPM) supply chain — specifically the **neodymium–iron–boron (NdFeB)** segment — within Europe, including the United Kingdom.  
+The interactive web map displays companies (nodes) and material flows (edges) across key years (2010, 2015, 2018, 2020, 2024), illustrating the evolution of the supply network.
 
-Currently, two official plugins are available:
+## Project Overview
+This study aims to provide a transparent, data-driven understanding of how the European REPM supply chain has evolved over time.  
+It highlights major processing, manufacturing, and recycling nodes, as well as the linkages between them.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Research Team
+- **Dr Haoyang Qin** – Research Fellow, Queen’s Business School, Queen’s University Belfast  
+- **Dr Shuang Tian** – Research Fellow, Queen’s Business School, Queen’s University Belfast  
+- **Prof. Min Zhang** – Information Technology, Analytics, and Operations (ITAO), Queen’s Business School
+- **Dr Hangfei Guo** – Project Lead, *Reimagining Supply Chains Network Plus (RiSC+)*, Queen’s Business School
+- **Prof. Peter Nockemann** – Project Co-Lead, Critical Minerals Work Package, RiSC+, Queen’s University Belfast
 
-## React Compiler
+## Data and Availability
+The underlying data used in this visualization are part of ongoing research under the **RiSC+** project.  
+Aggregated and illustrative data are presented in this public interface.  
+Full datasets are available upon reasonable request to the authors.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technology Stack
+- [React](https://react.dev/)  
+- [Leaflet](https://leafletjs.com/)  
+- [Vite](https://vitejs.dev/)  
+- Hosted via [GitHub Pages](https://pages.github.com/)
 
-## Expanding the ESLint configuration
+## Live Website
+👉 **[https://H-Qin.github.io/eu-repm-supplychain/](https://H-Qin.github.io/eu-repm-supplychain/)**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+© Queen’s University Belfast | Reimagining Supply Chains Network Plus (RiSC+)

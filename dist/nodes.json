@@ -1,0 +1,29 @@
+[
+{
+"id": "n-aks-dunkerque",
+"name": "Aks Magnets Dunkerque",
+"type": "Separator",
+"country": "France",
+"city": "Dunkerque",
+"lat": 51.034,
+"lng": 2.376,
+"size": 3,
+"info": {
+"website": "https://example.com",
+"notes": "NdPr separation unit"
+},
+"active_years": [2010, 2015, 2018, 2020, 2024]
+},
+{
+"id": "n-sinterco-augsburg",
+"name": "SinterCo GmbH",
+"type": "Metal/Alloy maker",
+"country": "Germany",
+"city": "Augsburg",
+"lat": 48.366,
+"lng": 10.898,
+"size": 5,
+"info": {"notes": "NdFeB alloy"},
+"active_years": [2015, 2018, 2020, 2024]
+}
+]
