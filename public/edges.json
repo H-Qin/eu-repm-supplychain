@@ -1,9 +1,176 @@
 [
-{
-"id": "e-aks-to-sinterco",
-"source": "n-aks-dunkerque",
-"target": "n-sinterco-augsburg",
-"relation": "NdPr oxide → alloy",
-"active_years": [2018, 2020, 2024]
-}
+  {
+    "edge_id": "edge_GKRE-CN_NEO-CN",
+    "source": "GKRE-CN",
+    "target": "NEO-CN",
+    "active_years": [2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024]
+  },
+  {
+    "edge_id": "edge_GQRE-CN_NEO-CN",
+    "source": "GQRE-CN",
+    "target": "NEO-CN",
+    "active_years": [2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024]
+  },
+  {
+    "edge_id": "edge_EF-CA_NEO-CN",
+    "source": "EF-CA",
+    "target": "NEO-CN",
+    "active_years": [2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024]
+  },
+  {
+    "edge_id": "edge_TMMM-JP_NEO-CN",
+    "source": "TMMM-JP",
+    "target": "NEO-CN",
+    "active_years": [2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024]
+  },
+  {
+    "edge_id": "edge_HTM-AU_NEO-CN",
+    "source": "HTM-AU",
+    "target": "NEO-CN",
+    "active_years": [2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024]
+  },
+  {
+    "edge_id": "edge_METR-BR_NEO-CN",
+    "source": "METR-BR",
+    "target": "NEO-CN",
+    "active_years": [2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024]
+  },
+  {
+    "edge_id": "edge_NEO-CN_GRUN-DK",
+    "source": "NEO-CN",
+    "target": "GRUN-DK",
+    "active_years": [2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024]
+  },
+  {
+    "edge_id": "edge_VML-CA_REET-NO",
+    "source": "VML-CA",
+    "target": "REET-NO",
+    "active_years": [2015,2016,2017,2018,2019,2020,2021,2022,2023,2024]
+  },
+  {
+    "edge_id": "edge_REET-NO_SCHF-DE",
+    "source": "REET-NO",
+    "target": "SCHF-DE",
+    "active_years": [2015,2016,2017,2018,2019,2020,2021,2022,2023,2024]
+  },
+  {
+    "edge_id": "edge_REET-NO_LCM-GB",
+    "source": "REET-NO",
+    "target": "LCM-GB",
+    "active_years": [2015,2016,2017,2018,2019,2020,2021,2022,2023,2024]
+  },
+  {
+    "edge_id": "edge_REET-NO_VAC-DE",
+    "source": "REET-NO",
+    "target": "VAC-DE",
+    "active_years": [2015,2016,2017,2018,2019,2020,2021,2022,2023,2024]
+  },
+  {
+    "edge_id": "edge_JBNM-CN_SMM-JP",
+    "source": "JBNM-CN",
+    "target": "SMM-JP",
+    "active_years": [2020,2021,2022,2023,2024]
+  },
+  {
+    "edge_id": "edge_SUMC-JP_SMM-JP",
+    "source": "SUMC-JP",
+    "target": "SMM-JP",
+    "active_years": [2020,2021,2022,2023,2024]
+  },
+  {
+    "edge_id": "edge_ND-JP_SMM-JP",
+    "source": "ND-JP",
+    "target": "SMM-JP",
+    "active_years": [2020,2021,2022,2023,2024]
+  },
+  {
+    "edge_id": "edge_TOKU-JP_SMM-JP",
+    "source": "TOKU-JP",
+    "target": "SMM-JP",
+    "active_years": [2020,2021,2022,2023,2024]
+  },
+  {
+    "edge_id": "edge_TAKI-JP_SMM-JP",
+    "source": "TAKI-JP",
+    "target": "SMM-JP",
+    "active_years": [2020,2021,2022,2023,2024]
+  },
+  {
+    "edge_id": "edge_SMM-JP_TMC-GB",
+    "source": "SMM-JP",
+    "target": "TMC-GB",
+    "active_years": [2022,2023,2024]
+  },
+  {
+    "edge_id": "edge_SMM-JP_TMC-FR",
+    "source": "SMM-JP",
+    "target": "TMC-FR",
+    "active_years": [2022,2023,2024]
+  },
+  {
+    "edge_id": "edge_SMM-JP_TMC-CZ",
+    "source": "SMM-JP",
+    "target": "TMC-CZ",
+    "active_years": [2022,2023,2024]
+  },
+  {
+    "edge_id": "edge_SMM-JP_PANA-CZ",
+    "source": "SMM-JP",
+    "target": "PANA-CZ",
+    "active_years": [2022,2023,2024]
+  },
+  {
+    "edge_id": "edge_SMM-JP_PANA-DE",
+    "source": "SMM-JP",
+    "target": "PANA-DE",
+    "active_years": [2022,2023,2024]
+  },
+  {
+    "edge_id": "edge_SMM-JP_MMCL-PL",
+    "source": "SMM-JP",
+    "target": "MMCL-PL",
+    "active_years": [2022,2023,2024]
+  },
+  {
+    "edge_id": "edge_SMM-JP_DSCL-DE",
+    "source": "SMM-JP",
+    "target": "DSCL-DE",
+    "active_years": [2022,2023,2024]
+  },
+  {
+    "edge_id": "edge_SMM-JP_ROHM-DE",
+    "source": "SMM-JP",
+    "target": "ROHM-DE",
+    "active_years": [2022,2023,2024]
+  },
+  {
+    "edge_id": "edge_SMM-JP_MURA-FI",
+    "source": "SMM-JP",
+    "target": "MURA-FI",
+    "active_years": [2024]
+  },
+  {
+    "edge_id": "edge_SMM-JP_MURA-DE",
+    "source": "SMM-JP",
+    "target": "MURA-DE",
+    "active_years": [2024]
+  },
+  {
+    "edge_id": "edge_SMM-JP_MURA-ES",
+    "source": "SMM-JP",
+    "target": "MURA-ES",
+    "active_years": [2024]
+  },
+  {
+    "edge_id": "edge_SMM-JP_MURA-GB",
+    "source": "SMM-JP",
+    "target": "MURA-GB",
+    "active_years": [2024]
+  },
+  {
+    "edge_id": "edge_SMM-JP_LGIN-PL",
+    "source": "SMM-JP",
+    "target": "LGIN-PL",
+    "active_years": [2024]
+  }
 ]

@@ -3,15 +3,26 @@ if (!node) return null
 return (
 <aside className="sidebar">
 <button className="close" onClick={onClose}>×</button>
-<h2>{node.name}</h2>
-<p><strong>Type:</strong> {node.type}</p>
+<h2>{node.company_name}</h2>
+<p><strong>Node ID:</strong> {node.node_id}</p>
 {node.city || node.country ? (
 <p><strong>Location:</strong> {node.city ? `${node.city}, ` : ''}{node.country || ''}</p>
 ) : null}
-{node.info?.website && (
-<p><a href={node.info.website} target="_blank" rel="noreferrer">Website</a></p>
+{node.hq_country && (
+<p><strong>Headquarters:</strong> {node.hq_country}</p>
 )}
-{node.info?.notes && <p>{node.info.notes}</p>}
+{node.tiers && node.tiers.length > 0 && (
+<p><strong>Type(s):</strong> {node.tiers.join(', ')}</p>
+)}
+{node.website && (
+<p><a href={node.website} target="_blank" rel="noreferrer">Visit Website</a></p>
+)}
+{(node.company_size || node.size) && (
+<p><strong>Size:</strong> {node.company_size || node.size}</p>
+)}
+{node.active_years && node.active_years.length > 0 && (
+<p><strong>Active Years:</strong> {node.active_years.join(', ')}</p>
+)}
 </aside>
 )
 }

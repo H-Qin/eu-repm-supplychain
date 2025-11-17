@@ -1,20 +1,179 @@
-import { MapContainer, TileLayer, CircleMarker, Popup, Polyline } from 'react-leaflet'
+import { MapContainer, TileLayer, CircleMarker, Popup, Polyline, Marker, SVGOverlay } from 'react-leaflet'
+import { useRef, Fragment } from 'react'
+import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import Legend from './Legend'
 import Sidebar from './Sidebar'
+
+// Calculate curved path between two points
+function getCurvedPath(lat1, lng1, lat2, lng2) {
+  // Calculate midpoint
+  const midLat = (lat1 + lat2) / 2
+  const midLng = (lng1 + lng2) / 2
+
+  // Calculate perpendicular offset for the curve
+  const dx = lng2 - lng1
+  const dy = lat2 - lat1
+  const distance = Math.sqrt(dx * dx + dy * dy)
+
+  // Offset amount (adjust this to control curve intensity)
+  const offset = distance * 0.15
+
+  // Perpendicular vector
+  const perpLat = -dx * offset
+  const perpLng = dy * offset
+
+  // Control point for the curve
+  const controlLat = midLat + perpLat
+  const controlLng = midLng + perpLng
+
+  // Generate points along the curve using quadratic bezier
+  const points = []
+  const segments = 20
+  for (let i = 0; i <= segments; i++) {
+    const t = i / segments
+    const invT = 1 - t
+    const lat = invT * invT * lat1 + 2 * invT * t * controlLat + t * t * lat2
+    const lng = invT * invT * lng1 + 2 * invT * t * controlLng + t * t * lng2
+    points.push([lat, lng])
+  }
+
+  return points
+}
 
 function visibleInYear(item, year) {
   return Array.isArray(item.active_years) && item.active_years.includes(year)
 }
 
 function radiusFromSize(size) {
-  // Map 1–10 to 4–18 pixels
+  // Map 1–10 to 6–24 pixels
   const s = Math.min(10, Math.max(1, Number(size || 1)))
-  return 4 + (s - 1) * (14 / 9)
+  return 6 + (s - 1) * (18 / 9)
+}
+
+// Tier color mapping
+const TIER_COLORS = {
+  'Tier 1': '#80b1d3',
+  'Tier 2': '#fb8072',
+  'Tier 3': '#bc80bd',
+  'Tier 4': '#fdb462',
+  'Tier 5': '#8dd3c7',
+  'Tier 6': '#b3de69'
+}
+
+// Create SVG pie chart for multi-tier nodes
+function createPieChartSVG(tiers, radius) {
+  const size = radius * 2
+  const centerX = radius
+  const centerY = radius
+  const colors = tiers.map(tier => TIER_COLORS[tier] || '#2b6cb0')
+
+  if (tiers.length === 1) {
+    // Single color circle
+    return `
+      <svg width="${size}" height="${size}" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="${centerX}" cy="${centerY}" r="${radius}"
+                fill="${colors[0]}" stroke="#333333" stroke-width="1" opacity="0.8"/>
+      </svg>
+    `
+  }
+
+  // Multiple tiers - create pie chart
+  const angleStep = (2 * Math.PI) / tiers.length
+  let paths = ''
+
+  for (let i = 0; i < tiers.length; i++) {
+    const startAngle = i * angleStep - Math.PI / 2
+    const endAngle = (i + 1) * angleStep - Math.PI / 2
+
+    const x1 = centerX + radius * Math.cos(startAngle)
+    const y1 = centerY + radius * Math.sin(startAngle)
+    const x2 = centerX + radius * Math.cos(endAngle)
+    const y2 = centerY + radius * Math.sin(endAngle)
+
+    const largeArcFlag = angleStep > Math.PI ? 1 : 0
+
+    paths += `
+      <path d="M ${centerX},${centerY} L ${x1},${y1} A ${radius},${radius} 0 ${largeArcFlag},1 ${x2},${y2} Z"
+            fill="${colors[i]}" stroke="#333333" stroke-width="1" opacity="0.8"/>
+    `
+  }
+
+  return `
+    <svg width="${size}" height="${size}" xmlns="http://www.w3.org/2000/svg">
+      ${paths}
+    </svg>
+  `
+}
+
+// Separate component for each node marker to handle hover/click
+function NodeMarker({ node, onSelectNode }) {
+  const markerRef = useRef(null)
+  const radius = radiusFromSize(node.company_size || node.size)
+  const tiers = node.tiers || []
+
+  const handleMouseOver = () => {
+    if (markerRef.current) {
+      markerRef.current.openPopup()
+    }
+  }
+
+  const handleMouseOut = () => {
+    if (markerRef.current) {
+      markerRef.current.closePopup()
+    }
+  }
+
+  const handleClick = () => {
+    onSelectNode(node)
+  }
+
+  // Create custom icon with pie chart
+  const svgIcon = L.divIcon({
+    html: createPieChartSVG(tiers, radius),
+    className: 'custom-marker-icon',
+    iconSize: [radius * 2, radius * 2],
+    iconAnchor: [radius, radius],
+    popupAnchor: [0, -radius]
+  })
+
+  return (
+    <Marker
+      ref={markerRef}
+      position={[node.lat, node.lng]}
+      icon={svgIcon}
+      eventHandlers={{
+        mouseover: handleMouseOver,
+        mouseout: handleMouseOut,
+        click: handleClick
+      }}
+    >
+      <Popup closeButton={false} autoClose={false} closeOnClick={false}>
+        <div style={{ minWidth: 200 }}>
+          <strong>{node.company_name}</strong>
+          <div><small>ID: {node.node_id}</small></div>
+          <div>{node.city ? `${node.city}, ` : ''}{node.country || ''}</div>
+          {node.hq_country && (
+            <div><small>HQ: {node.hq_country}</small></div>
+          )}
+          {node.tiers && node.tiers.length > 0 && (
+            <div style={{ marginTop: 4 }}>
+              <strong>Type(s):</strong> {node.tiers.join(', ')}
+            </div>
+          )}
+          {node.website && (
+            <div style={{ marginTop: 4 }}>
+              <a href={node.website} target="_blank" rel="noreferrer">Visit Website</a>
+            </div>
+          )}
+        </div>
+      </Popup>
+    </Marker>
+  )
 }
 
 export default function SupplyMap({ year, nodes, edges, selectedNode, onSelectNode, onCloseSidebar }) {
-  const nodeById = Object.fromEntries(nodes.map((n) => [n.id, n]))
+  const nodeById = Object.fromEntries(nodes.map((n) => [n.node_id, n]))
 
   const visibleNodes = nodes.filter((n) => visibleInYear(n, year))
   const visibleEdges = edges
@@ -42,38 +201,25 @@ export default function SupplyMap({ year, nodes, edges, selectedNode, onSelectNo
         {visibleEdges.map((e) => {
           const a = nodeById[e.source]
           const b = nodeById[e.target]
+          if (!a || !b) return null
+
           return (
             <Polyline
-              key={e.id}
+              key={e.edge_id}
               positions={[[a.lat, a.lng], [b.lat, b.lng]]}
               weight={2}
               opacity={0.6}
+              color="#4a5568"
             />
           )
         })}
 
         {visibleNodes.map((n) => (
-          <CircleMarker
-            key={n.id}
-            center={[n.lat, n.lng]}
-            radius={radiusFromSize(n.size)}
-            pathOptions={{ color: '#2b6cb0', fillOpacity: 0.7 }}
-            eventHandlers={{ click: () => onSelectNode(n) }}
-          >
-            <Popup>
-              <div style={{ minWidth: 200 }}>
-                <strong>{n.name}</strong>
-                <div>{n.type}</div>
-                <div>{n.city ? `${n.city}, ` : ''}{n.country || ''}</div>
-                {n.info?.website && (
-                  <div>
-                    <a href={n.info.website} target="_blank" rel="noreferrer">Website</a>
-                  </div>
-                )}
-                {n.info?.notes && <div style={{ marginTop: 6 }}>{n.info.notes}</div>}
-              </div>
-            </Popup>
-          </CircleMarker>
+          <NodeMarker
+            key={n.node_id}
+            node={n}
+            onSelectNode={onSelectNode}
+          />
         ))}
       </MapContainer>
 

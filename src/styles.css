@@ -28,9 +28,30 @@ html, body, #root { height: 100%; margin: 0; }
 }
 
 /* Legend */
-.legend { background: rgba(255,255,255,0.96); border: 1px solid #e5e7eb; border-radius: 8px; padding: 8px 10px; font-size: 12px; }
-.legend-row { display: flex; align-items: center; gap: 8px; margin: 4px 0; }
-.dot { width: 10px; height: 10px; display: inline-block; border-radius: 999px; background: #2b6cb0; }
+.legend {
+  background: rgba(255,255,255,0.96);
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 11px;
+  max-width: 320px;
+  line-height: 1.4;
+}
+.legend-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 5px 0;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  min-width: 10px;
+  display: inline-block;
+  border-radius: 999px;
+  background: #2b6cb0;
+  margin-top: 2px;
+}
 .dot-metal { background: #2b6cb0; }
 .dot-sep { background: #059669; }
 .line { width: 18px; height: 2px; background: #111827; display: inline-block; }
@@ -68,6 +89,26 @@ html, body, #root { height: 100%; margin: 0; }
 }
 .ticks-grid .tick { justify-self: center; }
 .ticks-grid .tick.active { color: #111827; font-weight: 700; }
+
+/* Custom marker icons */
+.custom-marker-icon {
+  background: transparent !important;
+  border: none !important;
+  cursor: pointer;
+}
+.custom-marker-icon svg {
+  display: block;
+}
+
+/* Arrow markers for edges */
+.arrow-marker {
+  background: transparent !important;
+  border: none !important;
+  pointer-events: none;
+}
+.arrow-marker svg {
+  display: block;
+}
 
 /* Responsive */
 @media (max-width: 900px) {

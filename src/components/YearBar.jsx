@@ -8,6 +8,11 @@ export default function YearBar({ year, setYear, years }) {
     )
   }
 
+  // Show label for every 2 years, plus first and last
+  const shouldShowLabel = (y) => {
+    return y === min || y === max || (y - min) % 2 === 0
+  }
+
   return (
     <div className="yearbar">
       <span className="year">{year}</span>
@@ -18,11 +23,13 @@ export default function YearBar({ year, setYear, years }) {
           max={max}
           step={1}
           value={year}
-          onChange={(e) => setYear(nearestYear(Number(e.target.value)))}
+          onChange={(e) => setYear(Number(e.target.value))}
         />
         <div className="ticks-grid" style={{ gridTemplateColumns: `repeat(${years.length}, 1fr)` }}>
           {years.map((y) => (
-            <span key={y} className={`tick ${y === year ? 'active' : ''}`}>{y}</span>
+            <span key={y} className={`tick ${y === year ? 'active' : ''}`}>
+              {shouldShowLabel(y) ? y : ''}
+            </span>
           ))}
         </div>
       </div>
