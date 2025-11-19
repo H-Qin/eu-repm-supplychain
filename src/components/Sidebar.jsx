@@ -11,8 +11,8 @@ return (
 {node.hq_country && (
 <p><strong>Headquarters:</strong> {node.hq_country}</p>
 )}
-{node.tiers && node.tiers.length > 0 && (
-<p><strong>Type(s):</strong> {node.tiers.join(', ')}</p>
+{node.processes && node.processes.length > 0 && (
+<p><strong>Process(es):</strong> {node.processes.join(', ')}</p>
 )}
 {node.website && (
 <p><a href={node.website} target="_blank" rel="noreferrer">Visit Website</a></p>

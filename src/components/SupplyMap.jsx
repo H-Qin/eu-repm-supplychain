@@ -110,7 +110,7 @@ function createPieChartSVG(processes, radius) {
 function NodeMarker({ node, onSelectNode }) {
   const markerRef = useRef(null)
   const radius = radiusFromSize(node.company_size || node.size)
-  const processes = node.tiers || []
+  const processes = node.processes || []
 
   const handleMouseOver = () => {
     if (markerRef.current) {
@@ -156,9 +156,9 @@ function NodeMarker({ node, onSelectNode }) {
           {node.hq_country && (
             <div><small>HQ: {node.hq_country}</small></div>
           )}
-          {node.tiers && node.tiers.length > 0 && (
+          {node.processes && node.processes.length > 0 && (
             <div style={{ marginTop: 4 }}>
-              <strong>Type(s):</strong> {node.tiers.join(', ')}
+              <strong>Process(es):</strong> {node.processes.join(', ')}
             </div>
           )}
           {node.website && (
