@@ -51,24 +51,24 @@ function radiusFromSize(size) {
   return 6 + (s - 1) * (18 / 9)
 }
 
-// Tier color mapping
-const TIER_COLORS = {
-  'Tier 1': '#80b1d3',
-  'Tier 2': '#fb8072',
-  'Tier 3': '#bc80bd',
-  'Tier 4': '#fdb462',
-  'Tier 5': '#8dd3c7',
-  'Tier 6': '#b3de69'
+// Process color mapping
+const PROCESS_COLORS = {
+  'Process 1': '#80b1d3',
+  'Process 2': '#fb8072',
+  'Process 3': '#bc80bd',
+  'Process 4': '#fdb462',
+  'Process 5': '#8dd3c7',
+  'Process 6': '#b3de69'
 }
 
-// Create SVG pie chart for multi-tier nodes
-function createPieChartSVG(tiers, radius) {
+// Create SVG pie chart for multi-process nodes
+function createPieChartSVG(processes, radius) {
   const size = radius * 2
   const centerX = radius
   const centerY = radius
-  const colors = tiers.map(tier => TIER_COLORS[tier] || '#2b6cb0')
+  const colors = processes.map(process => PROCESS_COLORS[process] || '#2b6cb0')
 
-  if (tiers.length === 1) {
+  if (processes.length === 1) {
     // Single color circle
     return `
       <svg width="${size}" height="${size}" xmlns="http://www.w3.org/2000/svg">
@@ -78,11 +78,11 @@ function createPieChartSVG(tiers, radius) {
     `
   }
 
-  // Multiple tiers - create pie chart
-  const angleStep = (2 * Math.PI) / tiers.length
+  // Multiple processes - create pie chart
+  const angleStep = (2 * Math.PI) / processes.length
   let paths = ''
 
-  for (let i = 0; i < tiers.length; i++) {
+  for (let i = 0; i < processes.length; i++) {
     const startAngle = i * angleStep - Math.PI / 2
     const endAngle = (i + 1) * angleStep - Math.PI / 2
 
@@ -110,7 +110,7 @@ function createPieChartSVG(tiers, radius) {
 function NodeMarker({ node, onSelectNode }) {
   const markerRef = useRef(null)
   const radius = radiusFromSize(node.company_size || node.size)
-  const tiers = node.tiers || []
+  const processes = node.tiers || []
 
   const handleMouseOver = () => {
     if (markerRef.current) {
@@ -130,7 +130,7 @@ function NodeMarker({ node, onSelectNode }) {
 
   // Create custom icon with pie chart
   const svgIcon = L.divIcon({
-    html: createPieChartSVG(tiers, radius),
+    html: createPieChartSVG(processes, radius),
     className: 'custom-marker-icon',
     iconSize: [radius * 2, radius * 2],
     iconAnchor: [radius, radius],
