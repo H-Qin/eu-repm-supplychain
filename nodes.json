@@ -8,7 +8,7 @@
     "city": "Nagoya",
     "lat": 35.1814464,
     "lng": 136.906398,
-    "tiers": [
+    "processes": [
       "Process 2",
       "Process 3"
     ],
@@ -27,7 +27,7 @@
     "city": "Frankfurt am Main",
     "lat": 50.1109,
     "lng": 8.6821,
-    "tiers": [
+    "processes": [
       "Process 2",
       "Process 3"
     ],
@@ -46,7 +46,7 @@
     "city": "Lakewood",
     "lat": 39.7047095,
     "lng": -105.0813734,
-    "tiers": [
+    "processes": [
       "Process 1",
       "Process 2"
     ],
@@ -65,7 +65,7 @@
     "city": "Toronto",
     "lat": 43.65107,
     "lng": -79.347015,
-    "tiers": [
+    "processes": [
       "Process 1",
       "Process 2"
     ],
@@ -84,7 +84,7 @@
     "city": "Ganzhou",
     "lat": 25.84664,
     "lng": 114.9326,
-    "tiers": [
+    "processes": [
       "Process 2",
       "Process 3"
     ],
@@ -103,7 +103,7 @@
     "city": "Ganzhou",
     "lat": 25.84664,
     "lng": 114.9326,
-    "tiers": [
+    "processes": [
       "Process 1",
       "Process 2"
     ],
@@ -122,7 +122,7 @@
     "city": "Bjerringbro",
     "lat": 56.37797,
     "lng": 9.66065,
-    "tiers": [
+    "processes": [
       "Process 5"
     ],
     "website": "https://www.grundfos.com",
@@ -140,7 +140,7 @@
     "city": "Perth",
     "lat": -31.9558964,
     "lng": 115.8605801,
-    "tiers": [
+    "processes": [
       "Process 1",
       "Process 2"
     ],
@@ -159,7 +159,7 @@
     "city": "Jiangyin",
     "lat": 31.9092756,
     "lng": 120.2630426,
-    "tiers": [
+    "processes": [
       "Process 2",
       "Process 3"
     ],
@@ -178,7 +178,7 @@
     "city": "Ellesmere Port",
     "lat": 53.2788,
     "lng": -2.90134,
-    "tiers": [
+    "processes": [
       "Process 2"
     ],
     "website": "https://www.lesscommonmetals.com",
@@ -196,7 +196,7 @@
     "city": "Seoul",
     "lat": 37.5326,
     "lng": 127.024612,
-    "tiers": [
+    "processes": [
       "Process 4",
       "Process 5"
     ],
@@ -215,7 +215,7 @@
     "city": "Biskupice Podgórne",
     "lat": 51.0295,
     "lng": 16.8875,
-    "tiers": [
+    "processes": [
       "Process 4",
       "Process 5"
     ],
@@ -234,7 +234,7 @@
     "city": "Matsudo",
     "lat": 35.79574,
     "lng": 139.92908,
-    "tiers": [
+    "processes": [
       "Process 4",
       "Process 5"
     ],
@@ -253,7 +253,7 @@
     "city": "Bochnia",
     "lat": 49.9685,
     "lng": 20.4303,
-    "tiers": [
+    "processes": [
       "Process 4",
       "Process 5"
     ],
@@ -272,7 +272,7 @@
     "city": "Perth",
     "lat": -31.9558964,
     "lng": 115.8605801,
-    "tiers": [
+    "processes": [
       "Process 1"
     ],
     "website": "https://www.meteoricresources.com.au",
@@ -290,7 +290,7 @@
     "city": "Nagaokakyo",
     "lat": 34.926771,
     "lng": 135.6957852,
-    "tiers": [
+    "processes": [
       "Process 4",
       "Process 5"
     ],
@@ -309,7 +309,7 @@
     "city": "Vantaa",
     "lat": 60.2941,
     "lng": 25.0410,
-    "tiers": [
+    "processes": [
       "Process 4",
       "Process 5"
     ],
@@ -328,7 +328,7 @@
     "city": "Nuremberg",
     "lat": 49.460983,
     "lng": 11.061859,
-    "tiers": [
+    "processes": [
       "Process 4",
       "Process 5"
     ],
@@ -347,7 +347,7 @@
     "city": "Badalona",
     "lat": 41.45004,
     "lng": 2.24741,
-    "tiers": [
+    "processes": [
       "Process 4",
       "Process 5"
     ],
@@ -366,7 +366,7 @@
     "city": "Fleet",
     "lat": 51.283,
     "lng": -0.840,
-    "tiers": [
+    "processes": [
       "Process 4",
       "Process 5"
     ],
@@ -385,7 +385,7 @@
     "city": "Toronto",
     "lat": 43.6534817,
     "lng": -79.3839347,
-    "tiers": [
+    "processes": [
       "Process 2",
       "Process 3",
       "Process 6"
@@ -405,7 +405,7 @@
     "city": "Zibo",
     "lat": 36.79,
     "lng": 118.06,
-    "tiers": [
+    "processes": [
       "Process 2",
       "Process 3",
       "Process 6"
@@ -425,7 +425,7 @@
     "city": "Narva",
     "lat": 59.3772,
     "lng": 28.1903,
-    "tiers": [
+    "processes": [
       "Process 2",
       "Process 3",
       "Process 6"
@@ -445,7 +445,7 @@
     "city": "Abingdon",
     "lat": 51.6731,
     "lng": -1.2672,
-    "tiers": [
+    "processes": [
       "Process 2",
       "Process 3",
       "Process 6"
@@ -465,7 +465,7 @@
     "city": "Nakhon Ratchasima",
     "lat": 14.9799,
     "lng": 102.0978,
-    "tiers": [
+    "processes": [
       "Process 2",
       "Process 3",
       "Process 6"
@@ -485,7 +485,7 @@
     "city": "Tokyo",
     "lat": 35.6894875,
     "lng": 139.6917064,
-    "tiers": [
+    "processes": [
       "Process 2"
     ],
     "website": "https://www.nippon-denko.co.jp",
@@ -503,7 +503,7 @@
     "city": "Kadoma",
     "lat": 34.7391507,
     "lng": 135.5868932,
-    "tiers": [
+    "processes": [
       "Process 4",
       "Process 5"
     ],
@@ -522,7 +522,7 @@
     "city": "Plzeň",
     "lat": 49.7475,
     "lng": 13.3776,
-    "tiers": [
+    "processes": [
       "Process 4",
       "Process 5"
     ],
@@ -541,7 +541,7 @@
     "city": "Lüneburg",
     "lat": 53.2509,
     "lng": 10.4141,
-    "tiers": [
+    "processes": [
       "Process 4",
       "Process 5"
     ],
@@ -560,7 +560,7 @@
     "city": "Porsgrunn",
     "lat": 59.132,
     "lng": 9.667,
-    "tiers": [
+    "processes": [
       "Process 2"
     ],
     "website": "https://reetec.no",
@@ -578,7 +578,7 @@
     "city": "Kyoto",
     "lat": 35.011665,
     "lng": 135.768326,
-    "tiers": [
+    "processes": [
       "Process 4",
       "Process 5"
     ],
@@ -597,7 +597,7 @@
     "city": "Willich",
     "lat": 51.2637,
     "lng": 6.54734,
-    "tiers": [
+    "processes": [
       "Process 4",
       "Process 5"
     ],
@@ -616,7 +616,7 @@
     "city": "Herzogenaurach",
     "lat": 49.5682987,
     "lng": 10.8828577,
-    "tiers": [
+    "processes": [
       "Process 4",
       "Process 5"
     ],
@@ -635,7 +635,7 @@
     "city": "Tokyo",
     "lat": 35.6894875,
     "lng": 139.6917064,
-    "tiers": [
+    "processes": [
       "Process 2",
       "Process 3"
     ],
@@ -654,7 +654,7 @@
     "city": "Zaventem",
     "lat": 50.8855,
     "lng": 4.4710,
-    "tiers": [
+    "processes": [
       "Process 2",
       "Process 3"
     ],
@@ -673,7 +673,7 @@
     "city": "Tokyo",
     "lat": 35.6894875,
     "lng": 139.6917064,
-    "tiers": [
+    "processes": [
       "Process 1",
       "Process 2"
     ],
@@ -692,7 +692,7 @@
     "city": "Taguig",
     "lat": 14.5243,
     "lng": 121.0792,
-    "tiers": [
+    "processes": [
       "Process 1",
       "Process 2"
     ],
@@ -711,7 +711,7 @@
     "city": "Kakogawa",
     "lat": 34.7569503,
     "lng": 134.8411775,
-    "tiers": [
+    "processes": [
       "Process 2"
     ],
     "website": "https://www.taki-chem.co.jp",
@@ -729,7 +729,7 @@
     "city": "Tianjin",
     "lat": 39.133331,
     "lng": 117.183334,
-    "tiers": [
+    "processes": [
       "Process 2",
       "Process 3"
     ],
@@ -748,7 +748,7 @@
     "city": "Shunan",
     "lat": 34.0551188,
     "lng": 131.8061858,
-    "tiers": [
+    "processes": [
       "Process 2"
     ],
     "website": "https://www.tokuyama.co.jp",
@@ -766,7 +766,7 @@
     "city": "Düsseldorf",
     "lat": 51.2333,
     "lng": 6.7833,
-    "tiers": [
+    "processes": [
       "Process 2"
     ],
     "website": "https://www.tokuyama.co.jp",
@@ -784,7 +784,7 @@
     "city": "Toyota",
     "lat": 35.0823947,
     "lng": 137.1562491,
-    "tiers": [
+    "processes": [
       "Process 4",
       "Process 5",
       "Process 6"
@@ -804,7 +804,7 @@
     "city": "Burnaston",
     "lat": 52.88969,
     "lng": -1.57354,
-    "tiers": [
+    "processes": [
       "Process 4",
       "Process 5",
       "Process 6"
@@ -824,7 +824,7 @@
     "city": "Onnaing",
     "lat": 50.386,
     "lng": 3.600,
-    "tiers": [
+    "processes": [
       "Process 4",
       "Process 5",
       "Process 6"
@@ -844,7 +844,7 @@
     "city": "Kolín",
     "lat": 50.028,
     "lng": 15.201,
-    "tiers": [
+    "processes": [
       "Process 4",
       "Process 5",
       "Process 6"
@@ -864,7 +864,7 @@
     "city": "Hanau",
     "lat": 50.1342,
     "lng": 8.91418,
-    "tiers": [
+    "processes": [
       "Process 2",
       "Process 3"
     ],
@@ -883,7 +883,7 @@
     "city": "Sydney",
     "lat": -33.865143,
     "lng": 151.2099,
-    "tiers": [
+    "processes": [
       "Process 1",
       "Process 2"
     ],
