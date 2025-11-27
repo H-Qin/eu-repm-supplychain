@@ -1,7 +1,7 @@
 # EU Rare-Earth Permanent Magnet (REPM) Supply Chain Map
 
 This project visualises the rare-earth permanent-magnet (REPM) supply chain, specifically the **neodymium–iron–boron (NdFeB)** segment, within Europe, including the United Kingdom.  
-The interactive web map displays companies (nodes) and material flows (edges) across 15 years (from 2009 to 2024), illustrating the evolution of the supply network.
+The interactive web map displays companies (nodes) and material flows (edges) across 20 years (from 20004 to 2024), illustrating the evolution of the supply network.
 
 ## Project Overview
 This study aims to provide a transparent, data-driven understanding of how the European REPM supply chain has evolved over time.  
