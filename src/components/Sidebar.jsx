@@ -5,23 +5,17 @@ return (
 <button className="close" onClick={onClose}>×</button>
 <h2>{node.company_name}</h2>
 <p><strong>Node ID:</strong> {node.node_id}</p>
-{node.city || node.country ? (
-<p><strong>Location:</strong> {node.city ? `${node.city}, ` : ''}{node.country || ''}</p>
-) : null}
-{node.hq_country && (
-<p><strong>Headquarters:</strong> {node.hq_country}</p>
+{(node.city || node['country_branch/plant']) && (
+<p><strong>Location:</strong> {node.city ? `${node.city}, ` : ''}{node['country_branch/plant'] || ''}</p>
 )}
-{node.processes && node.processes.length > 0 && (
-<p><strong>Process(es):</strong> {node.processes.join(', ')}</p>
+{node.country_HQ && (
+<p><strong>Headquarters:</strong> {node.country_HQ}</p>
 )}
-{node.website && (
-<p><a href={node.website} target="_blank" rel="noreferrer">Visit Website</a></p>
-)}
-{(node.company_size || node.size) && (
-<p><strong>Size:</strong> {node.company_size || node.size}</p>
+{node.process && node.process.length > 0 && (
+<p><strong>Process(es):</strong> {node.process.join(', ')}</p>
 )}
 {node.active_years && node.active_years.length > 0 && (
-<p><strong>Active Years:</strong> {node.active_years.join(', ')}</p>
+<p><strong>Active years:</strong> {node.active_years.join(', ')}</p>
 )}
 </aside>
 )

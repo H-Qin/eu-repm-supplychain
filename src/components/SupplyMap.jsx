@@ -4,42 +4,7 @@ import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import Legend from './Legend'
 import Sidebar from './Sidebar'
-
-// Calculate curved path between two points
-function getCurvedPath(lat1, lng1, lat2, lng2) {
-  // Calculate midpoint
-  const midLat = (lat1 + lat2) / 2
-  const midLng = (lng1 + lng2) / 2
-
-  // Calculate perpendicular offset for the curve
-  const dx = lng2 - lng1
-  const dy = lat2 - lat1
-  const distance = Math.sqrt(dx * dx + dy * dy)
-
-  // Offset amount (adjust this to control curve intensity)
-  const offset = distance * 0.15
-
-  // Perpendicular vector
-  const perpLat = -dx * offset
-  const perpLng = dy * offset
-
-  // Control point for the curve
-  const controlLat = midLat + perpLat
-  const controlLng = midLng + perpLng
-
-  // Generate points along the curve using quadratic bezier
-  const points = []
-  const segments = 20
-  for (let i = 0; i <= segments; i++) {
-    const t = i / segments
-    const invT = 1 - t
-    const lat = invT * invT * lat1 + 2 * invT * t * controlLat + t * t * lat2
-    const lng = invT * invT * lng1 + 2 * invT * t * controlLng + t * t * lng2
-    points.push([lat, lng])
-  }
-
-  return points
-}
+import CurvedEdge from './CurvedEdge'
 
 function visibleInYear(item, year) {
   return Array.isArray(item.active_years) && item.active_years.includes(year)
@@ -53,12 +18,35 @@ function radiusFromSize(size) {
 
 // Process color mapping
 const PROCESS_COLORS = {
-  'Process 1': '#80b1d3',
-  'Process 2': '#fb8072',
-  'Process 3': '#bc80bd',
-  'Process 4': '#fdb462',
-  'Process 5': '#8dd3c7',
-  'Process 6': '#b3de69'
+  'Process 1': '#d53e4f',
+  'Process 2': '#fc8d59',
+  'Process 3': '#fee08b',
+  'Process 4': '#e6f598',
+  'Process 5': '#99d594',
+  'Process 6': '#3288bd'
+}
+
+function clamp01(v) {
+  return Math.max(0, Math.min(1, Number(v ?? 0)))
+}
+
+// Equal-interval classification into 6 bins
+function getEdgeColor(volume) {
+  const v = clamp01(volume)
+  if (v <= 0.03) return '#2171b5'
+  if (v <= 0.06) return '#08519c'
+  if (v <= 0.09) return '#08519c'
+  if (v <= 0.2) return '#08306b'
+  if (v <= 0.4) return '#08306b'
+  return '#08306b'
+}
+
+// Optional: volume → opacity (low volume = faint, high = strong)
+function getEdgeOpacity(volume) {
+  const v = clamp01(volume)
+  const minOpacity = 0.4
+  const maxOpacity = 1
+  return minOpacity + (maxOpacity - minOpacity) * v
 }
 
 // Create SVG pie chart for multi-process nodes
@@ -109,8 +97,8 @@ function createPieChartSVG(processes, radius) {
 // Separate component for each node marker to handle hover/click
 function NodeMarker({ node, onSelectNode }) {
   const markerRef = useRef(null)
-  const radius = radiusFromSize(node.company_size || node.size)
-  const processes = node.processes || []
+  const radius = radiusFromSize(2) // All nodes size 2
+  const processes = (node.process || []).map(p => `Process ${p}`)
 
   const handleMouseOver = () => {
     if (markerRef.current) {
@@ -152,18 +140,13 @@ function NodeMarker({ node, onSelectNode }) {
         <div style={{ minWidth: 200 }}>
           <strong>{node.company_name}</strong>
           <div><small>ID: {node.node_id}</small></div>
-          <div>{node.city ? `${node.city}, ` : ''}{node.country || ''}</div>
-          {node.hq_country && (
-            <div><small>HQ: {node.hq_country}</small></div>
+          <div>{node.city ? `${node.city}, ` : ''}{node['country_branch/plant'] || ''}</div>
+          {node.country_HQ && (
+            <div><small>HQ: {node.country_HQ}</small></div>
           )}
-          {node.processes && node.processes.length > 0 && (
+          {node.process && node.process.length > 0 && (
             <div style={{ marginTop: 4 }}>
-              <strong>Process(es):</strong> {node.processes.join(', ')}
-            </div>
-          )}
-          {node.website && (
-            <div style={{ marginTop: 4 }}>
-              <a href={node.website} target="_blank" rel="noreferrer">Visit Website</a>
+              <strong>Process(es):</strong> {node.process.join(', ')}
             </div>
           )}
         </div>
@@ -201,15 +184,22 @@ export default function SupplyMap({ year, nodes, edges, selectedNode, onSelectNo
         {visibleEdges.map((e) => {
           const a = nodeById[e.source]
           const b = nodeById[e.target]
+          const volume = e.volume ?? 0
+          
+          const color = getEdgeColor(volume)
+          const opacity = getEdgeOpacity(volume)
+          // const opacity = 1
+
           if (!a || !b) return null
 
           return (
-            <Polyline
+            <CurvedEdge
               key={e.edge_id}
-              positions={[[a.lat, a.lng], [b.lat, b.lng]]}
+              from={[a.lat, a.lng]}
+              to={[b.lat, b.lng]}
+              color={color}
               weight={2}
-              opacity={0.6}
-              color="#4a5568"
+              opacity={opacity}
             />
           )
         })}
