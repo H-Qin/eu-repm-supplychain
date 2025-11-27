@@ -35,7 +35,7 @@ export default function App() {
           <YearBar
             year={year}
             setYear={setYear}
-            years={Array.from({ length: 2024 - 2009 + 1 }, (_, i) => 2009 + i)}
+            years={Array.from({ length: 2024 - 2004 + 1 }, (_, i) => 2004 + i)}
           />
         </div>
 
