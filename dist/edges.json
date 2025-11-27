@@ -1,176 +1,4394 @@
 [
   {
-    "edge_id": "edge_GKRE-CN_NEO-CN",
-    "source": "GKRE-CN",
-    "target": "NEO-CN",
-    "active_years": [2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024]
+    "edge_id": "edge_CNREGHTCL_CHN_CHN_ATMCL_CHN_CHN",
+    "source": "CNREGHTCL_CHN_CHN",
+    "target": "ATMCL_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.09481628599801391
   },
   {
-    "edge_id": "edge_GQRE-CN_NEO-CN",
-    "source": "GQRE-CN",
-    "target": "NEO-CN",
-    "active_years": [2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024]
+    "edge_id": "edge_CTAHM_CHN_CHN_ATMCL_CHN_CHN",
+    "source": "CTAHM_CHN_CHN",
+    "target": "ATMCL_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.048361469712015895
   },
   {
-    "edge_id": "edge_EF-CA_NEO-CN",
-    "source": "EF-CA",
-    "target": "NEO-CN",
-    "active_years": [2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024]
+    "edge_id": "edge_ATMCL_CHN_CHN_SEA_DEU_DEU",
+    "source": "ATMCL_CHN_CHN",
+    "target": "SEA_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.03406156901688182
   },
   {
-    "edge_id": "edge_TMMM-JP_NEO-CN",
-    "source": "TMMM-JP",
-    "target": "NEO-CN",
-    "active_years": [2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024]
+    "edge_id": "edge_ATMCL_CHN_CHN_SEA_ESP_DEU",
+    "source": "ATMCL_CHN_CHN",
+    "target": "SEA_ESP_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.01916583912611718
   },
   {
-    "edge_id": "edge_HTM-AU_NEO-CN",
-    "source": "HTM-AU",
-    "target": "NEO-CN",
-    "active_years": [2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024]
+    "edge_id": "edge_ATMCL_CHN_CHN_SEA_DNK_DEU",
+    "source": "ATMCL_CHN_CHN",
+    "target": "SEA_DNK_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.017795431976166835
   },
   {
-    "edge_id": "edge_METR-BR_NEO-CN",
-    "source": "METR-BR",
-    "target": "NEO-CN",
-    "active_years": [2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024]
+    "edge_id": "edge_ATMCL_CHN_CHN_AS_DEU_NLD",
+    "source": "ATMCL_CHN_CHN",
+    "target": "AS_DEU_NLD",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.023376365441906653
   },
   {
-    "edge_id": "edge_NEO-CN_GRUN-DK",
-    "source": "NEO-CN",
-    "target": "GRUN-DK",
-    "active_years": [2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024]
+    "edge_id": "edge_ATMCL_CHN_CHN_AS_ESP_NLD",
+    "source": "ATMCL_CHN_CHN",
+    "target": "AS_ESP_NLD",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.01916583912611718
   },
   {
-    "edge_id": "edge_VML-CA_REET-NO",
-    "source": "VML-CA",
-    "target": "REET-NO",
-    "active_years": [2015,2016,2017,2018,2019,2020,2021,2022,2023,2024]
+    "edge_id": "edge_ATMCL_CHN_CHN_AS_GBR_NLD",
+    "source": "ATMCL_CHN_CHN",
+    "target": "AS_GBR_NLD",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.048639523336643495
   },
   {
-    "edge_id": "edge_REET-NO_SCHF-DE",
-    "source": "REET-NO",
-    "target": "SCHF-DE",
-    "active_years": [2015,2016,2017,2018,2019,2020,2021,2022,2023,2024]
+    "edge_id": "edge_ATMCL_CHN_CHN_AS_FRA_NLD",
+    "source": "ATMCL_CHN_CHN",
+    "target": "AS_FRA_NLD",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.022125124131082426
   },
   {
-    "edge_id": "edge_REET-NO_LCM-GB",
-    "source": "REET-NO",
-    "target": "LCM-GB",
-    "active_years": [2015,2016,2017,2018,2019,2020,2021,2022,2023,2024]
+    "edge_id": "edge_AMT_CHN_USA_AMT_GBR_USA",
+    "source": "AMT_CHN_USA",
+    "target": "AMT_GBR_USA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.05070506454816286
   },
   {
-    "edge_id": "edge_REET-NO_VAC-DE",
-    "source": "REET-NO",
-    "target": "VAC-DE",
-    "active_years": [2015,2016,2017,2018,2019,2020,2021,2022,2023,2024]
+    "edge_id": "edge_CM_CAN_CAN_AMT_GBR_USA",
+    "source": "CM_CAN_CAN",
+    "target": "AMT_GBR_USA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.02504468718967229
   },
   {
-    "edge_id": "edge_JBNM-CN_SMM-JP",
-    "source": "JBNM-CN",
-    "target": "SMM-JP",
-    "active_years": [2020,2021,2022,2023,2024]
+    "edge_id": "edge_AMT_GBR_USA_MEL_BEL_BEL",
+    "source": "AMT_GBR_USA",
+    "target": "MEL_BEL_BEL",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.4374379344587885
   },
   {
-    "edge_id": "edge_SUMC-JP_SMM-JP",
-    "source": "SUMC-JP",
-    "target": "SMM-JP",
-    "active_years": [2020,2021,2022,2023,2024]
+    "edge_id": "edge_AMT_CHN_USA_AMT_CHE_USA",
+    "source": "AMT_CHN_USA",
+    "target": "AMT_CHE_USA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.013862959285004967
   },
   {
-    "edge_id": "edge_ND-JP_SMM-JP",
-    "source": "ND-JP",
-    "target": "SMM-JP",
-    "active_years": [2020,2021,2022,2023,2024]
+    "edge_id": "edge_CM_CAN_CAN_AMT_CHE_USA",
+    "source": "CM_CAN_CAN",
+    "target": "AMT_CHE_USA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.01906653426017875
   },
   {
-    "edge_id": "edge_TOKU-JP_SMM-JP",
-    "source": "TOKU-JP",
-    "target": "SMM-JP",
-    "active_years": [2020,2021,2022,2023,2024]
+    "edge_id": "edge_AMT_CHE_USA_MEL_BEL_BEL",
+    "source": "AMT_CHE_USA",
+    "target": "MEL_BEL_BEL",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.2211320754716981
   },
   {
-    "edge_id": "edge_TAKI-JP_SMM-JP",
-    "source": "TAKI-JP",
-    "target": "SMM-JP",
-    "active_years": [2020,2021,2022,2023,2024]
+    "edge_id": "edge_NY_CHN_CHN_AMT_CHN_USA",
+    "source": "NY_CHN_CHN",
+    "target": "AMT_CHN_USA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.05926514399205561
   },
   {
-    "edge_id": "edge_SMM-JP_TMC-GB",
-    "source": "SMM-JP",
-    "target": "TMC-GB",
-    "active_years": [2022,2023,2024]
+    "edge_id": "edge_ZKSHHTCL_CHN_CHN_BM_NLD_NLD",
+    "source": "ZKSHHTCL_CHN_CHN",
+    "target": "BM_NLD_NLD",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.04295928500496524
   },
   {
-    "edge_id": "edge_SMM-JP_TMC-FR",
-    "source": "SMM-JP",
-    "target": "TMC-FR",
-    "active_years": [2022,2023,2024]
+    "edge_id": "edge_NY_CHN_CHN_BM_NLD_NLD",
+    "source": "NY_CHN_CHN",
+    "target": "BM_NLD_NLD",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.04790466732869911
   },
   {
-    "edge_id": "edge_SMM-JP_TMC-CZ",
-    "source": "SMM-JP",
-    "target": "TMC-CZ",
-    "active_years": [2022,2023,2024]
+    "edge_id": "edge_BM_NLD_NLD_CFGE_IRL_IRL",
+    "source": "BM_NLD_NLD",
+    "target": "CFGE_IRL_IRL",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.2886593843098312
   },
   {
-    "edge_id": "edge_SMM-JP_PANA-CZ",
-    "source": "SMM-JP",
-    "target": "PANA-CZ",
-    "active_years": [2022,2023,2024]
+    "edge_id": "edge_ARE_AUS_AUS_BTM_CHN_CHN",
+    "source": "ARE_AUS_AUS",
+    "target": "BTM_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.022065541211519362
   },
   {
-    "edge_id": "edge_SMM-JP_PANA-DE",
-    "source": "SMM-JP",
-    "target": "PANA-DE",
-    "active_years": [2022,2023,2024]
+    "edge_id": "edge_CNREGHTCL_CHN_CHN_BTM_CHN_CHN",
+    "source": "CNREGHTCL_CHN_CHN",
+    "target": "BTM_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.28500496524329694
   },
   {
-    "edge_id": "edge_SMM-JP_MMCL-PL",
-    "source": "SMM-JP",
-    "target": "MMCL-PL",
-    "active_years": [2022,2023,2024]
+    "edge_id": "edge_GRIAMCL_CHN_CHN_BTM_CHN_CHN",
+    "source": "GRIAMCL_CHN_CHN",
+    "target": "BTM_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.09606752730883812
   },
   {
-    "edge_id": "edge_SMM-JP_DSCL-DE",
-    "source": "SMM-JP",
-    "target": "DSCL-DE",
-    "active_years": [2022,2023,2024]
+    "edge_id": "edge_NFRENMNZMM_CHN_CHN_BTM_CHN_CHN",
+    "source": "NFRENMNZMM_CHN_CHN",
+    "target": "BTM_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.05171797418073486
   },
   {
-    "edge_id": "edge_SMM-JP_ROHM-DE",
-    "source": "SMM-JP",
-    "target": "ROHM-DE",
-    "active_years": [2022,2023,2024]
+    "edge_id": "edge_GCRENMCL_CHN_CHN_BTM_CHN_CHN",
+    "source": "GCRENMCL_CHN_CHN",
+    "target": "BTM_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.06291956305858987
   },
   {
-    "edge_id": "edge_SMM-JP_MURA-FI",
-    "source": "SMM-JP",
-    "target": "MURA-FI",
-    "active_years": [2024]
+    "edge_id": "edge_JSREG_CHN_CHN_BTM_CHN_CHN",
+    "source": "JSREG_CHN_CHN",
+    "target": "BTM_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.06317775571002979
   },
   {
-    "edge_id": "edge_SMM-JP_MURA-DE",
-    "source": "SMM-JP",
-    "target": "MURA-DE",
-    "active_years": [2024]
+    "edge_id": "edge_IMBREITCL_CHN_CHN_BTM_CHN_CHN",
+    "source": "IMBREITCL_CHN_CHN",
+    "target": "BTM_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.28500496524329694
   },
   {
-    "edge_id": "edge_SMM-JP_MURA-ES",
-    "source": "SMM-JP",
-    "target": "MURA-ES",
-    "active_years": [2024]
+    "edge_id": "edge_IMBREMMCL_CHN_CHN_BTM_CHN_CHN",
+    "source": "IMBREMMCL_CHN_CHN",
+    "target": "BTM_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.28500496524329694
   },
   {
-    "edge_id": "edge_SMM-JP_MURA-GB",
-    "source": "SMM-JP",
-    "target": "MURA-GB",
-    "active_years": [2024]
+    "edge_id": "edge_BTM_CHN_CHN_VG_DEU_DEU",
+    "source": "BTM_CHN_CHN",
+    "target": "VG_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.02266137040714995
   },
   {
-    "edge_id": "edge_SMM-JP_LGIN-PL",
-    "source": "SMM-JP",
-    "target": "LGIN-PL",
-    "active_years": [2024]
+    "edge_id": "edge_BTM_CHN_CHN_MOO_GBR_USA",
+    "source": "BTM_CHN_CHN",
+    "target": "MOO_GBR_USA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.087785501489573
+  },
+  {
+    "edge_id": "edge_BTM_CHN_CHN_SGRE_FRA_DNK",
+    "source": "BTM_CHN_CHN",
+    "target": "SGRE_FRA_DNK",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.05330685203574975
+  },
+  {
+    "edge_id": "edge_BTM_CHN_CHN_SGRE_DNK_DNK",
+    "source": "BTM_CHN_CHN",
+    "target": "SGRE_DNK_DNK",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.014121151936444887
+  },
+  {
+    "edge_id": "edge_BTM_CHN_CHN_SGRE_DEU_DNK",
+    "source": "BTM_CHN_CHN",
+    "target": "SGRE_DEU_DNK",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.01864945382323734
+  },
+  {
+    "edge_id": "edge_BTM_CHN_CHN_RBGBG_DEU_DEU",
+    "source": "BTM_CHN_CHN",
+    "target": "RBGBG_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.040734856007944395
+  },
+  {
+    "edge_id": "edge_BMSB_MYS_CHE_BA_CHE_CHE",
+    "source": "BMSB_MYS_CHE",
+    "target": "BA_CHE_CHE",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.009831181727904668
+  },
+  {
+    "edge_id": "edge_BA_CHE_CHE_FEG_DEU_DEU",
+    "source": "BA_CHE_CHE",
+    "target": "FEG_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.24681231380337637
+  },
+  {
+    "edge_id": "edge_BA_CHE_CHE_EMG_DEU_DEU",
+    "source": "BA_CHE_CHE",
+    "target": "EMG_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.27209533267130087
+  },
+  {
+    "edge_id": "edge_BA_CHE_CHE_RBGBG_DEU_DEU",
+    "source": "BA_CHE_CHE",
+    "target": "RBGBG_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.19561072492552134
+  },
+  {
+    "edge_id": "edge_LCML_GBR_GBR_BME_GBR_GBR",
+    "source": "LCML_GBR_GBR",
+    "target": "BME_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.7316186693147965
+  },
+  {
+    "edge_id": "edge_MAI_USA_USA_BME_GBR_GBR",
+    "source": "MAI_USA_USA",
+    "target": "BME_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.020218470705064547
+  },
+  {
+    "edge_id": "edge_BME_GBR_GBR_MEL_BEL_BEL",
+    "source": "BME_GBR_GBR",
+    "target": "MEL_BEL_BEL",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.34466732869910627
+  },
+  {
+    "edge_id": "edge_BME_GBR_GBR_BCS_ITA_ITA",
+    "source": "BME_GBR_GBR",
+    "target": "BCS_ITA_ITA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.13489572989076465
+  },
+  {
+    "edge_id": "edge_BME_GBR_GBR_ZFA_CZE_DEU",
+    "source": "BME_GBR_GBR",
+    "target": "ZFA_CZE_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.21704071499503477
+  },
+  {
+    "edge_id": "edge_BME_GBR_GBR_GAS_DNK_DNK",
+    "source": "BME_GBR_GBR",
+    "target": "GAS_DNK_DNK",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.12790466732869912
+  },
+  {
+    "edge_id": "edge_BME_GBR_GBR_GAS_GBR_DNK",
+    "source": "BME_GBR_GBR",
+    "target": "GAS_GBR_DNK",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.6059582919563059
+  },
+  {
+    "edge_id": "edge_TM_CAN_CAN_C_FRA_FRA",
+    "source": "TM_CAN_CAN",
+    "target": "C_FRA_FRA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.0171201588877855
+  },
+  {
+    "edge_id": "edge_BRE_AUS_AUS_C_FRA_FRA",
+    "source": "BRE_AUS_AUS",
+    "target": "C_FRA_FRA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.004925521350546177
+  },
+  {
+    "edge_id": "edge_C_FRA_FRA_STE_NLD_NLD",
+    "source": "C_FRA_FRA",
+    "target": "STE_NLD_NLD",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.1932075471698113
+  },
+  {
+    "edge_id": "edge_C_FRA_FRA_SOL_BEL_BEL",
+    "source": "C_FRA_FRA",
+    "target": "SOL_BEL_BEL",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.19431976166832177
+  },
+  {
+    "edge_id": "edge_BIASG_CHN_CHN_CNREGHTCL_CHN_CHN",
+    "source": "BIASG_CHN_CHN",
+    "target": "CNREGHTCL_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.28500496524329694
+  },
+  {
+    "edge_id": "edge_EPAM_CHN_CHN_CNREGHTCL_CHN_CHN",
+    "source": "EPAM_CHN_CHN",
+    "target": "CNREGHTCL_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.06232373386295928
+  },
+  {
+    "edge_id": "edge_CRER_CHN_CHN_CNREGHTCL_CHN_CHN",
+    "source": "CRER_CHN_CHN",
+    "target": "CNREGHTCL_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.06317775571002979
+  },
+  {
+    "edge_id": "edge_CNREGHTCL_CHN_CHN_EPAM_CHN_CHN",
+    "source": "CNREGHTCL_CHN_CHN",
+    "target": "EPAM_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.06232373386295928
+  },
+  {
+    "edge_id": "edge_CNREGHTCL_CHN_CHN_ZKSHHTCL_CHN_CHN",
+    "source": "CNREGHTCL_CHN_CHN",
+    "target": "ZKSHHTCL_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.09606752730883812
+  },
+  {
+    "edge_id": "edge_CNREGHTCL_CHN_CHN_XTCL_CHN_CHN",
+    "source": "CNREGHTCL_CHN_CHN",
+    "target": "XTCL_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.047090367428003974
+  },
+  {
+    "edge_id": "edge_CNREGHTCL_CHN_CHN_NY_CHN_CHN",
+    "source": "CNREGHTCL_CHN_CHN",
+    "target": "NY_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.05171797418073486
+  },
+  {
+    "edge_id": "edge_CNREGHTCL_CHN_CHN_NZMM_CHN_CHN",
+    "source": "CNREGHTCL_CHN_CHN",
+    "target": "NZMM_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.05171797418073486
+  },
+  {
+    "edge_id": "edge_CNREGHTCL_CHN_CHN_YZMMCL_CHN_CHN",
+    "source": "CNREGHTCL_CHN_CHN",
+    "target": "YZMMCL_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.06538232373386296
+  },
+  {
+    "edge_id": "edge_CNREGHTCL_CHN_CHN_JMRE_CHN_CHN",
+    "source": "CNREGHTCL_CHN_CHN",
+    "target": "JMRE_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.06317775571002979
+  },
+  {
+    "edge_id": "edge_CRER_CHN_CHN_CREGC_CHN_CHN",
+    "source": "CRER_CHN_CHN",
+    "target": "CREGC_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.3545183714001986
+  },
+  {
+    "edge_id": "edge_GRIAMCL_CHN_CHN_CREGC_CHN_CHN",
+    "source": "GRIAMCL_CHN_CHN",
+    "target": "CREGC_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.07475670307845085
+  },
+  {
+    "edge_id": "edge_XTCL_CHN_CHN_CREGC_CHN_CHN",
+    "source": "XTCL_CHN_CHN",
+    "target": "CREGC_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.09523336643495532
+  },
+  {
+    "edge_id": "edge_RNM_CHN_CHN_CREGC_CHN_CHN",
+    "source": "RNM_CHN_CHN",
+    "target": "CREGC_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.059761668321747764
+  },
+  {
+    "edge_id": "edge_CREGC_CHN_CHN_GRIAMCL_CHN_CHN",
+    "source": "CREGC_CHN_CHN",
+    "target": "GRIAMCL_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.07475670307845085
+  },
+  {
+    "edge_id": "edge_CREGC_CHN_CHN_XTCL_CHN_CHN",
+    "source": "CREGC_CHN_CHN",
+    "target": "XTCL_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.09523336643495532
+  },
+  {
+    "edge_id": "edge_CREGC_CHN_CHN_CRER_CHN_CHN",
+    "source": "CREGC_CHN_CHN",
+    "target": "CRER_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.3545183714001986
+  },
+  {
+    "edge_id": "edge_CREGC_CHN_CHN_YZMMCL_CHN_CHN",
+    "source": "CREGC_CHN_CHN",
+    "target": "YZMMCL_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.0598609731876862
+  },
+  {
+    "edge_id": "edge_VV_DEU_DEU_CM_CAN_CAN",
+    "source": "VV_DEU_DEU",
+    "target": "CM_CAN_CAN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.035332671300893743
+  },
+  {
+    "edge_id": "edge_SL_GBR_GBR_CM_CAN_CAN",
+    "source": "SL_GBR_GBR",
+    "target": "CM_CAN_CAN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.02504468718967229
+  },
+  {
+    "edge_id": "edge_SOL_BEL_BEL_CM_CAN_CAN",
+    "source": "SOL_BEL_BEL",
+    "target": "CM_CAN_CAN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.017457795431976165
+  },
+  {
+    "edge_id": "edge_CM_CAN_CAN_SOL_FRA_BEL",
+    "source": "CM_CAN_CAN",
+    "target": "SOL_FRA_BEL",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.008341608738828202
+  },
+  {
+    "edge_id": "edge_CM_CAN_CAN_URMI_CAN_CAN",
+    "source": "CM_CAN_CAN",
+    "target": "URMI_CAN_CAN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.018550148957298906
+  },
+  {
+    "edge_id": "edge_NM_CHN_CAN_DSCLDE_JPN_JPN",
+    "source": "NM_CHN_CAN",
+    "target": "DSCLDE_JPN_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.037140019860973185
+  },
+  {
+    "edge_id": "edge_DSCLDE_JPN_JPN_DSCLDE_DEU_JPN",
+    "source": "DSCLDE_JPN_JPN",
+    "target": "DSCLDE_DEU_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.04299900695134061
+  },
+  {
+    "edge_id": "edge_NPM_GBR_CAN_DSCLDE_DEU_JPN",
+    "source": "NPM_GBR_CAN",
+    "target": "DSCLDE_DEU_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.37153922542204565
+  },
+  {
+    "edge_id": "edge_DSCLDE_DEU_JPN_TMC_POL_JPN",
+    "source": "DSCLDE_DEU_JPN",
+    "target": "TMC_POL_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.2651042701092353
+  },
+  {
+    "edge_id": "edge_DSCLDE_DEU_JPN_TIC_SWE_JPN",
+    "source": "DSCLDE_DEU_JPN",
+    "target": "TIC_SWE_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.07717974180734856
+  },
+  {
+    "edge_id": "edge_DSCLDE_DEU_JPN_TIC_FRA_JPN",
+    "source": "DSCLDE_DEU_JPN",
+    "target": "TIC_FRA_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.21992055610724925
+  },
+  {
+    "edge_id": "edge_DSCLDE_DEU_JPN_TIC_ITA_JPN",
+    "source": "DSCLDE_DEU_JPN",
+    "target": "TIC_ITA_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.1808937437934459
+  },
+  {
+    "edge_id": "edge_DSCLDE_DEU_JPN_NMCL_GBR_JPN",
+    "source": "DSCLDE_DEU_JPN",
+    "target": "NMCL_GBR_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.1472095332671301
+  },
+  {
+    "edge_id": "edge_DSCLDE_DEU_JPN_HMCL_ITA_JPN",
+    "source": "DSCLDE_DEU_JPN",
+    "target": "HMCL_ITA_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.12099304865938432
+  },
+  {
+    "edge_id": "edge_DSCLDE_DEU_JPN_SMC_HUN_JPN",
+    "source": "DSCLDE_DEU_JPN",
+    "target": "SMC_HUN_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.16568023833167825
+  },
+  {
+    "edge_id": "edge_DSCLDE_DEU_JPN_DC_CZE_JPN",
+    "source": "DSCLDE_DEU_JPN",
+    "target": "DC_CZE_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.3163853028798411
+  },
+  {
+    "edge_id": "edge_DSCLDE_DEU_JPN_DC_HUN_JPN",
+    "source": "DSCLDE_DEU_JPN",
+    "target": "DC_HUN_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.15239324726911618
+  },
+  {
+    "edge_id": "edge_DSCLDE_DEU_JPN_JC_CZE_JPN",
+    "source": "DSCLDE_DEU_JPN",
+    "target": "JC_CZE_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.21795431976166832
+  },
+  {
+    "edge_id": "edge_DSCLDE_DEU_JPN_JC_FRA_JPN",
+    "source": "DSCLDE_DEU_JPN",
+    "target": "JC_FRA_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.20593843098311818
+  },
+  {
+    "edge_id": "edge_DSCLDE_DEU_JPN_JC_GBR_JPN",
+    "source": "DSCLDE_DEU_JPN",
+    "target": "JC_GBR_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.3283416087388282
+  },
+  {
+    "edge_id": "edge_DSCLDE_DEU_JPN_AISC_CZE_JPN",
+    "source": "DSCLDE_DEU_JPN",
+    "target": "AISC_CZE_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.24478649453823237
+  },
+  {
+    "edge_id": "edge_DSCLDE_DEU_JPN_AISC_FRA_JPN",
+    "source": "DSCLDE_DEU_JPN",
+    "target": "AISC_FRA_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.1334061569016882
+  },
+  {
+    "edge_id": "edge_DSCLDE_DEU_JPN_AISC_GBR_JPN",
+    "source": "DSCLDE_DEU_JPN",
+    "target": "AISC_GBR_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.5020655412115194
+  },
+  {
+    "edge_id": "edge_DSCLDE_DEU_JPN_NL_GBR_JPN",
+    "source": "DSCLDE_DEU_JPN",
+    "target": "NL_GBR_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.3824230387288977
+  },
+  {
+    "edge_id": "edge_DSCLDE_DEU_JPN_NL_POL_JPN",
+    "source": "DSCLDE_DEU_JPN",
+    "target": "NL_POL_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.20701092353525324
+  },
+  {
+    "edge_id": "edge_DSCLDE_DEU_JPN_NL_CZE_JPN",
+    "source": "DSCLDE_DEU_JPN",
+    "target": "NL_CZE_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.31759682224429
+  },
+  {
+    "edge_id": "edge_DSCLDE_DEU_JPN_NC_FRA_JPN",
+    "source": "DSCLDE_DEU_JPN",
+    "target": "NC_FRA_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.18379344587884808
+  },
+  {
+    "edge_id": "edge_DSCLDE_DEU_JPN_KC_FRA_JPN",
+    "source": "DSCLDE_DEU_JPN",
+    "target": "KC_FRA_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.28264150943396227
+  },
+  {
+    "edge_id": "edge_DSCLDE_DEU_JPN_KC_DEU_JPN",
+    "source": "DSCLDE_DEU_JPN",
+    "target": "KC_DEU_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.4667328699106256
+  },
+  {
+    "edge_id": "edge_DSCLDE_DEU_JPN_CI_GBR_USA",
+    "source": "DSCLDE_DEU_JPN",
+    "target": "CI_GBR_USA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.4588282025819265
+  },
+  {
+    "edge_id": "edge_DSCLDE_DEU_JPN_CI_IRL_USA",
+    "source": "DSCLDE_DEU_JPN",
+    "target": "CI_IRL_USA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.261330685203575
+  },
+  {
+    "edge_id": "edge_DSCLDE_DEU_JPN_CI_FRA_USA",
+    "source": "DSCLDE_DEU_JPN",
+    "target": "CI_FRA_USA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.1618669314796425
+  },
+  {
+    "edge_id": "edge_DSCLDE_DEU_JPN_CI_POL_USA",
+    "source": "DSCLDE_DEU_JPN",
+    "target": "CI_POL_USA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.22856007944389276
+  },
+  {
+    "edge_id": "edge_DSCLDE_DEU_JPN_CICL_CZE_JPN",
+    "source": "DSCLDE_DEU_JPN",
+    "target": "CICL_CZE_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.3386891757696127
+  },
+  {
+    "edge_id": "edge_DSCLDE_DEU_JPN_FSCL_POL_JPN",
+    "source": "DSCLDE_DEU_JPN",
+    "target": "FSCL_POL_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.1570009930486594
+  },
+  {
+    "edge_id": "edge_DSCLDE_DEU_JPN_CS_ROU_ROU",
+    "source": "DSCLDE_DEU_JPN",
+    "target": "CS_ROU_ROU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.11298907646474678
+  },
+  {
+    "edge_id": "edge_PGS_FRA_FRA_DF_FRA_FRA",
+    "source": "PGS_FRA_FRA",
+    "target": "DF_FRA_FRA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.254617676266137
+  },
+  {
+    "edge_id": "edge_DF_FRA_FRA_O_FRA_FRA",
+    "source": "DF_FRA_FRA",
+    "target": "O_FRA_FRA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.25074478649453824
+  },
+  {
+    "edge_id": "edge_DF_FRA_FRA_CL_FRA_FRA",
+    "source": "DF_FRA_FRA",
+    "target": "CL_FRA_FRA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.14095332671300895
+  },
+  {
+    "edge_id": "edge_DI_SWE_USA_DI_BEL_USA",
+    "source": "DI_SWE_USA",
+    "target": "DI_BEL_USA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.0569811320754717
+  },
+  {
+    "edge_id": "edge_DI_BEL_USA_DI_HUN_USA",
+    "source": "DI_BEL_USA",
+    "target": "DI_HUN_USA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.23066534260178748
+  },
+  {
+    "edge_id": "edge_DI_ESP_USA_DI_HUN_USA",
+    "source": "DI_ESP_USA",
+    "target": "DI_HUN_USA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.04917576961271103
+  },
+  {
+    "edge_id": "edge_DI_SWE_USA_DI_ESP_USA",
+    "source": "DI_SWE_USA",
+    "target": "DI_ESP_USA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.09271102284011916
+  },
+  {
+    "edge_id": "edge_ABJ_CHN_CHN_EPAM_CHN_CHN",
+    "source": "ABJ_CHN_CHN",
+    "target": "EPAM_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.08540218470705065
+  },
+  {
+    "edge_id": "edge_EPAM_CHN_CHN_ZFA_CZE_DEU",
+    "source": "EPAM_CHN_CHN",
+    "target": "ZFA_CZE_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.020397219463753724
+  },
+  {
+    "edge_id": "edge_EPAM_CHN_CHN_SA_DEU_DEU",
+    "source": "EPAM_CHN_CHN",
+    "target": "SA_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.03624627606752731
+  },
+  {
+    "edge_id": "edge_EPAM_CHN_CHN_BCL_HUN_CHN",
+    "source": "EPAM_CHN_CHN",
+    "target": "BCL_HUN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.02621648460774578
+  },
+  {
+    "edge_id": "edge_EPAM_CHN_CHN_CCL_DEU_CHN",
+    "source": "EPAM_CHN_CHN",
+    "target": "CCL_DEU_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.04530287984111221
+  },
+  {
+    "edge_id": "edge_EPAM_CHN_CHN_MC_GBR_JPN",
+    "source": "EPAM_CHN_CHN",
+    "target": "MC_GBR_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.08250248262164846
+  },
+  {
+    "edge_id": "edge_EPAM_CHN_CHN_MC_ROU_JPN",
+    "source": "EPAM_CHN_CHN",
+    "target": "MC_ROU_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.019443892750744783
+  },
+  {
+    "edge_id": "edge_EPAM_CHN_CHN_SBDI_GBR_USA",
+    "source": "EPAM_CHN_CHN",
+    "target": "SBDI_GBR_USA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.06780536246276067
+  },
+  {
+    "edge_id": "edge_EPAM_CHN_CHN_SBDI_CZE_USA",
+    "source": "EPAM_CHN_CHN",
+    "target": "SBDI_CZE_USA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.026176762661370406
+  },
+  {
+    "edge_id": "edge_EPAM_CHN_CHN_SISM_DEU_DEU",
+    "source": "EPAM_CHN_CHN",
+    "target": "SISM_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.036881827209533265
+  },
+  {
+    "edge_id": "edge_EPAM_CHN_CHN_SC_GBR_JPN",
+    "source": "EPAM_CHN_CHN",
+    "target": "SC_GBR_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.08250248262164846
+  },
+  {
+    "edge_id": "edge_EPAM_CHN_CHN_PHC_CZE_JPN",
+    "source": "EPAM_CHN_CHN",
+    "target": "PHC_CZE_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.030069513406156902
+  },
+  {
+    "edge_id": "edge_EPAM_CHN_CHN_PHC_DEU_JPN",
+    "source": "EPAM_CHN_CHN",
+    "target": "PHC_DEU_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.045461767626613706
+  },
+  {
+    "edge_id": "edge_EPAM_CHN_CHN_PHC_GBR_JPN",
+    "source": "EPAM_CHN_CHN",
+    "target": "PHC_GBR_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.06683217477656404
+  },
+  {
+    "edge_id": "edge_EMRE_GBR_GBR_HYP_GBR_GBR",
+    "source": "EMRE_GBR_GBR",
+    "target": "HYP_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.5584707050645482
+  },
+  {
+    "edge_id": "edge_EMRE_GBR_GBR_MRE_GBR_GBR",
+    "source": "EMRE_GBR_GBR",
+    "target": "MRE_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.6807547169811321
+  },
+  {
+    "edge_id": "edge_EMRE_GBR_GBR_BWBW_GBR_GBR",
+    "source": "EMRE_GBR_GBR",
+    "target": "BWBW_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.5726713008937437
+  },
+  {
+    "edge_id": "edge_EMRE_GBR_GBR_GAL_GBR_GBR",
+    "source": "EMRE_GBR_GBR",
+    "target": "GAL_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.5584707050645482
+  },
+  {
+    "edge_id": "edge_EMRE_GBR_GBR_JLRJ_GBR_GBR",
+    "source": "EMRE_GBR_GBR",
+    "target": "JLRJ_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.6065342601787488
+  },
+  {
+    "edge_id": "edge_EMRE_GBR_GBR_MAGL_GBR_GBR",
+    "source": "EMRE_GBR_GBR",
+    "target": "MAGL_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.35900695134061567
+  },
+  {
+    "edge_id": "edge_NM_CHN_CAN_GMCL_CHN_CHN",
+    "source": "NM_CHN_CAN",
+    "target": "GMCL_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.034021847070506456
+  },
+  {
+    "edge_id": "edge_NM_THA_CAN_GMCL_CHN_CHN",
+    "source": "NM_THA_CAN",
+    "target": "GMCL_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.006355511420059583
+  },
+  {
+    "edge_id": "edge_CYMCL_CHN_CHN_GMCL_CHN_CHN",
+    "source": "CYMCL_CHN_CHN",
+    "target": "GMCL_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.07547169811320754
+  },
+  {
+    "edge_id": "edge_GMCL_CHN_CHN_RBGBG_DEU_DEU",
+    "source": "GMCL_CHN_CHN",
+    "target": "RBGBG_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.027964250248262164
+  },
+  {
+    "edge_id": "edge_GMCL_CHN_CHN_BFSCK_DEU_DEU",
+    "source": "GMCL_CHN_CHN",
+    "target": "BFSCK_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.0346772591857001
+  },
+  {
+    "edge_id": "edge_GMCL_CHN_CHN_BFSCK_CZE_DEU",
+    "source": "GMCL_CHN_CHN",
+    "target": "BFSCK_CZE_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.026355511420059582
+  },
+  {
+    "edge_id": "edge_GMCL_CHN_CHN_BFSCK_SVK_DEU",
+    "source": "GMCL_CHN_CHN",
+    "target": "BFSCK_SVK_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.02631578947368421
+  },
+  {
+    "edge_id": "edge_GMCL_CHN_CHN_BFSCK_HUN_DEU",
+    "source": "GMCL_CHN_CHN",
+    "target": "BFSCK_HUN_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.01843098311817279
+  },
+  {
+    "edge_id": "edge_GMCL_CHN_CHN_BFSCK_ESP_DEU",
+    "source": "GMCL_CHN_CHN",
+    "target": "BFSCK_ESP_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.006713008937437934
+  },
+  {
+    "edge_id": "edge_GMCL_CHN_CHN_BFSCK_GBR_DEU",
+    "source": "GMCL_CHN_CHN",
+    "target": "BFSCK_GBR_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.08419066534260179
+  },
+  {
+    "edge_id": "edge_GMCL_CHN_CHN_NC_FRA_JPN",
+    "source": "GMCL_CHN_CHN",
+    "target": "NC_FRA_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.01759682224428997
+  },
+  {
+    "edge_id": "edge_GMCL_CHN_CHN_WG_DEU_DEU",
+    "source": "GMCL_CHN_CHN",
+    "target": "WG_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.04085402184707051
+  },
+  {
+    "edge_id": "edge_GMCL_CHN_CHN_JE_ITA_CHN",
+    "source": "GMCL_CHN_CHN",
+    "target": "JE_ITA_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.01753723932472691
+  },
+  {
+    "edge_id": "edge_GMCL_CHN_CHN_JE_FRA_CHN",
+    "source": "GMCL_CHN_CHN",
+    "target": "JE_FRA_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.04303872889771599
+  },
+  {
+    "edge_id": "edge_GMCL_CHN_CHN_JE_DEU_CHN",
+    "source": "GMCL_CHN_CHN",
+    "target": "JE_DEU_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.0470506454816286
+  },
+  {
+    "edge_id": "edge_GMCL_CHN_CHN_JE_GBR_CHN",
+    "source": "GMCL_CHN_CHN",
+    "target": "JE_GBR_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.023634558093346573
+  },
+  {
+    "edge_id": "edge_GMCL_CHN_CHN_PHC_CZE_JPN",
+    "source": "GMCL_CHN_CHN",
+    "target": "PHC_CZE_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.03191658391261172
+  },
+  {
+    "edge_id": "edge_GMCL_CHN_CHN_PHC_DEU_JPN",
+    "source": "GMCL_CHN_CHN",
+    "target": "PHC_DEU_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.04309831181727904
+  },
+  {
+    "edge_id": "edge_GMCL_CHN_CHN_PHC_GBR_JPN",
+    "source": "GMCL_CHN_CHN",
+    "target": "PHC_GBR_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.061370407149950346
+  },
+  {
+    "edge_id": "edge_GMCL_CHN_CHN_MIN_DEU_JPN",
+    "source": "GMCL_CHN_CHN",
+    "target": "MIN_DEU_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.027805362462760674
+  },
+  {
+    "edge_id": "edge_GMCL_CHN_CHN_MIN_SVK_JPN",
+    "source": "GMCL_CHN_CHN",
+    "target": "MIN_SVK_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.025183714001986098
+  },
+  {
+    "edge_id": "edge_HYP_GBR_GBR_GAL_GBR_GBR",
+    "source": "HYP_GBR_GBR",
+    "target": "GAL_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 1.0
+  },
+  {
+    "edge_id": "edge_GPM_GBR_USA_GAL_GBR_GBR",
+    "source": "GPM_GBR_USA",
+    "target": "GAL_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 1.0
+  },
+  {
+    "edge_id": "edge_GPM_ITA_USA_GAL_GBR_GBR",
+    "source": "GPM_ITA_USA",
+    "target": "GAL_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.24061569016881829
+  },
+  {
+    "edge_id": "edge_GPM_TUR_USA_GAL_GBR_GBR",
+    "source": "GPM_TUR_USA",
+    "target": "GAL_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.1778748758689176
+  },
+  {
+    "edge_id": "edge_GAL_GBR_GBR_LLEVC_GBR_GBR",
+    "source": "GAL_GBR_GBR",
+    "target": "LLEVC_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 1.0
+  },
+  {
+    "edge_id": "edge_GAL_GBR_GBR_VC_SWE_SWE",
+    "source": "GAL_GBR_GBR",
+    "target": "VC_SWE_SWE",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.13157894736842105
+  },
+  {
+    "edge_id": "edge_GAL_GBR_GBR_BMWAB_DEU_DEU",
+    "source": "GAL_GBR_GBR",
+    "target": "BMWAB_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.3968222442899702
+  },
+  {
+    "edge_id": "edge_GAL_GBR_GBR_POR_DEU_DEU",
+    "source": "GAL_GBR_GBR",
+    "target": "POR_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.42653426017874874
+  },
+  {
+    "edge_id": "edge_GAL_GBR_GBR_JLRJ_GBR_GBR",
+    "source": "GAL_GBR_GBR",
+    "target": "JLRJ_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 1.0
+  },
+  {
+    "edge_id": "edge_GAL_GBR_GBR_STE_NLD_NLD",
+    "source": "GAL_GBR_GBR",
+    "target": "STE_NLD_NLD",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.43143992055610725
+  },
+  {
+    "edge_id": "edge_GPM_DEU_USA_GPM_GBR_USA",
+    "source": "GPM_DEU_USA",
+    "target": "GPM_GBR_USA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.4698709036742801
+  },
+  {
+    "edge_id": "edge_GPM_DEU_USA_GPM_ITA_USA",
+    "source": "GPM_DEU_USA",
+    "target": "GPM_ITA_USA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.2252035749751738
+  },
+  {
+    "edge_id": "edge_GPM_DEU_USA_GPM_TUR_USA",
+    "source": "GPM_DEU_USA",
+    "target": "GPM_TUR_USA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.09342601787487587
+  },
+  {
+    "edge_id": "edge_GPM_DEU_USA_SA_DEU_DEU",
+    "source": "GPM_DEU_USA",
+    "target": "SA_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.3873684210526316
+  },
+  {
+    "edge_id": "edge_GPM_DEU_USA_GAL_GBR_GBR",
+    "source": "GPM_DEU_USA",
+    "target": "GAL_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.48470705064548164
+  },
+  {
+    "edge_id": "edge_GPM_ROU_USA_GPM_DEU_USA",
+    "source": "GPM_ROU_USA",
+    "target": "GPM_DEU_USA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.13737835153922542
+  },
+  {
+    "edge_id": "edge_JMRE_CHN_CHN_GM_NLD_NLD",
+    "source": "JMRE_CHN_CHN",
+    "target": "GM_NLD_NLD",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.05114200595829196
+  },
+  {
+    "edge_id": "edge_NY_CHN_CHN_GM_NLD_NLD",
+    "source": "NY_CHN_CHN",
+    "target": "GM_NLD_NLD",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.04788480635551142
+  },
+  {
+    "edge_id": "edge_ZKSHHTCL_CHN_CHN_GM_NLD_NLD",
+    "source": "ZKSHHTCL_CHN_CHN",
+    "target": "GM_NLD_NLD",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.051340615690168824
+  },
+  {
+    "edge_id": "edge_GM_NLD_NLD_GM_GBR_NLD",
+    "source": "GM_NLD_NLD",
+    "target": "GM_GBR_NLD",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.24049652432969215
+  },
+  {
+    "edge_id": "edge_GM_NLD_NLD_GM_CZE_NLD",
+    "source": "GM_NLD_NLD",
+    "target": "GM_CZE_NLD",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.28885799404170803
+  },
+  {
+    "edge_id": "edge_GM_GBR_NLD_GM_FRA_NLD",
+    "source": "GM_GBR_NLD",
+    "target": "GM_FRA_NLD",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.4395431976166832
+  },
+  {
+    "edge_id": "edge_GM_CZE_NLD_GM_FRA_NLD",
+    "source": "GM_CZE_NLD",
+    "target": "GM_FRA_NLD",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.35437934458788484
+  },
+  {
+    "edge_id": "edge_GM_GBR_NLD_GM_DEU_NLD",
+    "source": "GM_GBR_NLD",
+    "target": "GM_DEU_NLD",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.18472691161866933
+  },
+  {
+    "edge_id": "edge_GM_CZE_NLD_GM_DEU_NLD",
+    "source": "GM_CZE_NLD",
+    "target": "GM_DEU_NLD",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.25104270109235355
+  },
+  {
+    "edge_id": "edge_GM_GBR_NLD_F_GBR_GBR",
+    "source": "GM_GBR_NLD",
+    "target": "F_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.3405561072492552
+  },
+  {
+    "edge_id": "edge_GM_GBR_NLD_MCL_GBR_GBR",
+    "source": "GM_GBR_NLD",
+    "target": "MCL_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.3486196623634558
+  },
+  {
+    "edge_id": "edge_GM_GBR_NLD_HM_GBR_GBR",
+    "source": "GM_GBR_NLD",
+    "target": "HM_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.173545183714002
+  },
+  {
+    "edge_id": "edge_GM_GBR_NLD_FGC_GBR_GBR",
+    "source": "GM_GBR_NLD",
+    "target": "FGC_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.45811320754716983
+  },
+  {
+    "edge_id": "edge_CREMCLC_CHN_CHN_GRIAMCL_CHN_CHN",
+    "source": "CREMCLC_CHN_CHN",
+    "target": "GRIAMCL_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.13704071499503476
+  },
+  {
+    "edge_id": "edge_GRIAMCL_CHN_CHN_LCML_GBR_GBR",
+    "source": "GRIAMCL_CHN_CHN",
+    "target": "LCML_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.04770605759682224
+  },
+  {
+    "edge_id": "edge_ITCL_CHN_CHN_HGDM_CHN_CHN",
+    "source": "ITCL_CHN_CHN",
+    "target": "HGDM_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.2542204568023833
+  },
+  {
+    "edge_id": "edge_CNREGHTCL_CHN_CHN_HGDM_CHN_CHN",
+    "source": "CNREGHTCL_CHN_CHN",
+    "target": "HGDM_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.06307845084409136
+  },
+  {
+    "edge_id": "edge_CREGC_CHN_CHN_HGDM_CHN_CHN",
+    "source": "CREGC_CHN_CHN",
+    "target": "HGDM_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.15535253227408144
+  },
+  {
+    "edge_id": "edge_HGDM_CHN_CHN_ECP_IRL_IRL",
+    "source": "HGDM_CHN_CHN",
+    "target": "ECP_IRL_IRL",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.08681231380337637
+  },
+  {
+    "edge_id": "edge_HGDM_CHN_CHN_V_FRA_FRA",
+    "source": "HGDM_CHN_CHN",
+    "target": "V_FRA_FRA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.041330685203574975
+  },
+  {
+    "edge_id": "edge_HGDM_CHN_CHN_RBGBG_DEU_DEU",
+    "source": "HGDM_CHN_CHN",
+    "target": "RBGBG_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.033823237338629596
+  },
+  {
+    "edge_id": "edge_HGDM_CHN_CHN_BI_PRT_USA",
+    "source": "HGDM_CHN_CHN",
+    "target": "BI_PRT_USA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.016226415094339624
+  },
+  {
+    "edge_id": "edge_HGDM_CHN_CHN_TES_DEU_USA",
+    "source": "HGDM_CHN_CHN",
+    "target": "TES_DEU_USA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.02480635551142006
+  },
+  {
+    "edge_id": "edge_HGDM_CHN_CHN_NC_FRA_JPN",
+    "source": "HGDM_CHN_CHN",
+    "target": "NC_FRA_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.024885799404170805
+  },
+  {
+    "edge_id": "edge_HGDM_CHN_CHN_BFSCK_DEU_DEU",
+    "source": "HGDM_CHN_CHN",
+    "target": "BFSCK_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.04095332671300894
+  },
+  {
+    "edge_id": "edge_HGDM_CHN_CHN_BFSCK_CZE_DEU",
+    "source": "HGDM_CHN_CHN",
+    "target": "BFSCK_CZE_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.031022840119165836
+  },
+  {
+    "edge_id": "edge_HGDM_CHN_CHN_BFSCK_SVK_DEU",
+    "source": "HGDM_CHN_CHN",
+    "target": "BFSCK_SVK_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.03300893743793446
+  },
+  {
+    "edge_id": "edge_HGDM_CHN_CHN_BFSCK_HUN_DEU",
+    "source": "HGDM_CHN_CHN",
+    "target": "BFSCK_HUN_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.025124131082423038
+  },
+  {
+    "edge_id": "edge_HGDM_CHN_CHN_BFSCK_ESP_DEU",
+    "source": "HGDM_CHN_CHN",
+    "target": "BFSCK_ESP_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.014856007944389276
+  },
+  {
+    "edge_id": "edge_HGDM_CHN_CHN_BFSCK_GBR_DEU",
+    "source": "HGDM_CHN_CHN",
+    "target": "BFSCK_GBR_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.08367428003972195
+  },
+  {
+    "edge_id": "edge_ILS_GBR_GBR_HYP_GBR_GBR",
+    "source": "ILS_GBR_GBR",
+    "target": "HYP_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.34093346573982125
+  },
+  {
+    "edge_id": "edge_HYP_GBR_GBR_JLRJ_GBR_GBR",
+    "source": "HYP_GBR_GBR",
+    "target": "JLRJ_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 1.0
+  },
+  {
+    "edge_id": "edge_HYP_GBR_GBR_BWBW_GBR_GBR",
+    "source": "HYP_GBR_GBR",
+    "target": "BWBW_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.5903872889771599
+  },
+  {
+    "edge_id": "edge_HYP_GBR_GBR_BENM_GBR_GBR",
+    "source": "HYP_GBR_GBR",
+    "target": "BENM_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.6718570009930486
+  },
+  {
+    "edge_id": "edge_HYP_GBR_GBR_SRIA_SWE_SWE",
+    "source": "HYP_GBR_GBR",
+    "target": "SRIA_SWE_SWE",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.13157894736842105
+  },
+  {
+    "edge_id": "edge_IIAMTASLU_CHN_ESP_IIAMTASLU_ESP_ESP",
+    "source": "IIAMTASLU_CHN_ESP",
+    "target": "IIAMTASLU_ESP_ESP",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.019563058589870903
+  },
+  {
+    "edge_id": "edge_MLDD_SVN_SVN_IIAMTASLU_ESP_ESP",
+    "source": "MLDD_SVN_SVN",
+    "target": "IIAMTASLU_ESP_ESP",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.04077457795431976
+  },
+  {
+    "edge_id": "edge_IIAMTASLU_ESP_ESP_KG_SVN_SVN",
+    "source": "IIAMTASLU_ESP_ESP",
+    "target": "KG_SVN_SVN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.04212512413108242
+  },
+  {
+    "edge_id": "edge_IIAMTASLU_ESP_ESP_CRFC_ITA_ITA",
+    "source": "IIAMTASLU_ESP_ESP",
+    "target": "CRFC_ITA_ITA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.03870903674280039
+  },
+  {
+    "edge_id": "edge_IIAMTASLU_ESP_ESP_IISPA_ITA_ITA",
+    "source": "IIAMTASLU_ESP_ESP",
+    "target": "IISPA_ITA_ITA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.0453227408142999
+  },
+  {
+    "edge_id": "edge_IMBREMMCL_CHN_CHN_IMBREITCL_CHN_CHN",
+    "source": "IMBREMMCL_CHN_CHN",
+    "target": "IMBREITCL_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.28500496524329694
+  },
+  {
+    "edge_id": "edge_ILS_GBR_GBR_BENM_GBR_GBR",
+    "source": "ILS_GBR_GBR",
+    "target": "BENM_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.13358490566037737
+  },
+  {
+    "edge_id": "edge_ILS_GBR_GBR_JLRJ_GBR_GBR",
+    "source": "ILS_GBR_GBR",
+    "target": "JLRJ_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.4655213505461767
+  },
+  {
+    "edge_id": "edge_VV_DEU_DEU_IT_GBR_GBR",
+    "source": "VV_DEU_DEU",
+    "target": "IT_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.28337636544190664
+  },
+  {
+    "edge_id": "edge_IT_GBR_GBR_LCML_GBR_GBR",
+    "source": "IT_GBR_GBR",
+    "target": "LCML_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.18333664349553128
+  },
+  {
+    "edge_id": "edge_IT_GBR_GBR_VV_DEU_DEU",
+    "source": "IT_GBR_GBR",
+    "target": "VV_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.28337636544190664
+  },
+  {
+    "edge_id": "edge_IT_GBR_GBR_FE_DEU_DEU",
+    "source": "IT_GBR_GBR",
+    "target": "FE_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.2172591857000993
+  },
+  {
+    "edge_id": "edge_IT_GBR_GBR_FE_TUR_DEU",
+    "source": "IT_GBR_GBR",
+    "target": "FE_TUR_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.17227408142999007
+  },
+  {
+    "edge_id": "edge_IT_GBR_GBR_FE_GBR_DEU",
+    "source": "IT_GBR_GBR",
+    "target": "FE_GBR_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.17283018867924527
+  },
+  {
+    "edge_id": "edge_ZIM_CHN_CHN_IMS_ITA_ITA",
+    "source": "ZIM_CHN_CHN",
+    "target": "IMS_ITA_ITA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.023674280039721947
+  },
+  {
+    "edge_id": "edge_PHML_GBR_JPN_IMS_ITA_ITA",
+    "source": "PHML_GBR_JPN",
+    "target": "IMS_ITA_ITA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.14520357497517378
+  },
+  {
+    "edge_id": "edge_PHML_ITA_JPN_IMS_ITA_ITA",
+    "source": "PHML_ITA_JPN",
+    "target": "IMS_ITA_ITA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.14895729890764647
+  },
+  {
+    "edge_id": "edge_MI_CHN_USA_IMS_ITA_ITA",
+    "source": "MI_CHN_USA",
+    "target": "IMS_ITA_ITA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.010268123138033764
+  },
+  {
+    "edge_id": "edge_IMS_ITA_ITA_S_ITA_ITA",
+    "source": "IMS_ITA_ITA",
+    "target": "S_ITA_ITA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.07773584905660377
+  },
+  {
+    "edge_id": "edge_DRPCL_CHN_CHN_JMCL_CHN_CHN",
+    "source": "DRPCL_CHN_CHN",
+    "target": "JMCL_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.06156901688182721
+  },
+  {
+    "edge_id": "edge_JMCL_CHN_CHN_JVCLE_POL_USA",
+    "source": "JMCL_CHN_CHN",
+    "target": "JVCLE_POL_USA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.013445878848063555
+  },
+  {
+    "edge_id": "edge_JMCL_CHN_CHN_H_HUN_USA",
+    "source": "JMCL_CHN_CHN",
+    "target": "H_HUN_USA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.006991062562065541
+  },
+  {
+    "edge_id": "edge_GPMMCL_CHN_CHN_JMRE_CHN_CHN",
+    "source": "GPMMCL_CHN_CHN",
+    "target": "JMRE_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.3545183714001986
+  },
+  {
+    "edge_id": "edge_CREGC_CHN_CHN_JMRE_CHN_CHN",
+    "source": "CREGC_CHN_CHN",
+    "target": "JMRE_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.3545183714001986
+  },
+  {
+    "edge_id": "edge_GREG_CHN_CHN_JMRE_CHN_CHN",
+    "source": "GREG_CHN_CHN",
+    "target": "JMRE_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.3545183714001986
+  },
+  {
+    "edge_id": "edge_JMRE_CHN_CHN_RBGBG_DEU_DEU",
+    "source": "JMRE_CHN_CHN",
+    "target": "RBGBG_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.02637537239324727
+  },
+  {
+    "edge_id": "edge_JMRE_CHN_CHN_DI_SWE_USA",
+    "source": "JMRE_CHN_CHN",
+    "target": "DI_SWE_USA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.01896722939424032
+  },
+  {
+    "edge_id": "edge_JMRE_CHN_CHN_BCL_HUN_CHN",
+    "source": "JMRE_CHN_CHN",
+    "target": "BCL_HUN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.019245283018867923
+  },
+  {
+    "edge_id": "edge_JMRE_CHN_CHN_MG_ITA_CHN",
+    "source": "JMRE_CHN_CHN",
+    "target": "MG_ITA_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.01650446871896723
+  },
+  {
+    "edge_id": "edge_JMRE_CHN_CHN_TES_DEU_USA",
+    "source": "JMRE_CHN_CHN",
+    "target": "TES_DEU_USA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.02585898709036743
+  },
+  {
+    "edge_id": "edge_JMRE_CHN_CHN_VG_DEU_DEU",
+    "source": "JMRE_CHN_CHN",
+    "target": "VG_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.02730883813306852
+  },
+  {
+    "edge_id": "edge_JMRE_CHN_CHN_MAGL_GBR_GBR",
+    "source": "JMRE_CHN_CHN",
+    "target": "MAGL_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.055491559086395234
+  },
+  {
+    "edge_id": "edge_KREPF_AUS_AUS_LMSB_MYS_AUS",
+    "source": "KREPF_AUS_AUS",
+    "target": "LMSB_MYS_AUS",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.0016881827209533266
+  },
+  {
+    "edge_id": "edge_NM_CHN_CAN_KG_SVN_SVN",
+    "source": "NM_CHN_CAN",
+    "target": "KG_SVN_SVN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.02595829195630586
+  },
+  {
+    "edge_id": "edge_NM_THA_CAN_KG_SVN_SVN",
+    "source": "NM_THA_CAN",
+    "target": "KG_SVN_SVN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.006752730883813307
+  },
+  {
+    "edge_id": "edge_ZKSHHTCL_CHN_CHN_KG_SVN_SVN",
+    "source": "ZKSHHTCL_CHN_CHN",
+    "target": "KG_SVN_SVN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.028282025819265144
+  },
+  {
+    "edge_id": "edge_KG_SVN_SVN_MEL_BEL_BEL",
+    "source": "KG_SVN_SVN",
+    "target": "MEL_BEL_BEL",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.21733862959285005
+  },
+  {
+    "edge_id": "edge_KG_SVN_SVN_JE_ITA_CHN",
+    "source": "KG_SVN_SVN",
+    "target": "JE_ITA_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.1012909632571996
+  },
+  {
+    "edge_id": "edge_KG_SVN_SVN_JE_FRA_CHN",
+    "source": "KG_SVN_SVN",
+    "target": "JE_FRA_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.15030784508440914
+  },
+  {
+    "edge_id": "edge_KG_SVN_SVN_JE_DEU_CHN",
+    "source": "KG_SVN_SVN",
+    "target": "JE_DEU_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.20756703078450844
+  },
+  {
+    "edge_id": "edge_KG_SVN_SVN_JE_GBR_CHN",
+    "source": "KG_SVN_SVN",
+    "target": "JE_GBR_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.1456007944389275
+  },
+  {
+    "edge_id": "edge_RRER_GGY_GGY_LCML_GBR_GBR",
+    "source": "RRER_GGY_GGY",
+    "target": "LCML_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.08707050645481629
+  },
+  {
+    "edge_id": "edge_RA_NOR_NOR_LCML_GBR_GBR",
+    "source": "RA_NOR_NOR",
+    "target": "LCML_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.040119165839126114
+  },
+  {
+    "edge_id": "edge_C_FRA_FRA_LCML_GBR_GBR",
+    "source": "C_FRA_FRA",
+    "target": "LCML_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.2933465739821251
+  },
+  {
+    "edge_id": "edge_LCML_GBR_GBR_VV_DEU_DEU",
+    "source": "LCML_GBR_GBR",
+    "target": "VV_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.40351539225422045
+  },
+  {
+    "edge_id": "edge_LCML_GBR_GBR_HYP_GBR_GBR",
+    "source": "LCML_GBR_GBR",
+    "target": "HYP_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.5820655412115193
+  },
+  {
+    "edge_id": "edge_LRELM_AUS_AUS_RBGBG_DEU_DEU",
+    "source": "LRELM_AUS_AUS",
+    "target": "RBGBG_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.00887785501489573
+  },
+  {
+    "edge_id": "edge_LRELM_AUS_AUS_KREPF_AUS_AUS",
+    "source": "LRELM_AUS_AUS",
+    "target": "KREPF_AUS_AUS",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.017517378351539225
+  },
+  {
+    "edge_id": "edge_NPM_GBR_CAN_MB_DEU_DEU",
+    "source": "NPM_GBR_CAN",
+    "target": "MB_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.33271102284011916
+  },
+  {
+    "edge_id": "edge_MB_DEU_DEU_MEL_BEL_BEL",
+    "source": "MB_DEU_DEU",
+    "target": "MEL_BEL_BEL",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.351519364448858
+  },
+  {
+    "edge_id": "edge_MB_DEU_DEU_APSAP_CHE_CHE",
+    "source": "MB_DEU_DEU",
+    "target": "APSAP_CHE_CHE",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.2795034756703078
+  },
+  {
+    "edge_id": "edge_LCML_GBR_GBR_MLDD_SVN_SVN",
+    "source": "LCML_GBR_GBR",
+    "target": "MLDD_SVN_SVN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.33159880834160876
+  },
+  {
+    "edge_id": "edge_MLDD_SVN_SVN_MEL_BEL_BEL",
+    "source": "MLDD_SVN_SVN",
+    "target": "MEL_BEL_BEL",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.20816285998013903
+  },
+  {
+    "edge_id": "edge_MLDD_SVN_SVN_ZFA_DEU_DEU",
+    "source": "MLDD_SVN_SVN",
+    "target": "ZFA_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.14971201588877855
+  },
+  {
+    "edge_id": "edge_MLDD_SVN_SVN_GAS_DNK_DNK",
+    "source": "MLDD_SVN_SVN",
+    "target": "GAS_DNK_DNK",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.07962264150943398
+  },
+  {
+    "edge_id": "edge_MLDD_SVN_SVN_BCS_ITA_ITA",
+    "source": "MLDD_SVN_SVN",
+    "target": "BCS_ITA_ITA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.05118172790466733
+  },
+  {
+    "edge_id": "edge_MLDD_SVN_SVN_GAL_GBR_GBR",
+    "source": "MLDD_SVN_SVN",
+    "target": "GAL_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.3021847070506455
+  },
+  {
+    "edge_id": "edge_HYP_GBR_GBR_MAGL_GBR_GBR",
+    "source": "HYP_GBR_GBR",
+    "target": "MAGL_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.6015094339622642
+  },
+  {
+    "edge_id": "edge_MRE_GBR_GBR_MAGL_GBR_GBR",
+    "source": "MRE_GBR_GBR",
+    "target": "MAGL_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.6776166832174777
+  },
+  {
+    "edge_id": "edge_MAGL_GBR_GBR_SMDS_GBR_GBR",
+    "source": "MAGL_GBR_GBR",
+    "target": "SMDS_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.114240317775571
+  },
+  {
+    "edge_id": "edge_MAGL_GBR_GBR_NEASL_ESP_ESP",
+    "source": "MAGL_GBR_GBR",
+    "target": "NEASL_ESP_ESP",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.1153922542204568
+  },
+  {
+    "edge_id": "edge_M_FRA_FRA_LA_FRA_FRA",
+    "source": "M_FRA_FRA",
+    "target": "LA_FRA_FRA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.17628599801390268
+  },
+  {
+    "edge_id": "edge_M_FRA_FRA_GP_FRA_FRA",
+    "source": "M_FRA_FRA",
+    "target": "GP_FRA_FRA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.19809334657398212
+  },
+  {
+    "edge_id": "edge_M_FRA_FRA_V_FRA_FRA",
+    "source": "M_FRA_FRA",
+    "target": "V_FRA_FRA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.19773584905660377
+  },
+  {
+    "edge_id": "edge_M_FRA_FRA_LG_FRA_FRA",
+    "source": "M_FRA_FRA",
+    "target": "LG_FRA_FRA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.08989076464746772
+  },
+  {
+    "edge_id": "edge_BMSCL_CHN_DEU_MBG_DEU_DEU",
+    "source": "BMSCL_CHN_DEU",
+    "target": "MBG_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.043535253227408144
+  },
+  {
+    "edge_id": "edge_MBG_DEU_DEU_MEL_BEL_BEL",
+    "source": "MBG_DEU_DEU",
+    "target": "MEL_BEL_BEL",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.24967229394240317
+  },
+  {
+    "edge_id": "edge_MBG_DEU_DEU_BOUI_DEU_USA",
+    "source": "MBG_DEU_DEU",
+    "target": "BOUI_DEU_USA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.2892154915590864
+  },
+  {
+    "edge_id": "edge_MBG_DEU_DEU_BOUI_HUN_USA",
+    "source": "MBG_DEU_DEU",
+    "target": "BOUI_HUN_USA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.20691161866931482
+  },
+  {
+    "edge_id": "edge_MBG_DEU_DEU_RBGBG_DEU_DEU",
+    "source": "MBG_DEU_DEU",
+    "target": "RBGBG_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.33406156901688183
+  },
+  {
+    "edge_id": "edge_MBG_DEU_DEU_BFSCK_DEU_DEU",
+    "source": "MBG_DEU_DEU",
+    "target": "BFSCK_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.4113207547169811
+  },
+  {
+    "edge_id": "edge_MBG_DEU_DEU_BFSCK_CZE_DEU",
+    "source": "MBG_DEU_DEU",
+    "target": "BFSCK_CZE_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.2490566037735849
+  },
+  {
+    "edge_id": "edge_MBG_DEU_DEU_BFSCK_SVK_DEU",
+    "source": "MBG_DEU_DEU",
+    "target": "BFSCK_SVK_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.23980139026812314
+  },
+  {
+    "edge_id": "edge_MBG_DEU_DEU_BFSCK_HUN_DEU",
+    "source": "MBG_DEU_DEU",
+    "target": "BFSCK_HUN_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.19958291956305857
+  },
+  {
+    "edge_id": "edge_MBG_DEU_DEU_BFSCK_ESP_DEU",
+    "source": "MBG_DEU_DEU",
+    "target": "BFSCK_ESP_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.13982125124131084
+  },
+  {
+    "edge_id": "edge_MBG_DEU_DEU_BFSCK_GBR_DEU",
+    "source": "MBG_DEU_DEU",
+    "target": "BFSCK_GBR_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.4104667328699106
+  },
+  {
+    "edge_id": "edge_MBG_DEU_DEU_RBASBG_DEU_DEU",
+    "source": "MBG_DEU_DEU",
+    "target": "RBASBG_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.33163853028798407
+  },
+  {
+    "edge_id": "edge_MBG_DEU_DEU_RBASBG_HUN_DEU",
+    "source": "MBG_DEU_DEU",
+    "target": "RBASBG_HUN_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.20623634558093348
+  },
+  {
+    "edge_id": "edge_HYP_GBR_GBR_MTGCK_DEU_DEU",
+    "source": "HYP_GBR_GBR",
+    "target": "MTGCK_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.4275471698113208
+  },
+  {
+    "edge_id": "edge_LCML_GBR_GBR_MTGCK_DEU_DEU",
+    "source": "LCML_GBR_GBR",
+    "target": "MTGCK_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.4221251241310824
+  },
+  {
+    "edge_id": "edge_SRIA_SWE_SWE_MTGCK_DEU_DEU",
+    "source": "SRIA_SWE_SWE",
+    "target": "MTGCK_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.12063555114200596
+  },
+  {
+    "edge_id": "edge_MLDD_SVN_SVN_MTGCK_DEU_DEU",
+    "source": "MLDD_SVN_SVN",
+    "target": "MTGCK_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.14571996027805365
+  },
+  {
+    "edge_id": "edge_MTGCK_DEU_DEU_ZFA_CZE_DEU",
+    "source": "MTGCK_DEU_DEU",
+    "target": "ZFA_CZE_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.2168023833167825
+  },
+  {
+    "edge_id": "edge_MTGCK_DEU_DEU_SEGCK_DEU_DEU",
+    "source": "MTGCK_DEU_DEU",
+    "target": "SEGCK_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.22967229394240318
+  },
+  {
+    "edge_id": "edge_MTGCK_DEU_DEU_BCS_ITA_ITA",
+    "source": "MTGCK_DEU_DEU",
+    "target": "BCS_ITA_ITA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.1370009930486594
+  },
+  {
+    "edge_id": "edge_MTGCK_DEU_DEU_GAS_DNK_DNK",
+    "source": "MTGCK_DEU_DEU",
+    "target": "GAS_DNK_DNK",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.14095332671300895
+  },
+  {
+    "edge_id": "edge_MTGCK_DEU_DEU_GAS_GBR_DNK",
+    "source": "MTGCK_DEU_DEU",
+    "target": "GAS_GBR_DNK",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.3139622641509434
+  },
+  {
+    "edge_id": "edge_HYP_GBR_GBR_MRE_GBR_GBR",
+    "source": "HYP_GBR_GBR",
+    "target": "MRE_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.778351539225422
+  },
+  {
+    "edge_id": "edge_ARL_GBR_GBR_MRE_GBR_GBR",
+    "source": "ARL_GBR_GBR",
+    "target": "MRE_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.6399801390268124
+  },
+  {
+    "edge_id": "edge_LCML_GBR_GBR_MRE_GBR_GBR",
+    "source": "LCML_GBR_GBR",
+    "target": "MRE_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.6872293942403177
+  },
+  {
+    "edge_id": "edge_MP_POL_POL_MRE_GBR_GBR",
+    "source": "MP_POL_POL",
+    "target": "MRE_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.12762661370407152
+  },
+  {
+    "edge_id": "edge_IASL_ESP_ESP_MRE_GBR_GBR",
+    "source": "IASL_ESP_ESP",
+    "target": "MRE_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.10285998013902681
+  },
+  {
+    "edge_id": "edge_MRE_GBR_GBR_AIL_GBR_GBR",
+    "source": "MRE_GBR_GBR",
+    "target": "AIL_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.36295928500496527
+  },
+  {
+    "edge_id": "edge_MRE_GBR_GBR_BWBW_GBR_GBR",
+    "source": "MRE_GBR_GBR",
+    "target": "BWBW_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.328540218470705
+  },
+  {
+    "edge_id": "edge_MRE_GBR_GBR_GAL_GBR_GBR",
+    "source": "MRE_GBR_GBR",
+    "target": "GAL_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.778351539225422
+  },
+  {
+    "edge_id": "edge_MRE_GBR_GBR_BENM_GBR_GBR",
+    "source": "MRE_GBR_GBR",
+    "target": "BENM_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.7354319761668322
+  },
+  {
+    "edge_id": "edge_MRE_GBR_GBR_JLRJ_GBR_GBR",
+    "source": "MRE_GBR_GBR",
+    "target": "JLRJ_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.7660377358490565
+  },
+  {
+    "edge_id": "edge_MIMM_USA_USA_PHML_JPN_JPN",
+    "source": "MIMM_USA_USA",
+    "target": "PHML_JPN_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.006057596822244289
+  },
+  {
+    "edge_id": "edge_MIMM_USA_USA_PHML_GBR_JPN",
+    "source": "MIMM_USA_USA",
+    "target": "PHML_GBR_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.012035749751737834
+  },
+  {
+    "edge_id": "edge_MIMM_USA_USA_PHML_ITA_JPN",
+    "source": "MIMM_USA_USA",
+    "target": "PHML_ITA_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.0061171797418073486
+  },
+  {
+    "edge_id": "edge_NM_CHN_CAN_MS_DEU_DEU",
+    "source": "NM_CHN_CAN",
+    "target": "MS_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.04
+  },
+  {
+    "edge_id": "edge_NPM_EST_CAN_MS_DEU_DEU",
+    "source": "NPM_EST_CAN",
+    "target": "MS_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.06448857994041708
+  },
+  {
+    "edge_id": "edge_MS_DEU_DEU_CA_DEU_DEU",
+    "source": "MS_DEU_DEU",
+    "target": "CA_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.2290367428003972
+  },
+  {
+    "edge_id": "edge_MS_DEU_DEU_ZFA_CZE_DEU",
+    "source": "MS_DEU_DEU",
+    "target": "ZFA_CZE_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.20035749751737833
+  },
+  {
+    "edge_id": "edge_MS_DEU_DEU_ZFA_SVK_DEU",
+    "source": "MS_DEU_DEU",
+    "target": "ZFA_SVK_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.1314995034756703
+  },
+  {
+    "edge_id": "edge_MS_DEU_DEU_ZFA_DEU_DEU",
+    "source": "MS_DEU_DEU",
+    "target": "ZFA_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.25998013902681233
+  },
+  {
+    "edge_id": "edge_MS_DEU_DEU_P_DEU_DEU",
+    "source": "MS_DEU_DEU",
+    "target": "P_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.3069116186693148
+  },
+  {
+    "edge_id": "edge_MS_DEU_DEU_MEL_BEL_BEL",
+    "source": "MS_DEU_DEU",
+    "target": "MEL_BEL_BEL",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.2553128103277061
+  },
+  {
+    "edge_id": "edge_MICC_MMR_MMR_CMREG_CHN_CHN",
+    "source": "MICC_MMR_MMR",
+    "target": "CMREG_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.04387288977159881
+  },
+  {
+    "edge_id": "edge_MICC_MMR_MMR_CSREG_CHN_CHN",
+    "source": "MICC_MMR_MMR",
+    "target": "CSREG_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.04387288977159881
+  },
+  {
+    "edge_id": "edge_GKRENMCL_CHN_CHN_NM_CHN_CAN",
+    "source": "GKRENMCL_CHN_CHN",
+    "target": "NM_CHN_CAN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.06210526315789473
+  },
+  {
+    "edge_id": "edge_GQREGCL_CHN_CHN_NM_CHN_CAN",
+    "source": "GQREGCL_CHN_CHN",
+    "target": "NM_CHN_CAN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.06210526315789473
+  },
+  {
+    "edge_id": "edge_NPM_EST_CAN_NM_CHN_CAN",
+    "source": "NPM_EST_CAN",
+    "target": "NM_CHN_CAN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.013723932472691162
+  },
+  {
+    "edge_id": "edge_NM_CHN_CAN_NPM_GBR_CAN",
+    "source": "NM_CHN_CAN",
+    "target": "NPM_GBR_CAN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.062720953326713
+  },
+  {
+    "edge_id": "edge_NPM_EST_CAN_NM_THA_CAN",
+    "source": "NPM_EST_CAN",
+    "target": "NM_THA_CAN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.0065739821251241315
+  },
+  {
+    "edge_id": "edge_NM_THA_CAN_NPM_GBR_CAN",
+    "source": "NM_THA_CAN",
+    "target": "NPM_GBR_CAN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.0418669314796425
+  },
+  {
+    "edge_id": "edge_EF_USA_USA_NPM_EST_CAN",
+    "source": "EF_USA_USA",
+    "target": "NPM_EST_CAN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.010983118172790468
+  },
+  {
+    "edge_id": "edge_EF_CAN_USA_NPM_EST_CAN",
+    "source": "EF_CAN_USA",
+    "target": "NPM_EST_CAN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.011976166832174777
+  },
+  {
+    "edge_id": "edge_HTM_AUS_AUS_NPM_GBR_CAN",
+    "source": "HTM_AUS_AUS",
+    "target": "NPM_GBR_CAN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.016643495531281034
+  },
+  {
+    "edge_id": "edge_TMMMCL_JPN_JPN_NPM_GBR_CAN",
+    "source": "TMMMCL_JPN_JPN",
+    "target": "NPM_GBR_CAN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.04490566037735849
+  },
+  {
+    "edge_id": "edge_NPM_GBR_CAN_GAS_GBR_DNK",
+    "source": "NPM_GBR_CAN",
+    "target": "GAS_GBR_DNK",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.6157894736842106
+  },
+  {
+    "edge_id": "edge_NPM_GBR_CAN_GAS_DNK_DNK",
+    "source": "NPM_GBR_CAN",
+    "target": "GAS_DNK_DNK",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.07428003972194637
+  },
+  {
+    "edge_id": "edge_NPM_GBR_CAN_RBGBG_DEU_DEU",
+    "source": "NPM_GBR_CAN",
+    "target": "RBGBG_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.28707050645481624
+  },
+  {
+    "edge_id": "edge_NNMG_CHN_CHN_NME_FRA_FRA",
+    "source": "NNMG_CHN_CHN",
+    "target": "NME_FRA_FRA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.022025819265143992
+  },
+  {
+    "edge_id": "edge_NME_FRA_FRA_THY_DEU_DEU",
+    "source": "NME_FRA_FRA",
+    "target": "THY_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.19273088381330686
+  },
+  {
+    "edge_id": "edge_NME_FRA_FRA_SISM_DEU_DEU",
+    "source": "NME_FRA_FRA",
+    "target": "SISM_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.1635948361469712
+  },
+  {
+    "edge_id": "edge_NME_FRA_FRA_RBGBG_DEU_DEU",
+    "source": "NME_FRA_FRA",
+    "target": "RBGBG_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.14685203574975172
+  },
+  {
+    "edge_id": "edge_NME_FRA_FRA_CA_DEU_DEU",
+    "source": "NME_FRA_FRA",
+    "target": "CA_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.18105263157894735
+  },
+  {
+    "edge_id": "edge_NME_FRA_FRA_TES_DEU_USA",
+    "source": "NME_FRA_FRA",
+    "target": "TES_DEU_USA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.18333664349553128
+  },
+  {
+    "edge_id": "edge_NME_FRA_FRA_BMWAB_DEU_DEU",
+    "source": "NME_FRA_FRA",
+    "target": "BMWAB_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.1552333664349553
+  },
+  {
+    "edge_id": "edge_NME_FRA_FRA_SEA_DEU_DEU",
+    "source": "NME_FRA_FRA",
+    "target": "SEA_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.1552333664349553
+  },
+  {
+    "edge_id": "edge_NME_FRA_FRA_SEA_ESP_DEU",
+    "source": "NME_FRA_FRA",
+    "target": "SEA_ESP_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.015650446871896723
+  },
+  {
+    "edge_id": "edge_NME_FRA_FRA_SEA_DNK_DEU",
+    "source": "NME_FRA_FRA",
+    "target": "SEA_DNK_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.13201588877855014
+  },
+  {
+    "edge_id": "edge_NME_FRA_FRA_SGRE_FRA_DNK",
+    "source": "NME_FRA_FRA",
+    "target": "SGRE_FRA_DNK",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.16711022840119166
+  },
+  {
+    "edge_id": "edge_NME_FRA_FRA_SGRE_DNK_DNK",
+    "source": "NME_FRA_FRA",
+    "target": "SGRE_DNK_DNK",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.14548162859980138
+  },
+  {
+    "edge_id": "edge_NME_FRA_FRA_SGRE_DEU_DNK",
+    "source": "NME_FRA_FRA",
+    "target": "SGRE_DEU_DNK",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.1551539225422046
+  },
+  {
+    "edge_id": "edge_NC_FRA_JPN_NC_ITA_JPN",
+    "source": "NC_FRA_JPN",
+    "target": "NC_ITA_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.10651439920556108
+  },
+  {
+    "edge_id": "edge_NC_FRA_JPN_NC_POL_JPN",
+    "source": "NC_FRA_JPN",
+    "target": "NC_POL_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.1191261171797418
+  },
+  {
+    "edge_id": "edge_NC_FRA_JPN_NC_SVK_JPN",
+    "source": "NC_FRA_JPN",
+    "target": "NC_SVK_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.09753723932472691
+  },
+  {
+    "edge_id": "edge_NC_FRA_JPN_NC_DEU_JPN",
+    "source": "NC_FRA_JPN",
+    "target": "NC_DEU_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.15302879841112213
+  },
+  {
+    "edge_id": "edge_CNREGHTCL_CHN_CHN_NNMG_CHN_CHN",
+    "source": "CNREGHTCL_CHN_CHN",
+    "target": "NNMG_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.05171797418073486
+  },
+  {
+    "edge_id": "edge_CREGC_CHN_CHN_NNMG_CHN_CHN",
+    "source": "CREGC_CHN_CHN",
+    "target": "NNMG_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.1391459781529295
+  },
+  {
+    "edge_id": "edge_SRGCL_CHN_CHN_NY_CHN_CHN",
+    "source": "SRGCL_CHN_CHN",
+    "target": "NY_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.03491559086395233
+  },
+  {
+    "edge_id": "edge_NY_CHN_CHN_VTGA_DEU_DEU",
+    "source": "NY_CHN_CHN",
+    "target": "VTGA_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.028897715988083418
+  },
+  {
+    "edge_id": "edge_NY_CHN_CHN_VTGA_HUN_DEU",
+    "source": "NY_CHN_CHN",
+    "target": "VTGA_HUN_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.02307845084409136
+  },
+  {
+    "edge_id": "edge_NY_CHN_CHN_VTGA_CZE_DEU",
+    "source": "NY_CHN_CHN",
+    "target": "VTGA_CZE_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.0276266137040715
+  },
+  {
+    "edge_id": "edge_NY_CHN_CHN_SA_DEU_DEU",
+    "source": "NY_CHN_CHN",
+    "target": "SA_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.03515392254220457
+  },
+  {
+    "edge_id": "edge_PGS_FRA_FRA_O_FRA_FRA",
+    "source": "PGS_FRA_FRA",
+    "target": "O_FRA_FRA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.41509433962264153
+  },
+  {
+    "edge_id": "edge_CT_BEL_BEL_O_FRA_FRA",
+    "source": "CT_BEL_BEL",
+    "target": "O_FRA_FRA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.24887785501489573
+  },
+  {
+    "edge_id": "edge_O_FRA_FRA_V_FRA_FRA",
+    "source": "O_FRA_FRA",
+    "target": "V_FRA_FRA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.41509433962264153
+  },
+  {
+    "edge_id": "edge_O_FRA_FRA_MLDD_SVN_SVN",
+    "source": "O_FRA_FRA",
+    "target": "MLDD_SVN_SVN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.15392254220456802
+  },
+  {
+    "edge_id": "edge_O_FRA_FRA_CRFC_ITA_ITA",
+    "source": "O_FRA_FRA",
+    "target": "CRFC_ITA_ITA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.16210526315789475
+  },
+  {
+    "edge_id": "edge_O_FRA_FRA_IEN_FRA_FRA",
+    "source": "O_FRA_FRA",
+    "target": "IEN_FRA_FRA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.41509433962264153
+  },
+  {
+    "edge_id": "edge_DF_FRA_FRA_PGS_FRA_FRA",
+    "source": "DF_FRA_FRA",
+    "target": "PGS_FRA_FRA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.254617676266137
+  },
+  {
+    "edge_id": "edge_CL_FRA_FRA_PGS_FRA_FRA",
+    "source": "CL_FRA_FRA",
+    "target": "PGS_FRA_FRA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.19046673286991064
+  },
+  {
+    "edge_id": "edge_O_FRA_FRA_PGS_FRA_FRA",
+    "source": "O_FRA_FRA",
+    "target": "PGS_FRA_FRA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.41509433962264153
+  },
+  {
+    "edge_id": "edge_PGS_FRA_FRA_V_FRA_FRA",
+    "source": "PGS_FRA_FRA",
+    "target": "V_FRA_FRA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.41509433962264153
+  },
+  {
+    "edge_id": "edge_SECCL_JPN_JPN_PHML_JPN_JPN",
+    "source": "SECCL_JPN_JPN",
+    "target": "PHML_JPN_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.04929493545183714
+  },
+  {
+    "edge_id": "edge_ZKSHHTCL_CHN_CHN_PHML_JPN_JPN",
+    "source": "ZKSHHTCL_CHN_CHN",
+    "target": "PHML_JPN_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.028520357497517378
+  },
+  {
+    "edge_id": "edge_NY_CHN_CHN_PHML_JPN_JPN",
+    "source": "NY_CHN_CHN",
+    "target": "PHML_JPN_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.0188480635551142
+  },
+  {
+    "edge_id": "edge_PHML_JPN_JPN_PHML_GBR_JPN",
+    "source": "PHML_JPN_JPN",
+    "target": "PHML_GBR_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.06307845084409136
+  },
+  {
+    "edge_id": "edge_PHML_JPN_JPN_PHML_ITA_JPN",
+    "source": "PHML_JPN_JPN",
+    "target": "PHML_ITA_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.022502482621648463
+  },
+  {
+    "edge_id": "edge_PHML_JPN_JPN_SS_FRA_FRA",
+    "source": "PHML_JPN_JPN",
+    "target": "SS_FRA_FRA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.05000993048659384
+  },
+  {
+    "edge_id": "edge_PHML_JPN_JPN_SS_GBR_FRA",
+    "source": "PHML_JPN_JPN",
+    "target": "SS_GBR_FRA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.0826017874875869
+  },
+  {
+    "edge_id": "edge_PHML_JPN_JPN_TOSC_POL_JPN",
+    "source": "PHML_JPN_JPN",
+    "target": "TOSC_POL_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.02099304865938431
+  },
+  {
+    "edge_id": "edge_PHML_JPN_JPN_SECCL_DEU_JPN",
+    "source": "PHML_JPN_JPN",
+    "target": "SECCL_DEU_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.043535253227408144
+  },
+  {
+    "edge_id": "edge_PHML_GBR_JPN_AL_DEU_JPN",
+    "source": "PHML_GBR_JPN",
+    "target": "AL_DEU_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.26405163853028796
+  },
+  {
+    "edge_id": "edge_PHML_GBR_JPN_AL_FRA_JPN",
+    "source": "PHML_GBR_JPN",
+    "target": "AL_FRA_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.16838133068520358
+  },
+  {
+    "edge_id": "edge_PHML_GBR_JPN_AL_ESP_JPN",
+    "source": "PHML_GBR_JPN",
+    "target": "AL_ESP_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.10502482621648461
+  },
+  {
+    "edge_id": "edge_PHML_ITA_JPN_AL_DEU_JPN",
+    "source": "PHML_ITA_JPN",
+    "target": "AL_DEU_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.12407149950347567
+  },
+  {
+    "edge_id": "edge_PHML_ITA_JPN_AL_FRA_JPN",
+    "source": "PHML_ITA_JPN",
+    "target": "AL_FRA_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.1526315789473684
+  },
+  {
+    "edge_id": "edge_PHML_ITA_JPN_AL_ESP_JPN",
+    "source": "PHML_ITA_JPN",
+    "target": "AL_ESP_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.04711022840119165
+  },
+  {
+    "edge_id": "edge_VML_AUS_AUS_RA_NOR_NOR",
+    "source": "VML_AUS_AUS",
+    "target": "RA_NOR_NOR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.005183714001986097
+  },
+  {
+    "edge_id": "edge_RA_NOR_NOR_SA_DEU_DEU",
+    "source": "RA_NOR_NOR",
+    "target": "SA_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.09296921549155909
+  },
+  {
+    "edge_id": "edge_RA_NOR_NOR_VV_DEU_DEU",
+    "source": "RA_NOR_NOR",
+    "target": "VV_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.08796425024826217
+  },
+  {
+    "edge_id": "edge_RBGBG_DEU_DEU_RBGBG_GBR_DEU",
+    "source": "RBGBG_DEU_DEU",
+    "target": "RBGBG_GBR_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.2732075471698113
+  },
+  {
+    "edge_id": "edge_AZLA_AUS_AUS_SECCL_JPN_JPN",
+    "source": "AZLA_AUS_AUS",
+    "target": "SECCL_JPN_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.002323733862959285
+  },
+  {
+    "edge_id": "edge_SECCL_JPN_JPN_TMC_POL_JPN",
+    "source": "SECCL_JPN_JPN",
+    "target": "TMC_POL_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.027904667328699107
+  },
+  {
+    "edge_id": "edge_SECCL_JPN_JPN_SMC_HUN_JPN",
+    "source": "SECCL_JPN_JPN",
+    "target": "SMC_HUN_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.027209533267130086
+  },
+  {
+    "edge_id": "edge_SECCL_JPN_JPN_SECCL_DEU_JPN",
+    "source": "SECCL_JPN_JPN",
+    "target": "SECCL_DEU_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.04570009930486594
+  },
+  {
+    "edge_id": "edge_SOL_FRA_BEL_SOL_BEL_BEL",
+    "source": "SOL_FRA_BEL",
+    "target": "SOL_BEL_BEL",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.185759682224429
+  },
+  {
+    "edge_id": "edge_HTM_AUS_AUS_SOL_FRA_BEL",
+    "source": "HTM_AUS_AUS",
+    "target": "SOL_FRA_BEL",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.004230387288977159
+  },
+  {
+    "edge_id": "edge_C_FRA_FRA_SOL_FRA_BEL",
+    "source": "C_FRA_FRA",
+    "target": "SOL_FRA_BEL",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.1120953326713009
+  },
+  {
+    "edge_id": "edge_LCML_GBR_GBR_SRIA_SWE_SWE",
+    "source": "LCML_GBR_GBR",
+    "target": "SRIA_SWE_SWE",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.068480635551142
+  },
+  {
+    "edge_id": "edge_T_ESP_ESP_SRIA_SWE_SWE",
+    "source": "T_ESP_ESP",
+    "target": "SRIA_SWE_SWE",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.11066534260178748
+  },
+  {
+    "edge_id": "edge_SRIA_SWE_SWE_MLDD_SVN_SVN",
+    "source": "SRIA_SWE_SWE",
+    "target": "MLDD_SVN_SVN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.06423038728897716
+  },
+  {
+    "edge_id": "edge_SRIA_SWE_SWE_KMTG_DEU_DEU",
+    "source": "SRIA_SWE_SWE",
+    "target": "KMTG_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.04897715988083416
+  },
+  {
+    "edge_id": "edge_SRIA_SWE_SWE_ZFA_CZE_DEU",
+    "source": "SRIA_SWE_SWE",
+    "target": "ZFA_CZE_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.03130089374379345
+  },
+  {
+    "edge_id": "edge_JBNM_CHN_CHN_SMMCL_JPN_JPN",
+    "source": "JBNM_CHN_CHN",
+    "target": "SMMCL_JPN_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.026236345580933466
+  },
+  {
+    "edge_id": "edge_NDCL_JPN_JPN_SMMCL_JPN_JPN",
+    "source": "NDCL_JPN_JPN",
+    "target": "SMMCL_JPN_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.022383316782522342
+  },
+  {
+    "edge_id": "edge_SMMCL_JPN_JPN_TMC_POL_JPN",
+    "source": "SMMCL_JPN_JPN",
+    "target": "TMC_POL_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.027924528301886794
+  },
+  {
+    "edge_id": "edge_SMMCL_JPN_JPN_PHC_CZE_JPN",
+    "source": "SMMCL_JPN_JPN",
+    "target": "PHC_CZE_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.037060575968222445
+  },
+  {
+    "edge_id": "edge_SMMCL_JPN_JPN_PHC_DEU_JPN",
+    "source": "SMMCL_JPN_JPN",
+    "target": "PHC_DEU_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.05098311817279047
+  },
+  {
+    "edge_id": "edge_SMMCL_JPN_JPN_PHC_GBR_JPN",
+    "source": "SMMCL_JPN_JPN",
+    "target": "PHC_GBR_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.07257199602780535
+  },
+  {
+    "edge_id": "edge_SMMCL_JPN_JPN_DSCLDE_DEU_JPN",
+    "source": "SMMCL_JPN_JPN",
+    "target": "DSCLDE_DEU_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.04544190665342602
+  },
+  {
+    "edge_id": "edge_SMMCL_JPN_JPN_MMCL_POL_JPN",
+    "source": "SMMCL_JPN_JPN",
+    "target": "MMCL_POL_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.029851042701092352
+  },
+  {
+    "edge_id": "edge_SMMCL_JPN_JPN_MURMCL_FIN_JPN",
+    "source": "SMMCL_JPN_JPN",
+    "target": "MURMCL_FIN_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.010009930486593844
+  },
+  {
+    "edge_id": "edge_SMMCL_JPN_JPN_LICL_POL_KOR",
+    "source": "SMMCL_JPN_JPN",
+    "target": "LICL_POL_KOR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.028123138033763654
+  },
+  {
+    "edge_id": "edge_LI_GBR_GBR_SL_GBR_GBR",
+    "source": "LI_GBR_GBR",
+    "target": "SL_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.5639523336643495
+  },
+  {
+    "edge_id": "edge_NFUM_GBR_GBR_SL_GBR_GBR",
+    "source": "NFUM_GBR_GBR",
+    "target": "SL_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.6637735849056603
+  },
+  {
+    "edge_id": "edge_SECCL_JPN_JPN_TCTJMC_JPN_JPN",
+    "source": "SECCL_JPN_JPN",
+    "target": "TCTJMC_JPN_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.09016881827209533
+  },
+  {
+    "edge_id": "edge_NCICL_JPN_JPN_TCTJMC_JPN_JPN",
+    "source": "NCICL_JPN_JPN",
+    "target": "TCTJMC_JPN_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.1221449851042701
+  },
+  {
+    "edge_id": "edge_XTCL_CHN_CHN_TCTJMC_JPN_JPN",
+    "source": "XTCL_CHN_CHN",
+    "target": "TCTJMC_JPN_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.01702085402184707
+  },
+  {
+    "edge_id": "edge_TGRENMCL_CHN_CHN_TCTJMC_JPN_JPN",
+    "source": "TGRENMCL_CHN_CHN",
+    "target": "TCTJMC_JPN_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.045143992055610725
+  },
+  {
+    "edge_id": "edge_GTRREHTMCL_CHN_CHN_TCTJMC_JPN_JPN",
+    "source": "GTRREHTMCL_CHN_CHN",
+    "target": "TCTJMC_JPN_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.018987090367428006
+  },
+  {
+    "edge_id": "edge_TCTJMC_JPN_JPN_TMC_POL_JPN",
+    "source": "TCTJMC_JPN_JPN",
+    "target": "TMC_POL_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.027924528301886794
+  },
+  {
+    "edge_id": "edge_TCTJMC_JPN_JPN_TES_DEU_USA",
+    "source": "TCTJMC_JPN_JPN",
+    "target": "TES_DEU_USA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.025819265143992055
+  },
+  {
+    "edge_id": "edge_TCTJMC_JPN_JPN_BMWAB_DEU_DEU",
+    "source": "TCTJMC_JPN_JPN",
+    "target": "BMWAB_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.032869910625620655
+  },
+  {
+    "edge_id": "edge_TCTJMC_JPN_JPN_NMCL_GBR_JPN",
+    "source": "TCTJMC_JPN_JPN",
+    "target": "NMCL_GBR_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.024468718967229394
+  },
+  {
+    "edge_id": "edge_TCTJMC_JPN_JPN_NO_FIN_FIN",
+    "source": "TCTJMC_JPN_JPN",
+    "target": "NO_FIN_FIN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.010029791459781529
+  },
+  {
+    "edge_id": "edge_TCTJMC_JPN_JPN_IC_GBR_JPN",
+    "source": "TCTJMC_JPN_JPN",
+    "target": "IC_GBR_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.06597815292949355
+  },
+  {
+    "edge_id": "edge_TCTJMC_JPN_JPN_KMI_CZE_JPN",
+    "source": "TCTJMC_JPN_JPN",
+    "target": "KMI_CZE_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.033445878848063555
+  },
+  {
+    "edge_id": "edge_TCTJMC_JPN_JPN_SGRE_FRA_DNK",
+    "source": "TCTJMC_JPN_JPN",
+    "target": "SGRE_FRA_DNK",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.05106256206554121
+  },
+  {
+    "edge_id": "edge_TCTJMC_JPN_JPN_SGRE_DNK_DNK",
+    "source": "TCTJMC_JPN_JPN",
+    "target": "SGRE_DNK_DNK",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.02051638530287984
+  },
+  {
+    "edge_id": "edge_TCTJMC_JPN_JPN_SGRE_DEU_DNK",
+    "source": "TCTJMC_JPN_JPN",
+    "target": "SGRE_DEU_DNK",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.024786494538232375
+  },
+  {
+    "edge_id": "edge_TCTJMC_JPN_JPN_RCL_GBR_JPN",
+    "source": "TCTJMC_JPN_JPN",
+    "target": "RCL_GBR_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.0424428997020854
+  },
+  {
+    "edge_id": "edge_TCTJMC_JPN_JPN_RCL_FRA_JPN",
+    "source": "TCTJMC_JPN_JPN",
+    "target": "RCL_FRA_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.03505461767626614
+  },
+  {
+    "edge_id": "edge_TCTJMC_JPN_JPN_DC_CZE_JPN",
+    "source": "TCTJMC_JPN_JPN",
+    "target": "DC_CZE_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.032730883813306855
+  },
+  {
+    "edge_id": "edge_TCTJMC_JPN_JPN_DC_HUN_JPN",
+    "source": "TCTJMC_JPN_JPN",
+    "target": "DC_HUN_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.027706057596822244
+  },
+  {
+    "edge_id": "edge_TCTJMC_JPN_JPN_DC_ITA_JPN",
+    "source": "TCTJMC_JPN_JPN",
+    "target": "DC_ITA_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.016623634558093344
+  },
+  {
+    "edge_id": "edge_TCTJMC_JPN_JPN_DC_ESP_JPN",
+    "source": "TCTJMC_JPN_JPN",
+    "target": "DC_ESP_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.017080436941410128
+  },
+  {
+    "edge_id": "edge_TMC_POL_JPN_TMC_GBR_JPN",
+    "source": "TMC_POL_JPN",
+    "target": "TMC_GBR_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.14714995034756703
+  },
+  {
+    "edge_id": "edge_TMC_POL_JPN_TMC_FRA_JPN",
+    "source": "TMC_POL_JPN",
+    "target": "TMC_FRA_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.2983316782522344
+  },
+  {
+    "edge_id": "edge_TMC_POL_JPN_TMC_CZE_JPN",
+    "source": "TMC_POL_JPN",
+    "target": "TMC_CZE_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.12689175769612712
+  },
+  {
+    "edge_id": "edge_CM_CAN_CAN_VV_DEU_DEU",
+    "source": "CM_CAN_CAN",
+    "target": "VV_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.035332671300893743
+  },
+  {
+    "edge_id": "edge_VV_DEU_DEU_BENM_GBR_GBR",
+    "source": "VV_DEU_DEU",
+    "target": "BENM_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.43823237338629595
+  },
+  {
+    "edge_id": "edge_VV_DEU_DEU_FE_DEU_DEU",
+    "source": "VV_DEU_DEU",
+    "target": "FE_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.4534657398212512
+  },
+  {
+    "edge_id": "edge_VV_DEU_DEU_FE_TUR_DEU",
+    "source": "VV_DEU_DEU",
+    "target": "FE_TUR_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.06530287984111222
+  },
+  {
+    "edge_id": "edge_VV_DEU_DEU_FE_GBR_DEU",
+    "source": "VV_DEU_DEU",
+    "target": "FE_GBR_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.3712214498510427
+  },
+  {
+    "edge_id": "edge_VV_DEU_DEU_W_GBR_GBR",
+    "source": "VV_DEU_DEU",
+    "target": "W_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.2583515392254221
+  },
+  {
+    "edge_id": "edge_CMREG_CHN_CHN_YZMMCL_CHN_CHN",
+    "source": "CMREG_CHN_CHN",
+    "target": "YZMMCL_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.0598609731876862
+  },
+  {
+    "edge_id": "edge_YZMMCL_CHN_CHN_SEA_DEU_DEU",
+    "source": "YZMMCL_CHN_CHN",
+    "target": "SEA_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.030566037735849056
+  },
+  {
+    "edge_id": "edge_YZMMCL_CHN_CHN_SEA_ESP_DEU",
+    "source": "YZMMCL_CHN_CHN",
+    "target": "SEA_ESP_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.012254220456802384
+  },
+  {
+    "edge_id": "edge_YZMMCL_CHN_CHN_SEA_DNK_DEU",
+    "source": "YZMMCL_CHN_CHN",
+    "target": "SEA_DNK_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.017835153922542205
+  },
+  {
+    "edge_id": "edge_YZMMCL_CHN_CHN_VG_DEU_DEU",
+    "source": "YZMMCL_CHN_CHN",
+    "target": "VG_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.027884806355511417
+  },
+  {
+    "edge_id": "edge_YZMMCL_CHN_CHN_BFSCK_DEU_DEU",
+    "source": "YZMMCL_CHN_CHN",
+    "target": "BFSCK_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.040099304865938434
+  },
+  {
+    "edge_id": "edge_YZMMCL_CHN_CHN_BFSCK_CZE_DEU",
+    "source": "YZMMCL_CHN_CHN",
+    "target": "BFSCK_CZE_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.030943396226415093
+  },
+  {
+    "edge_id": "edge_YZMMCL_CHN_CHN_BFSCK_SVK_DEU",
+    "source": "YZMMCL_CHN_CHN",
+    "target": "BFSCK_SVK_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.031002979145978153
+  },
+  {
+    "edge_id": "edge_YZMMCL_CHN_CHN_BFSCK_HUN_DEU",
+    "source": "YZMMCL_CHN_CHN",
+    "target": "BFSCK_HUN_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.025402184707050645
+  },
+  {
+    "edge_id": "edge_YZMMCL_CHN_CHN_BFSCK_ESP_DEU",
+    "source": "YZMMCL_CHN_CHN",
+    "target": "BFSCK_ESP_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.014955312810327706
+  },
+  {
+    "edge_id": "edge_YZMMCL_CHN_CHN_BFSCK_GBR_DEU",
+    "source": "YZMMCL_CHN_CHN",
+    "target": "BFSCK_GBR_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.07674280039721947
+  },
+  {
+    "edge_id": "edge_YZMMCL_CHN_CHN_VWSAS_DNK_DNK",
+    "source": "YZMMCL_CHN_CHN",
+    "target": "VWSAS_DNK_DNK",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.018470705064548166
+  },
+  {
+    "edge_id": "edge_YZMMCL_CHN_CHN_VWSAS_DEU_DNK",
+    "source": "YZMMCL_CHN_CHN",
+    "target": "VWSAS_DEU_DNK",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.024508440913604768
+  },
+  {
+    "edge_id": "edge_YZMMCL_CHN_CHN_VWSAS_POL_DNK",
+    "source": "YZMMCL_CHN_CHN",
+    "target": "VWSAS_POL_DNK",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.022740814299900693
+  },
+  {
+    "edge_id": "edge_YZMMCL_CHN_CHN_TMC_POL_JPN",
+    "source": "YZMMCL_CHN_CHN",
+    "target": "TMC_POL_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.028361469712015887
+  },
+  {
+    "edge_id": "edge_YZMMCL_CHN_CHN_NMCL_GBR_JPN",
+    "source": "YZMMCL_CHN_CHN",
+    "target": "NMCL_GBR_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.026017874875868915
+  },
+  {
+    "edge_id": "edge_YZMMCL_CHN_CHN_FE_DEU_DEU",
+    "source": "YZMMCL_CHN_CHN",
+    "target": "FE_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.05038728897715988
+  },
+  {
+    "edge_id": "edge_YZMMCL_CHN_CHN_FE_TUR_DEU",
+    "source": "YZMMCL_CHN_CHN",
+    "target": "FE_TUR_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.017616683217477655
+  },
+  {
+    "edge_id": "edge_YZMMCL_CHN_CHN_FE_GBR_DEU",
+    "source": "YZMMCL_CHN_CHN",
+    "target": "FE_GBR_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.04627606752730884
+  },
+  {
+    "edge_id": "edge_YZMMCL_CHN_CHN_HYUM_CZE_KOR",
+    "source": "YZMMCL_CHN_CHN",
+    "target": "HYUM_CZE_KOR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.03076464746772592
+  },
+  {
+    "edge_id": "edge_YZMMCL_CHN_CHN_NC_FRA_JPN",
+    "source": "YZMMCL_CHN_CHN",
+    "target": "NC_FRA_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.024925521350546178
+  },
+  {
+    "edge_id": "edge_YZMMCL_CHN_CHN_SGRE_FRA_DNK",
+    "source": "YZMMCL_CHN_CHN",
+    "target": "SGRE_FRA_DNK",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.0469116186693148
+  },
+  {
+    "edge_id": "edge_YZMMCL_CHN_CHN_SGRE_DNK_DNK",
+    "source": "YZMMCL_CHN_CHN",
+    "target": "SGRE_DNK_DNK",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.018570009930486592
+  },
+  {
+    "edge_id": "edge_YZMMCL_CHN_CHN_SGRE_DEU_DNK",
+    "source": "YZMMCL_CHN_CHN",
+    "target": "SGRE_DEU_DNK",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.024568023833167824
+  },
+  {
+    "edge_id": "edge_YZMMCL_CHN_CHN_VC_SWE_SWE",
+    "source": "YZMMCL_CHN_CHN",
+    "target": "VC_SWE_SWE",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.013882820258192652
+  },
+  {
+    "edge_id": "edge_YZMMCL_CHN_CHN_LLEVC_GBR_GBR",
+    "source": "YZMMCL_CHN_CHN",
+    "target": "LLEVC_GBR_GBR",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.07674280039721947
+  },
+  {
+    "edge_id": "edge_YZMMCL_CHN_CHN_VC_BEL_SWE",
+    "source": "YZMMCL_CHN_CHN",
+    "target": "VC_BEL_SWE",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.06683217477656404
+  },
+  {
+    "edge_id": "edge_ZFA_CZE_DEU_ZFA_DEU_DEU",
+    "source": "ZFA_CZE_DEU",
+    "target": "ZFA_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.18570009930486595
+  },
+  {
+    "edge_id": "edge_ZFA_CZE_DEU_ZFA_SVK_DEU",
+    "source": "ZFA_CZE_DEU",
+    "target": "ZFA_SVK_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.11547169811320755
+  },
+  {
+    "edge_id": "edge_ZFA_CZE_DEU_ZFA_SRB_DEU",
+    "source": "ZFA_CZE_DEU",
+    "target": "ZFA_SRB_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.07233366434955313
+  },
+  {
+    "edge_id": "edge_HGDM_CHN_CHN_ZIM_CHN_CHN",
+    "source": "HGDM_CHN_CHN",
+    "target": "ZIM_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.2542204568023833
+  },
+  {
+    "edge_id": "edge_HGTL_CHN_CHN_ZIM_CHN_CHN",
+    "source": "HGTL_CHN_CHN",
+    "target": "ZIM_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.2542204568023833
+  },
+  {
+    "edge_id": "edge_ZIM_CHN_CHN_LS_FRA_JPN",
+    "source": "ZIM_CHN_CHN",
+    "target": "LS_FRA_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.024885799404170805
+  },
+  {
+    "edge_id": "edge_ZIM_CHN_CHN_LS_CZE_JPN",
+    "source": "ZIM_CHN_CHN",
+    "target": "LS_CZE_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.03116186693147964
+  },
+  {
+    "edge_id": "edge_ZIM_CHN_CHN_STE_NLD_NLD",
+    "source": "ZIM_CHN_CHN",
+    "target": "STE_NLD_NLD",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.03586891757696127
+  },
+  {
+    "edge_id": "edge_ZIM_CHN_CHN_VG_DEU_DEU",
+    "source": "ZIM_CHN_CHN",
+    "target": "VG_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.026911618669314796
+  },
+  {
+    "edge_id": "edge_ZIM_CHN_CHN_AOA_DEU_DEU",
+    "source": "ZIM_CHN_CHN",
+    "target": "AOA_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.03334657398212512
+  },
+  {
+    "edge_id": "edge_ZIM_CHN_CHN_BI_PRT_USA",
+    "source": "ZIM_CHN_CHN",
+    "target": "BI_PRT_USA",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.016226415094339624
+  },
+  {
+    "edge_id": "edge_CNREGHTCL_CHN_CHN_ZZMICL_CHN_CHN",
+    "source": "CNREGHTCL_CHN_CHN",
+    "target": "ZZMICL_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.06325719960278053
+  },
+  {
+    "edge_id": "edge_HGDM_CHN_CHN_ZZMICL_CHN_CHN",
+    "source": "HGDM_CHN_CHN",
+    "target": "ZZMICL_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.2542204568023833
+  },
+  {
+    "edge_id": "edge_ZZMICL_CHN_CHN_MG_ITA_CHN",
+    "source": "ZZMICL_CHN_CHN",
+    "target": "MG_ITA_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.02391261171797418
+  },
+  {
+    "edge_id": "edge_ZZMICL_CHN_CHN_WEAG_AUT_CHN",
+    "source": "ZZMICL_CHN_CHN",
+    "target": "WEAG_AUT_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.030268123138033762
+  },
+  {
+    "edge_id": "edge_ZZMICL_CHN_CHN_WEAG_DEU_CHN",
+    "source": "ZZMICL_CHN_CHN",
+    "target": "WEAG_DEU_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.05777557100297914
+  },
+  {
+    "edge_id": "edge_ZZMICL_CHN_CHN_WEAG_GBR_CHN",
+    "source": "ZZMICL_CHN_CHN",
+    "target": "WEAG_GBR_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.054121151936444886
+  },
+  {
+    "edge_id": "edge_ZZMICL_CHN_CHN_NC_FRA_JPN",
+    "source": "ZZMICL_CHN_CHN",
+    "target": "NC_FRA_JPN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.024885799404170805
+  },
+  {
+    "edge_id": "edge_GKRENMCL_CHN_CHN_ZKSHHTCL_CHN_CHN",
+    "source": "GKRENMCL_CHN_CHN",
+    "target": "ZKSHHTCL_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.07475670307845085
+  },
+  {
+    "edge_id": "edge_JSREG_CHN_CHN_ZKSHHTCL_CHN_CHN",
+    "source": "JSREG_CHN_CHN",
+    "target": "ZKSHHTCL_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.07475670307845085
+  },
+  {
+    "edge_id": "edge_GQREGCL_CHN_CHN_ZKSHHTCL_CHN_CHN",
+    "source": "GQREGCL_CHN_CHN",
+    "target": "ZKSHHTCL_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.07475670307845085
+  },
+  {
+    "edge_id": "edge_ZSHJM_CHN_CHN_ZKSHHTCL_CHN_CHN",
+    "source": "ZSHJM_CHN_CHN",
+    "target": "ZKSHHTCL_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.04395233366434955
+  },
+  {
+    "edge_id": "edge_NHMS_CHN_CHN_ZKSHHTCL_CHN_CHN",
+    "source": "NHMS_CHN_CHN",
+    "target": "ZKSHHTCL_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.0341012909632572
+  },
+  {
+    "edge_id": "edge_CMNFM_CHN_CHN_ZKSHHTCL_CHN_CHN",
+    "source": "CMNFM_CHN_CHN",
+    "target": "ZKSHHTCL_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.13704071499503476
+  },
+  {
+    "edge_id": "edge_CSREG_CHN_CHN_ZKSHHTCL_CHN_CHN",
+    "source": "CSREG_CHN_CHN",
+    "target": "ZKSHHTCL_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.07475670307845085
+  },
+  {
+    "edge_id": "edge_KMTG_DEU_DEU_ZKSHHTCL_CHN_CHN",
+    "source": "KMTG_DEU_DEU",
+    "target": "ZKSHHTCL_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.03791459781529295
+  },
+  {
+    "edge_id": "edge_TII_USA_USA_ZKSHHTCL_CHN_CHN",
+    "source": "TII_USA_USA",
+    "target": "ZKSHHTCL_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.008421052631578947
+  },
+  {
+    "edge_id": "edge_RNM_CHN_CHN_ZKSHHTCL_CHN_CHN",
+    "source": "RNM_CHN_CHN",
+    "target": "ZKSHHTCL_CHN_CHN",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.06913604766633566
+  },
+  {
+    "edge_id": "edge_ZKSHHTCL_CHN_CHN_KMTG_DEU_DEU",
+    "source": "ZKSHHTCL_CHN_CHN",
+    "target": "KMTG_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.03791459781529295
+  },
+  {
+    "edge_id": "edge_ZKSHHTCL_CHN_CHN_VG_DEU_DEU",
+    "source": "ZKSHHTCL_CHN_CHN",
+    "target": "VG_DEU_DEU",
+    "active_years": [
+      2024
+    ],
+    "volume": 0.027090367428003973
   }
 ]
