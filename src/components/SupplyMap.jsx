@@ -198,7 +198,7 @@ export default function SupplyMap({ year, nodes, edges, selectedNode, onSelectNo
               from={[a.lat, a.lng]}
               to={[b.lat, b.lng]}
               color={color}
-              weight={2}
+              weight={1}
               opacity={opacity}
             />
           )

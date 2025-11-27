@@ -8,9 +8,9 @@ export default function YearBar({ year, setYear, years }) {
     )
   }
 
-  // Show label for every 2 years, plus first and last
+  // Show label for every 3 years, plus first and last
   const shouldShowLabel = (y) => {
-    return y === min || y === max || (y - min) % 2 === 0
+    return y === min || y === max || (y - min) % 3 === 0
   }
 
   return (
