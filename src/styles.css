@@ -3,22 +3,25 @@ html, body, #root { height: 100%; margin: 0; }
 .app { min-height: 100%; background: #ffffff; }
 
 /* Center the page and constrain width */
-.page { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
+.page { max-width: 100%; margin: 0 auto; padding: 0 16px; }
 
 /* Header */
 .topbar {
   display: flex; justify-content: space-between; align-items: center;
-  padding: 16px 0; border-bottom: 1px solid #e5e7eb; background: #fff;
+  padding: 16px; border-bottom: 1px solid #e5e7eb; background: #fff;
+  max-width: 95%;
+  margin: 0 auto;
 }
 .topbar h1 { margin: 0; font-size: 28px; font-weight: 700; color: #1f2937; }
 
 /* Single centered column */
 .content { display: block; }
 
-/* Map wrapper: centered “card” with tidy max-width */
+/* Map wrapper: centered "card" with tidy max-width */
 .mapwrap {
   position: relative;
-  max-width: 1200px;   /* adjust to taste: 900–1200px works well */
+  max-width: 95%;      /* use most of the screen width */
+  width: 100%;
   margin: 18px auto;   /* centers the map */
   border: 1px solid #e5e7eb;
   border-radius: 10px;

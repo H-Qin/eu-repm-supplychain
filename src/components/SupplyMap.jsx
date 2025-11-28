@@ -219,7 +219,7 @@ export default function SupplyMap({ year, nodes, edges, selectedNode, selectedEd
         maxBoundsViscosity={1.0}
       >
         <TileLayer
-          attribution="&copy; OpenStreetMap contributors"
+          attribution='Built and maintained by Dr Qin (h.qin@qub.ac.uk)<br/><div style="text-align: right;"> &copy; 2025 RiSC+, Queen&#39;s University Belfast. All rights reserved.</div>'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           noWrap={true}
         />
