@@ -50,7 +50,7 @@ function getEdgeOpacity(volume) {
 }
 
 // Create SVG pie chart for multi-process nodes
-function createPieChartSVG(processes, radius) {
+function createPieChartSVG(processes, radius, strokeColor = '#333333', opacity = 0.8) {
   const size = radius * 2
   const centerX = radius
   const centerY = radius
@@ -61,7 +61,7 @@ function createPieChartSVG(processes, radius) {
     return `
       <svg width="${size}" height="${size}" xmlns="http://www.w3.org/2000/svg">
         <circle cx="${centerX}" cy="${centerY}" r="${radius}"
-                fill="${colors[0]}" stroke="#333333" stroke-width="1" opacity="0.8"/>
+                fill="${colors[0]}" stroke="${strokeColor}" stroke-width="1" opacity="${opacity}"/>
       </svg>
     `
   }
@@ -83,7 +83,7 @@ function createPieChartSVG(processes, radius) {
 
     paths += `
       <path d="M ${centerX},${centerY} L ${x1},${y1} A ${radius},${radius} 0 ${largeArcFlag},1 ${x2},${y2} Z"
-            fill="${colors[i]}" stroke="#333333" stroke-width="1" opacity="0.8"/>
+            fill="${colors[i]}" stroke="${strokeColor}" stroke-width="1" opacity="${opacity}"/>
     `
   }
 
@@ -95,9 +95,10 @@ function createPieChartSVG(processes, radius) {
 }
 
 // Separate component for each node marker to handle hover/click
-function NodeMarker({ node, onSelectNode }) {
+function NodeMarker({ node, isHighlighted, isDimmed, onSelectNode }) {
   const markerRef = useRef(null)
-  const radius = radiusFromSize(2) // All nodes size 2
+  const baseRadius = radiusFromSize(2) // All nodes size 2
+  const radius = isHighlighted ? baseRadius + 2 : baseRadius
   const processes = (node.process || []).map(p => `Process ${p}`)
 
   const handleMouseOver = () => {
@@ -116,9 +117,12 @@ function NodeMarker({ node, onSelectNode }) {
     onSelectNode(node)
   }
 
+  const strokeColor = isHighlighted ? '#f97316' : '#333333'
+  const opacity = isDimmed ? 0.25 : 0.8
+
   // Create custom icon with pie chart
   const svgIcon = L.divIcon({
-    html: createPieChartSVG(processes, radius),
+    html: createPieChartSVG(processes, radius, strokeColor, opacity),
     className: 'custom-marker-icon',
     iconSize: [radius * 2, radius * 2],
     iconAnchor: [radius, radius],
@@ -155,13 +159,52 @@ function NodeMarker({ node, onSelectNode }) {
   )
 }
 
-export default function SupplyMap({ year, nodes, edges, selectedNode, onSelectNode, onCloseSidebar }) {
+export default function SupplyMap({ year, nodes, edges, selectedNode, selectedEdge, onSelectNode, onSelectEdge, onCloseSidebar }) {
   const nodeById = Object.fromEntries(nodes.map((n) => [n.node_id, n]))
 
   const visibleNodes = nodes.filter((n) => visibleInYear(n, year))
   const visibleEdges = edges
     .filter((e) => visibleInYear(e, year))
     .filter((e) => nodeById[e.source] && nodeById[e.target])
+
+  const selectedNodeId = selectedNode?.node_id || null
+  const selectedEdgeId = selectedEdge?.edge_id || null
+
+  const highlightedNodeIds = new Set()
+  const highlightedEdgeIds = new Set()
+
+  if (selectedNodeId) {
+    highlightedNodeIds.add(selectedNodeId)
+    visibleEdges.forEach((e) => {
+      if (e.source === selectedNodeId || e.target === selectedNodeId) {
+        highlightedEdgeIds.add(e.edge_id)
+        highlightedNodeIds.add(e.source)
+        highlightedNodeIds.add(e.target)
+      }
+    })
+  } else if (selectedEdgeId) {
+    const baseEdge = visibleEdges.find((e) => e.edge_id === selectedEdgeId)
+    if (baseEdge) {
+      highlightedEdgeIds.add(baseEdge.edge_id)
+      highlightedNodeIds.add(baseEdge.source)
+      highlightedNodeIds.add(baseEdge.target)
+
+      visibleEdges.forEach((e) => {
+        const sharesNode =
+          e.source === baseEdge.source ||
+          e.target === baseEdge.source ||
+          e.source === baseEdge.target ||
+          e.target === baseEdge.target
+        if (sharesNode) {
+          highlightedEdgeIds.add(e.edge_id)
+          highlightedNodeIds.add(e.source)
+          highlightedNodeIds.add(e.target)
+        }
+      })
+    }
+  }
+
+  const hasSelection = !!(selectedNodeId || selectedEdgeId)
 
   return (
     // Centered map “card” with max-width
@@ -181,16 +224,26 @@ export default function SupplyMap({ year, nodes, edges, selectedNode, onSelectNo
           noWrap={true}
         />
 
+        {/* EDGES */}
         {visibleEdges.map((e) => {
           const a = nodeById[e.source]
           const b = nodeById[e.target]
-          const volume = e.volume ?? 0
-          
-          const color = getEdgeColor(volume)
-          const opacity = getEdgeOpacity(volume)
-          // const opacity = 1
-
           if (!a || !b) return null
+
+          const volume = e.volume ?? 0
+          const baseOpacity = getEdgeOpacity(volume)
+          const color = getEdgeColor(volume)
+          
+          const isHighlighted = highlightedEdgeIds.has(e.edge_id)
+          const isDimmed = hasSelection && !isHighlighted
+
+          const opacity = isDimmed
+            ? baseOpacity * 0.2
+            : isHighlighted
+            ? Math.max(baseOpacity, 0.9)
+            : baseOpacity
+
+          const weight = isHighlighted ? 2 : 1
 
           return (
             <CurvedEdge
@@ -198,28 +251,44 @@ export default function SupplyMap({ year, nodes, edges, selectedNode, onSelectNo
               from={[a.lat, a.lng]}
               to={[b.lat, b.lng]}
               color={color}
-              weight={1}
+              weight={weight}
               opacity={opacity}
+              onClick={() => onSelectEdge && onSelectEdge(e)}
+              edge={e}
+              nodeById={nodeById}
             />
           )
         })}
 
-        {visibleNodes.map((n) => (
-          <NodeMarker
-            key={n.node_id}
-            node={n}
-            onSelectNode={onSelectNode}
-          />
-        ))}
+        {/* NODES */}
+        {visibleNodes.map((n) => {
+          const isHighlighted = highlightedNodeIds.has(n.node_id)
+          const isDimmed = hasSelection && !isHighlighted
+
+          return (
+            <NodeMarker
+              key={n.node_id}
+              node={n}
+              isHighlighted={isHighlighted}
+              isDimmed={isDimmed}
+              onSelectNode={onSelectNode}
+            />
+          )
+        })}
       </MapContainer>
 
       {/* Legend overlay on the right */}
       <Legend className="legend legend-right" />
 
-      {/* Sidebar as an overlay to the right of the map (only if a node is selected) */}
-      {selectedNode && (
+      {/* Sidebar overlay on the right (still node-only for now) */}
+      {(selectedNode || selectedEdge) && (
         <div className="sidebar-overlay">
-          <Sidebar node={selectedNode} onClose={onCloseSidebar} />
+          <Sidebar
+            node={selectedNode}
+            edge={selectedEdge}
+            nodes={nodes}
+            onClose={onCloseSidebar}
+          />
         </div>
       )}
     </div>

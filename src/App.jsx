@@ -9,11 +9,17 @@ const useStore = create((set) => ({
   year: 2024,
   setYear: (y) => set({ year: y }),
   selectedNode: null,
-  setSelectedNode: (n) => set({ selectedNode: n })
+  selectedEdge: null,
+  setSelectedNode: (node) =>
+    set({ selectedNode: node, selectedEdge: null }),  // clear edge when node selected
+  setSelectedEdge: (edge) =>
+    set({ selectedEdge: edge, selectedNode: null }),  // clear node when edge selected
+
+  clearSelection: () => set({ selectedNode: null, selectedEdge: null })
 }))
 
 export default function App() {
-  const { year, setYear, selectedNode, setSelectedNode } = useStore()
+  const { year, setYear, selectedNode, selectedEdge, setSelectedNode, setSelectedEdge, clearSelection } = useStore()
   const [nodes, setNodes] = useState([])
   const [edges, setEdges] = useState([])
 
@@ -46,8 +52,10 @@ export default function App() {
             nodes={nodes}
             edges={edges}
             selectedNode={selectedNode}
+            selectedEdge={selectedEdge}
             onSelectNode={setSelectedNode}
-            onCloseSidebar={() => setSelectedNode(null)}
+            onSelectEdge={setSelectedEdge}
+            onCloseSidebar={clearSelection}
           />
         </div>
       </div>

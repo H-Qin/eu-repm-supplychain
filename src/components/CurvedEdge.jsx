@@ -91,7 +91,7 @@ function makeCircularArc(map, from, to, segments = 80) {
   return points
 }
 
-export default function CurvedEdge({ from, to, color = '#7c3aed', weight = 2, opacity}) {
+export default function CurvedEdge({ from, to, color = '#7c3aed', weight = 2, opacity, onClick, edge, nodeById}) {
   const map = useMap()
 
   useEffect(() => {
@@ -100,8 +100,66 @@ export default function CurvedEdge({ from, to, color = '#7c3aed', weight = 2, op
     const line = L.polyline(latlngs, {
       color,
       weight,
-      opacity,
+      opacity
     }).addTo(map)
+
+    // Add popup with edge information that follows cursor
+    if (edge && nodeById) {
+      const sourceNode = nodeById[edge.source]
+      const targetNode = nodeById[edge.target]
+
+      const popupContent = `
+        <div style="min-width: 200px;">
+          <strong>Flow: ${edge.edge_id || 'N/A'}</strong>
+          ${edge.active_years && edge.active_years.length > 0 ? `<div><small>Years: ${edge.active_years.join(', ')}</small></div>` : ''}
+          <hr style="margin: 8px 0;" />
+          <div><strong>From:</strong> ${sourceNode ? sourceNode.company_name : 'Unknown'}</div>
+          ${sourceNode ? `<div style="margin-left: 8px;"><small>${sourceNode.city ? sourceNode.city + ', ' : ''}${sourceNode['country_branch/plant'] || ''}</small></div>` : ''}
+          <div style="margin-top: 4px;"><strong>To:</strong> ${targetNode ? targetNode.company_name : 'Unknown'}</div>
+          ${targetNode ? `<div style="margin-left: 8px;"><small>${targetNode.city ? targetNode.city + ', ' : ''}${targetNode['country_branch/plant'] || ''}</small></div>` : ''}
+        </div>
+      `
+
+      let popup = null
+
+      // Add hover handlers
+      line.on('mouseover', (e) => {
+        popup = L.popup({
+          closeButton: false,
+          autoClose: false,
+          closeOnClick: false
+        })
+          .setLatLng(e.latlng)
+          .setContent(popupContent)
+          .openOn(map)
+      })
+
+      line.on('mousemove', (e) => {
+        if (popup) {
+          popup.setLatLng(e.latlng)
+        }
+      })
+
+      line.on('mouseout', () => {
+        if (popup) {
+          map.closePopup(popup)
+          popup = null
+        }
+      })
+
+      // Close popup on click as well
+      if (onClick) {
+        line.on('click', () => {
+          if (popup) {
+            map.closePopup(popup)
+            popup = null
+          }
+          onClick()
+        })
+      }
+    } else if (onClick) {
+      line.on('click', () => onClick())
+    }
 
     const decorator = L.polylineDecorator(line, {
       patterns: [
@@ -127,7 +185,7 @@ export default function CurvedEdge({ from, to, color = '#7c3aed', weight = 2, op
       map.removeLayer(line)
       map.removeLayer(decorator)
     }
-  }, [map, from, to, color, weight, opacity])
+  }, [map, from, to, color, weight, opacity, onClick, edge, nodeById])
 
   return null
 }
