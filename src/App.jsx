@@ -15,11 +15,20 @@ const useStore = create((set) => ({
   setSelectedEdge: (edge) =>
     set({ selectedEdge: edge, selectedNode: null }),  // clear node when edge selected
 
-  clearSelection: () => set({ selectedNode: null, selectedEdge: null })
+  clearSelection: () => set({ selectedNode: null, selectedEdge: null }),
+
+  // Process filters: store numbers like 1,2,3,...
+  selectedProcesses: [],
+  toggleProcess: (proc) =>
+    set((state) =>
+      state.selectedProcesses.includes(proc)
+        ? { selectedProcesses: state.selectedProcesses.filter((p) => p !== proc) }
+        : { selectedProcesses: [...state.selectedProcesses, proc] }
+    ),
 }))
 
 export default function App() {
-  const { year, setYear, selectedNode, selectedEdge, setSelectedNode, setSelectedEdge, clearSelection } = useStore()
+  const { year, setYear, selectedNode, selectedEdge, setSelectedNode, setSelectedEdge, clearSelection, selectedProcesses, toggleProcess, } = useStore()
   const [nodes, setNodes] = useState([])
   const [edges, setEdges] = useState([])
 
@@ -53,8 +62,10 @@ export default function App() {
             edges={edges}
             selectedNode={selectedNode}
             selectedEdge={selectedEdge}
+            selectedProcesses={selectedProcesses}
             onSelectNode={setSelectedNode}
             onSelectEdge={setSelectedEdge}
+            onToggleProcess={toggleProcess}
             onCloseSidebar={clearSelection}
           />
         </div>

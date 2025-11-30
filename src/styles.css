@@ -59,6 +59,23 @@ html, body, #root { height: 100%; margin: 0; }
 .dot-sep { background: #059669; }
 .line { width: 18px; height: 2px; background: #111827; display: inline-block; }
 
+.legend-row-clickable {
+  cursor: pointer;
+  border-radius: 999px;
+  padding: 3px 6px;
+  margin: 2px 0;
+}
+.legend-row-clickable:hover {
+  background: #86d1ff;
+}
+.legend-row-active {
+  background: #3288bd;
+  color: #ffffff;
+}
+.legend-row-active .dot {
+  box-shadow: 0 0 0 2px #ffffff;
+}
+
 /* Right overlay inside the map area */
 .legend-right {
   position: absolute;

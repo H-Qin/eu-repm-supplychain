@@ -1,4 +1,4 @@
-import { MapContainer, TileLayer, CircleMarker, Popup, Polyline, Marker, SVGOverlay } from 'react-leaflet'
+import { MapContainer, TileLayer, CircleMarker, Popup, Polyline, Marker, SVGOverlay, useMapEvents } from 'react-leaflet'
 import { useRef, Fragment } from 'react'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
@@ -41,12 +41,22 @@ function getEdgeColor(volume) {
   return '#08306b'
 }
 
-// Optional: volume → opacity (low volume = faint, high = strong)
+// volume → opacity (low volume = faint, high = strong)
 function getEdgeOpacity(volume) {
   const v = clamp01(volume)
   const minOpacity = 0.4
   const maxOpacity = 1
   return minOpacity + (maxOpacity - minOpacity) * v
+}
+
+// Check if a node matches selected processes (numbers like [3,5])
+function nodeMatchesProcesses(node, selectedProcesses) {
+  if (!selectedProcesses || selectedProcesses.length === 0) {
+    // No filter: all nodes allowed
+    return true
+  }
+  const nodeProcs = Array.isArray(node.process) ? node.process : []
+  return nodeProcs.some((p) => selectedProcesses.includes(p))
 }
 
 // Create SVG pie chart for multi-process nodes
@@ -92,6 +102,24 @@ function createPieChartSVG(processes, radius, strokeColor = '#333333', opacity =
       ${paths}
     </svg>
   `
+}
+
+// Component to handle map clicks (for closing sidebar when clicking empty areas)
+function MapClickHandler({ onMapClick }) {
+  useMapEvents({
+    click: (e) => {
+      // Check if the click target is the map itself (not a marker, polyline, etc.)
+      // In Leaflet, clicking on the map background will have the map as the target
+      const clickedOnMap = e.originalEvent.target.classList.contains('leaflet-container') ||
+                           e.originalEvent.target.classList.contains('leaflet-tile') ||
+                           e.originalEvent.target.classList.contains('leaflet-tile-container')
+
+      if (clickedOnMap) {
+        onMapClick()
+      }
+    }
+  })
+  return null
 }
 
 // Separate component for each node marker to handle hover/click
@@ -159,13 +187,20 @@ function NodeMarker({ node, isHighlighted, isDimmed, onSelectNode }) {
   )
 }
 
-export default function SupplyMap({ year, nodes, edges, selectedNode, selectedEdge, onSelectNode, onSelectEdge, onCloseSidebar }) {
+export default function SupplyMap({ year, nodes, edges, selectedNode, selectedEdge, selectedProcesses, onSelectNode, onSelectEdge, onToggleProcess, onCloseSidebar }) {
   const nodeById = Object.fromEntries(nodes.map((n) => [n.node_id, n]))
 
-  const visibleNodes = nodes.filter((n) => visibleInYear(n, year))
+  // Filter nodes by year and selected processes
+  const visibleNodes = nodes
+    .filter((n) => visibleInYear(n, year))
+    .filter((n) => nodeMatchesProcesses(n, selectedProcesses))
+
+  const visibleNodeIds = new Set(visibleNodes.map((n) => n.node_id))
+
   const visibleEdges = edges
     .filter((e) => visibleInYear(e, year))
     .filter((e) => nodeById[e.source] && nodeById[e.target])
+    .filter((e) => visibleNodeIds.has(e.source) && visibleNodeIds.has(e.target))
 
   const selectedNodeId = selectedNode?.node_id || null
   const selectedEdgeId = selectedEdge?.edge_id || null
@@ -218,6 +253,8 @@ export default function SupplyMap({ year, nodes, edges, selectedNode, selectedEd
         maxBounds={[[-85, -180], [85, 180]]}
         maxBoundsViscosity={1.0}
       >
+        <MapClickHandler onMapClick={onCloseSidebar} />
+
         <TileLayer
           attribution='Built and maintained by Dr Qin (h.qin@qub.ac.uk)<br/><div style="text-align: right;"> &copy; 2025 RiSC+, Queen&#39;s University Belfast. All rights reserved.</div>'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -277,8 +314,12 @@ export default function SupplyMap({ year, nodes, edges, selectedNode, selectedEd
         })}
       </MapContainer>
 
-      {/* Legend overlay on the right */}
-      <Legend className="legend legend-right" />
+      {/* Legend overlay on the right, now clickable */}
+      <Legend
+        className="legend legend-right"
+        selectedProcesses={selectedProcesses}
+        onToggleProcess={onToggleProcess}
+      />
 
       {/* Sidebar overlay on the right (still node-only for now) */}
       {(selectedNode || selectedEdge) && (
