@@ -26,7 +26,7 @@
       2023,
       2024
     ],
-    "volume": 0.10138678223185266
+    "volume": 0.12578073089700997
   },
   {
     "edge_id": "edge_CTAHM_CHN_CHN_ATMCL_CHN_CHN",
@@ -55,7 +55,7 @@
       2023,
       2024
     ],
-    "volume": 0.05248104008667389
+    "volume": 0.048349944629014395
   },
   {
     "edge_id": "edge_ATMCL_CHN_CHN_SEA_DEU_DEU",
@@ -84,7 +84,7 @@
       2023,
       2024
     ],
-    "volume": 0.03551462621885157
+    "volume": 0.048217054263565894
   },
   {
     "edge_id": "edge_ATMCL_CHN_CHN_SEA_ESP_DEU",
@@ -113,7 +113,7 @@
       2023,
       2024
     ],
-    "volume": 0.020346695557963163
+    "volume": 0.026954595791805095
   },
   {
     "edge_id": "edge_ATMCL_CHN_CHN_SEA_DNK_DEU",
@@ -142,7 +142,7 @@
       2023,
       2024
     ],
-    "volume": 0.01915492957746479
+    "volume": 0.013864894795127352
   },
   {
     "edge_id": "edge_ATMCL_CHN_CHN_AS_DEU_NLD",
@@ -171,7 +171,7 @@
       2023,
       2024
     ],
-    "volume": 0.02485373781148429
+    "volume": 0.01964562569213732
   },
   {
     "edge_id": "edge_ATMCL_CHN_CHN_AS_ESP_NLD",
@@ -200,7 +200,7 @@
       2023,
       2024
     ],
-    "volume": 0.020346695557963163
+    "volume": 0.026954595791805095
   },
   {
     "edge_id": "edge_ATMCL_CHN_CHN_AS_GBR_NLD",
@@ -229,7 +229,7 @@
       2023,
       2024
     ],
-    "volume": 0.051354279523293606
+    "volume": 0.05207087486157254
   },
   {
     "edge_id": "edge_ATMCL_CHN_CHN_AS_FRA_NLD",
@@ -258,7 +258,7 @@
       2023,
       2024
     ],
-    "volume": 0.022535211267605635
+    "volume": 0.028637873754152825
   },
   {
     "edge_id": "edge_AMT_CHN_USA_AMT_GBR_USA",
@@ -287,7 +287,7 @@
       2023,
       2024
     ],
-    "volume": 0.05068255687973998
+    "volume": 0.05698781838316722
   },
   {
     "edge_id": "edge_CM_CAN_CAN_AMT_GBR_USA",
@@ -299,7 +299,7 @@
       2023,
       2024
     ],
-    "volume": 0.025655471289274107
+    "volume": 0.02106312292358804
   },
   {
     "edge_id": "edge_AMT_GBR_USA_MEL_BEL_BEL",
@@ -328,7 +328,7 @@
       2023,
       2024
     ],
-    "volume": 0.4506175514626219
+    "volume": 0.45355481727574753
   },
   {
     "edge_id": "edge_AMT_CHN_USA_AMT_CHE_USA",
@@ -357,7 +357,7 @@
       2023,
       2024
     ],
-    "volume": 0.012372697724810401
+    "volume": 0.01769656699889258
   },
   {
     "edge_id": "edge_CM_CAN_CAN_AMT_CHE_USA",
@@ -369,7 +369,7 @@
       2023,
       2024
     ],
-    "volume": 0.018353196099674975
+    "volume": 0.02159468438538206
   },
   {
     "edge_id": "edge_AMT_CHE_USA_MEL_BEL_BEL",
@@ -398,7 +398,7 @@
       2023,
       2024
     ],
-    "volume": 0.2160996749729144
+    "volume": 0.1969656699889258
   },
   {
     "edge_id": "edge_NY_CHN_CHN_AMT_CHN_USA",
@@ -427,7 +427,7 @@
       2023,
       2024
     ],
-    "volume": 0.057854821235102924
+    "volume": 0.04086378737541528
   },
   {
     "edge_id": "edge_ZKSHHTCL_CHN_CHN_BM_NLD_NLD",
@@ -456,7 +456,7 @@
       2023,
       2024
     ],
-    "volume": 0.0457421451787649
+    "volume": 0.050121816168327796
   },
   {
     "edge_id": "edge_NY_CHN_CHN_BM_NLD_NLD",
@@ -485,7 +485,7 @@
       2023,
       2024
     ],
-    "volume": 0.04879739978331527
+    "volume": 0.04673311184939092
   },
   {
     "edge_id": "edge_BM_NLD_NLD_CFGE_IRL_IRL",
@@ -508,32 +508,7 @@
       2023,
       2024
     ],
-    "volume": 0.2935861321776815
-  },
-  {
-    "edge_id": "edge_ARE_AUS_AUS_BTM_CHN_CHN",
-    "source": "ARE_AUS_AUS",
-    "target": "BTM_CHN_CHN",
-    "active_years": [
-      2008,
-      2009,
-      2010,
-      2011,
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024
-    ],
-    "volume": 0.02426868905742145
+    "volume": 0.2837873754152824
   },
   {
     "edge_id": "edge_CNREGHTCL_CHN_CHN_BTM_CHN_CHN",
@@ -558,7 +533,7 @@
       2023,
       2024
     ],
-    "volume": 0.30985915492957744
+    "volume": 0.33665559246954596
   },
   {
     "edge_id": "edge_GRIAMCL_CHN_CHN_BTM_CHN_CHN",
@@ -583,7 +558,7 @@
       2023,
       2024
     ],
-    "volume": 0.10275189599133261
+    "volume": 0.12578073089700997
   },
   {
     "edge_id": "edge_NFRENMNZMM_CHN_CHN_BTM_CHN_CHN",
@@ -603,7 +578,7 @@
       2023,
       2024
     ],
-    "volume": 0.05605633802816901
+    "volume": 0.060996677740863786
   },
   {
     "edge_id": "edge_GCRENMCL_CHN_CHN_BTM_CHN_CHN",
@@ -628,7 +603,7 @@
       2023,
       2024
     ],
-    "volume": 0.06849404117009751
+    "volume": 0.08168327796234774
   },
   {
     "edge_id": "edge_JSREG_CHN_CHN_BTM_CHN_CHN",
@@ -646,7 +621,7 @@
       2023,
       2024
     ],
-    "volume": 0.06877573131094257
+    "volume": 0.07517165005537098
   },
   {
     "edge_id": "edge_IMBREITCL_CHN_CHN_BTM_CHN_CHN",
@@ -671,7 +646,7 @@
       2023,
       2024
     ],
-    "volume": 0.30985915492957744
+    "volume": 0.33665559246954596
   },
   {
     "edge_id": "edge_IMBREMMCL_CHN_CHN_BTM_CHN_CHN",
@@ -696,7 +671,7 @@
       2023,
       2024
     ],
-    "volume": 0.30985915492957744
+    "volume": 0.33665559246954596
   },
   {
     "edge_id": "edge_BTM_CHN_CHN_VG_DEU_DEU",
@@ -721,7 +696,7 @@
       2023,
       2024
     ],
-    "volume": 0.02400866738894908
+    "volume": 0.022524916943521593
   },
   {
     "edge_id": "edge_BTM_CHN_CHN_MOO_GBR_USA",
@@ -746,7 +721,7 @@
       2023,
       2024
     ],
-    "volume": 0.08968580715059589
+    "volume": 0.0930454042081949
   },
   {
     "edge_id": "edge_BTM_CHN_CHN_SGRE_FRA_DNK",
@@ -771,7 +746,7 @@
       2023,
       2024
     ],
-    "volume": 0.05336944745395449
+    "volume": 0.051162790697674425
   },
   {
     "edge_id": "edge_BTM_CHN_CHN_SGRE_DNK_DNK",
@@ -796,7 +771,7 @@
       2023,
       2024
     ],
-    "volume": 0.015211267605633802
+    "volume": 0.016611295681063124
   },
   {
     "edge_id": "edge_BTM_CHN_CHN_SGRE_DEU_DNK",
@@ -821,7 +796,7 @@
       2023,
       2024
     ],
-    "volume": 0.01980498374864572
+    "volume": 0.019933554817275746
   },
   {
     "edge_id": "edge_BTM_CHN_CHN_RBGBG_DEU_DEU",
@@ -846,7 +821,7 @@
       2023,
       2024
     ],
-    "volume": 0.04236186348862405
+    "volume": 0.04697674418604651
   },
   {
     "edge_id": "edge_BMSB_MYS_CHE_BA_CHE_CHE",
@@ -865,7 +840,7 @@
       2023,
       2024
     ],
-    "volume": 0.009079089924160347
+    "volume": 0.01016611295681063
   },
   {
     "edge_id": "edge_BA_CHE_CHE_FEG_DEU_DEU",
@@ -894,7 +869,7 @@
       2023,
       2024
     ],
-    "volume": 0.24786565547128928
+    "volume": 0.30361018826135105
   },
   {
     "edge_id": "edge_BA_CHE_CHE_EMG_DEU_DEU",
@@ -923,7 +898,7 @@
       2023,
       2024
     ],
-    "volume": 0.27627302275189597
+    "volume": 0.29900332225913623
   },
   {
     "edge_id": "edge_BA_CHE_CHE_RBGBG_DEU_DEU",
@@ -952,7 +927,7 @@
       2023,
       2024
     ],
-    "volume": 0.19085590465872157
+    "volume": 0.30533776301218163
   },
   {
     "edge_id": "edge_LCML_GBR_GBR_BME_GBR_GBR",
@@ -981,7 +956,7 @@
       2023,
       2024
     ],
-    "volume": 0.7345178764897076
+    "volume": 0.769125138427464
   },
   {
     "edge_id": "edge_MAI_USA_USA_BME_GBR_GBR",
@@ -1010,7 +985,7 @@
       2023,
       2024
     ],
-    "volume": 0.021690140845070423
+    "volume": 0.01813953488372093
   },
   {
     "edge_id": "edge_BME_GBR_GBR_MEL_BEL_BEL",
@@ -1039,7 +1014,7 @@
       2023,
       2024
     ],
-    "volume": 0.3536728060671723
+    "volume": 0.45018826135105205
   },
   {
     "edge_id": "edge_BME_GBR_GBR_BCS_ITA_ITA",
@@ -1068,7 +1043,7 @@
       2023,
       2024
     ],
-    "volume": 0.1294907908992416
+    "volume": 0.13275747508305646
   },
   {
     "edge_id": "edge_BME_GBR_GBR_ZFA_CZE_DEU",
@@ -1097,7 +1072,7 @@
       2023,
       2024
     ],
-    "volume": 0.22491874322860236
+    "volume": 0.23641196013289034
   },
   {
     "edge_id": "edge_BME_GBR_GBR_GAS_DNK_DNK",
@@ -1126,7 +1101,7 @@
       2023,
       2024
     ],
-    "volume": 0.1314842903575298
+    "volume": 0.08376522702104097
   },
   {
     "edge_id": "edge_BME_GBR_GBR_GAS_GBR_DNK",
@@ -1155,7 +1130,7 @@
       2023,
       2024
     ],
-    "volume": 0.6130877573131094
+    "volume": 0.3306533776301218
   },
   {
     "edge_id": "edge_TM_CAN_CAN_C_FRA_FRA",
@@ -1169,19 +1144,7 @@
       2023,
       2024
     ],
-    "volume": 0.016641386782231853
-  },
-  {
-    "edge_id": "edge_BRE_AUS_AUS_C_FRA_FRA",
-    "source": "BRE_AUS_AUS",
-    "target": "C_FRA_FRA",
-    "active_years": [
-      2021,
-      2022,
-      2023,
-      2024
-    ],
-    "volume": 0.0038136511375947996
+    "volume": 0.01654485049833887
   },
   {
     "edge_id": "edge_C_FRA_FRA_STE_NLD_NLD",
@@ -1193,7 +1156,7 @@
       2023,
       2024
     ],
-    "volume": 0.18327193932827734
+    "volume": 0.18334440753045406
   },
   {
     "edge_id": "edge_C_FRA_FRA_SOL_BEL_BEL",
@@ -1204,7 +1167,7 @@
       2023,
       2024
     ],
-    "volume": 0.18023835319609968
+    "volume": 0.17787375415282392
   },
   {
     "edge_id": "edge_BIASG_CHN_CHN_CNREGHTCL_CHN_CHN",
@@ -1233,7 +1196,7 @@
       2023,
       2024
     ],
-    "volume": 0.30985915492957744
+    "volume": 0.33665559246954596
   },
   {
     "edge_id": "edge_EPAM_CHN_CHN_CNREGHTCL_CHN_CHN",
@@ -1262,7 +1225,7 @@
       2023,
       2024
     ],
-    "volume": 0.06751895991332611
+    "volume": 0.07455149501661129
   },
   {
     "edge_id": "edge_CRER_CHN_CHN_CNREGHTCL_CHN_CHN",
@@ -1291,7 +1254,7 @@
       2023,
       2024
     ],
-    "volume": 0.06877573131094257
+    "volume": 0.08168327796234774
   },
   {
     "edge_id": "edge_CNREGHTCL_CHN_CHN_EPAM_CHN_CHN",
@@ -1320,7 +1283,7 @@
       2023,
       2024
     ],
-    "volume": 0.06751895991332611
+    "volume": 0.07455149501661129
   },
   {
     "edge_id": "edge_CNREGHTCL_CHN_CHN_ZKSHHTCL_CHN_CHN",
@@ -1349,7 +1312,7 @@
       2023,
       2024
     ],
-    "volume": 0.10275189599133261
+    "volume": 0.12578073089700997
   },
   {
     "edge_id": "edge_CNREGHTCL_CHN_CHN_XTCL_CHN_CHN",
@@ -1378,7 +1341,7 @@
       2023,
       2024
     ],
-    "volume": 0.05109425785482123
+    "volume": 0.05461794019933555
   },
   {
     "edge_id": "edge_CNREGHTCL_CHN_CHN_NY_CHN_CHN",
@@ -1407,7 +1370,7 @@
       2023,
       2024
     ],
-    "volume": 0.05605633802816901
+    "volume": 0.060996677740863786
   },
   {
     "edge_id": "edge_CNREGHTCL_CHN_CHN_NZMM_CHN_CHN",
@@ -1433,7 +1396,7 @@
       2023,
       2024
     ],
-    "volume": 0.05605633802816901
+    "volume": 0.060996677740863786
   },
   {
     "edge_id": "edge_CNREGHTCL_CHN_CHN_YZMMCL_CHN_CHN",
@@ -1462,7 +1425,7 @@
       2023,
       2024
     ],
-    "volume": 0.0695557963163597
+    "volume": 0.07510520487264673
   },
   {
     "edge_id": "edge_CNREGHTCL_CHN_CHN_JMRE_CHN_CHN",
@@ -1487,7 +1450,7 @@
       2023,
       2024
     ],
-    "volume": 0.06877573131094257
+    "volume": 0.07517165005537098
   },
   {
     "edge_id": "edge_CRER_CHN_CHN_CREGC_CHN_CHN",
@@ -1499,7 +1462,7 @@
       2023,
       2024
     ],
-    "volume": 0.38894907908992415
+    "volume": 0.3743078626799557
   },
   {
     "edge_id": "edge_GRIAMCL_CHN_CHN_CREGC_CHN_CHN",
@@ -1511,7 +1474,7 @@
       2023,
       2024
     ],
-    "volume": 0.08143011917659805
+    "volume": 0.08919158361018827
   },
   {
     "edge_id": "edge_XTCL_CHN_CHN_CREGC_CHN_CHN",
@@ -1523,7 +1486,7 @@
       2023,
       2024
     ],
-    "volume": 0.10706392199349946
+    "volume": 0.06686600221483943
   },
   {
     "edge_id": "edge_RNM_CHN_CHN_CREGC_CHN_CHN",
@@ -1535,7 +1498,7 @@
       2023,
       2024
     ],
-    "volume": 0.07009750812567714
+    "volume": 0.044540420819490584
   },
   {
     "edge_id": "edge_CREGC_CHN_CHN_GRIAMCL_CHN_CHN",
@@ -1547,7 +1510,7 @@
       2023,
       2024
     ],
-    "volume": 0.08143011917659805
+    "volume": 0.08919158361018827
   },
   {
     "edge_id": "edge_CREGC_CHN_CHN_XTCL_CHN_CHN",
@@ -1559,7 +1522,7 @@
       2023,
       2024
     ],
-    "volume": 0.10706392199349946
+    "volume": 0.06686600221483943
   },
   {
     "edge_id": "edge_CREGC_CHN_CHN_CRER_CHN_CHN",
@@ -1571,7 +1534,7 @@
       2023,
       2024
     ],
-    "volume": 0.38894907908992415
+    "volume": 0.3743078626799557
   },
   {
     "edge_id": "edge_CREGC_CHN_CHN_YZMMCL_CHN_CHN",
@@ -1583,7 +1546,7 @@
       2023,
       2024
     ],
-    "volume": 0.06548212351029252
+    "volume": 0.05306755260243633
   },
   {
     "edge_id": "edge_VV_DEU_DEU_CM_CAN_CAN",
@@ -1595,7 +1558,7 @@
       2023,
       2024
     ],
-    "volume": 0.03497291440953413
+    "volume": 0.032070874861572535
   },
   {
     "edge_id": "edge_SL_GBR_GBR_CM_CAN_CAN",
@@ -1607,7 +1570,7 @@
       2023,
       2024
     ],
-    "volume": 0.025698808234019502
+    "volume": 0.02998892580287929
   },
   {
     "edge_id": "edge_SOL_BEL_BEL_CM_CAN_CAN",
@@ -1618,7 +1581,7 @@
       2023,
       2024
     ],
-    "volume": 0.01885157096424702
+    "volume": 0.023056478405315616
   },
   {
     "edge_id": "edge_CM_CAN_CAN_SOL_FRA_BEL",
@@ -1629,7 +1592,7 @@
       2023,
       2024
     ],
-    "volume": 0.009382448537378116
+    "volume": 0.008637873754152824
   },
   {
     "edge_id": "edge_CM_CAN_CAN_URMI_CAN_CAN",
@@ -1641,7 +1604,7 @@
       2023,
       2024
     ],
-    "volume": 0.02106175514626219
+    "volume": 0.018892580287929124
   },
   {
     "edge_id": "edge_NM_CHN_CAN_DSCLDE_JPN_JPN",
@@ -1670,7 +1633,7 @@
       2023,
       2024
     ],
-    "volume": 0.03963163596966414
+    "volume": 0.03630121816168328
   },
   {
     "edge_id": "edge_DSCLDE_JPN_JPN_DSCLDE_DEU_JPN",
@@ -1688,7 +1651,7 @@
       2023,
       2024
     ],
-    "volume": 0.04292524377031419
+    "volume": 0.044451827242524916
   },
   {
     "edge_id": "edge_NPM_GBR_CAN_DSCLDE_DEU_JPN",
@@ -1698,7 +1661,7 @@
       2023,
       2024
     ],
-    "volume": 0.37183098591549296
+    "volume": 0.38799557032115173
   },
   {
     "edge_id": "edge_DSCLDE_DEU_JPN_TMC_POL_JPN",
@@ -1716,7 +1679,7 @@
       2023,
       2024
     ],
-    "volume": 0.2560130010834236
+    "volume": 0.2484828349944629
   },
   {
     "edge_id": "edge_DSCLDE_DEU_JPN_TIC_SWE_JPN",
@@ -1734,7 +1697,7 @@
       2023,
       2024
     ],
-    "volume": 0.07486457204767064
+    "volume": 0.08332225913621262
   },
   {
     "edge_id": "edge_DSCLDE_DEU_JPN_TIC_FRA_JPN",
@@ -1752,7 +1715,7 @@
       2023,
       2024
     ],
-    "volume": 0.19887323943661972
+    "volume": 0.20008859357696568
   },
   {
     "edge_id": "edge_DSCLDE_DEU_JPN_TIC_ITA_JPN",
@@ -1770,7 +1733,7 @@
       2023,
       2024
     ],
-    "volume": 0.17191765980498375
+    "volume": 0.17621262458471762
   },
   {
     "edge_id": "edge_DSCLDE_DEU_JPN_NMCL_GBR_JPN",
@@ -1788,7 +1751,7 @@
       2023,
       2024
     ],
-    "volume": 0.14611050920910076
+    "volume": 0.14686600221483942
   },
   {
     "edge_id": "edge_DSCLDE_DEU_JPN_HMCL_ITA_JPN",
@@ -1806,7 +1769,7 @@
       2023,
       2024
     ],
-    "volume": 0.11269772481040086
+    "volume": 0.11862679955703212
   },
   {
     "edge_id": "edge_DSCLDE_DEU_JPN_SMC_HUN_JPN",
@@ -1824,7 +1787,7 @@
       2023,
       2024
     ],
-    "volume": 0.1609750812567714
+    "volume": 0.15853820598006643
   },
   {
     "edge_id": "edge_DSCLDE_DEU_JPN_DC_CZE_JPN",
@@ -1842,7 +1805,7 @@
       2023,
       2024
     ],
-    "volume": 0.30270855904658717
+    "volume": 0.292735326688815
   },
   {
     "edge_id": "edge_DSCLDE_DEU_JPN_DC_HUN_JPN",
@@ -1860,7 +1823,7 @@
       2023,
       2024
     ],
-    "volume": 0.14780065005417117
+    "volume": 0.14757475083056476
   },
   {
     "edge_id": "edge_DSCLDE_DEU_JPN_AISC_CZE_JPN",
@@ -1878,7 +1841,7 @@
       2023,
       2024
     ],
-    "volume": 0.23172264355362945
+    "volume": 0.21543743078626798
   },
   {
     "edge_id": "edge_DSCLDE_DEU_JPN_AISC_FRA_JPN",
@@ -1896,7 +1859,7 @@
       2023,
       2024
     ],
-    "volume": 0.1265438786565547
+    "volume": 0.16161683277962346
   },
   {
     "edge_id": "edge_DSCLDE_DEU_JPN_AISC_GBR_JPN",
@@ -1914,7 +1877,7 @@
       2023,
       2024
     ],
-    "volume": 0.5021018418201517
+    "volume": 0.48737541528239203
   },
   {
     "edge_id": "edge_DSCLDE_DEU_JPN_NL_GBR_JPN",
@@ -1932,7 +1895,7 @@
       2023,
       2024
     ],
-    "volume": 0.38353196099674974
+    "volume": 0.4046733111849391
   },
   {
     "edge_id": "edge_DSCLDE_DEU_JPN_NL_POL_JPN",
@@ -1950,7 +1913,7 @@
       2023,
       2024
     ],
-    "volume": 0.20260021668472372
+    "volume": 0.19634551495016614
   },
   {
     "edge_id": "edge_DSCLDE_DEU_JPN_NL_CZE_JPN",
@@ -1968,7 +1931,7 @@
       2023,
       2024
     ],
-    "volume": 0.3037486457204767
+    "volume": 0.2932225913621262
   },
   {
     "edge_id": "edge_DSCLDE_DEU_JPN_NC_FRA_JPN",
@@ -1984,7 +1947,7 @@
       2023,
       2024
     ],
-    "volume": 0.169750812567714
+    "volume": 0.16068660022148393
   },
   {
     "edge_id": "edge_DSCLDE_DEU_JPN_CI_GBR_USA",
@@ -2002,7 +1965,7 @@
       2023,
       2024
     ],
-    "volume": 0.45906825568797405
+    "volume": 0.4150830564784053
   },
   {
     "edge_id": "edge_DSCLDE_DEU_JPN_CI_IRL_USA",
@@ -2020,7 +1983,7 @@
       2023,
       2024
     ],
-    "volume": 0.26439869989165765
+    "volume": 0.2755260243632337
   },
   {
     "edge_id": "edge_DSCLDE_DEU_JPN_CI_FRA_USA",
@@ -2038,7 +2001,7 @@
       2023,
       2024
     ],
-    "volume": 0.15284940411700976
+    "volume": 0.1580952380952381
   },
   {
     "edge_id": "edge_DSCLDE_DEU_JPN_CI_POL_USA",
@@ -2056,7 +2019,7 @@
       2023,
       2024
     ],
-    "volume": 0.22387865655471287
+    "volume": 0.21878183831672204
   },
   {
     "edge_id": "edge_DSCLDE_DEU_JPN_CICL_CZE_JPN",
@@ -2074,7 +2037,7 @@
       2023,
       2024
     ],
-    "volume": 0.3203900325027086
+    "volume": 0.304828349944629
   },
   {
     "edge_id": "edge_DSCLDE_DEU_JPN_CS_ROU_ROU",
@@ -2089,7 +2052,7 @@
       2023,
       2024
     ],
-    "volume": 0.10853737811484292
+    "volume": 0.10717607973421928
   },
   {
     "edge_id": "edge_PGS_FRA_FRA_DF_FRA_FRA",
@@ -2100,7 +2063,7 @@
       2023,
       2024
     ],
-    "volume": 0.23367280606717228
+    "volume": 0.22673311184939093
   },
   {
     "edge_id": "edge_DF_FRA_FRA_O_FRA_FRA",
@@ -2109,7 +2072,7 @@
     "active_years": [
       2024
     ],
-    "volume": 0.2293824485373781
+    "volume": 0.23142857142857143
   },
   {
     "edge_id": "edge_DF_FRA_FRA_CL_FRA_FRA",
@@ -2121,7 +2084,7 @@
       2023,
       2024
     ],
-    "volume": 0.13152762730227519
+    "volume": 0.10057585825027685
   },
   {
     "edge_id": "edge_DI_SWE_USA_DI_BEL_USA",
@@ -2131,7 +2094,7 @@
       2023,
       2024
     ],
-    "volume": 0.05926327193932828
+    "volume": 0.06057585825027686
   },
   {
     "edge_id": "edge_DI_BEL_USA_DI_HUN_USA",
@@ -2141,7 +2104,7 @@
       2023,
       2024
     ],
-    "volume": 0.2285157096424702
+    "volume": 0.22172757475083057
   },
   {
     "edge_id": "edge_DI_ESP_USA_DI_HUN_USA",
@@ -2151,7 +2114,7 @@
       2023,
       2024
     ],
-    "volume": 0.04058504875406284
+    "volume": 0.04015503875968992
   },
   {
     "edge_id": "edge_DI_SWE_USA_DI_ESP_USA",
@@ -2161,7 +2124,7 @@
       2023,
       2024
     ],
-    "volume": 0.09074756229685808
+    "volume": 0.09616832779623477
   },
   {
     "edge_id": "edge_ABJ_CHN_CHN_EPAM_CHN_CHN",
@@ -2183,7 +2146,7 @@
       2023,
       2024
     ],
-    "volume": 0.09317443120260022
+    "volume": 0.10963455149501661
   },
   {
     "edge_id": "edge_EPAM_CHN_CHN_ZFA_CZE_DEU",
@@ -2212,7 +2175,7 @@
       2023,
       2024
     ],
-    "volume": 0.021755146262188513
+    "volume": 0.023499446290143965
   },
   {
     "edge_id": "edge_EPAM_CHN_CHN_SA_DEU_DEU",
@@ -2234,7 +2197,7 @@
       2023,
       2024
     ],
-    "volume": 0.03794149512459372
+    "volume": 0.037054263565891477
   },
   {
     "edge_id": "edge_EPAM_CHN_CHN_BCL_HUN_CHN",
@@ -2244,7 +2207,7 @@
       2023,
       2024
     ],
-    "volume": 0.027865655471289275
+    "volume": 0.0279734219269103
   },
   {
     "edge_id": "edge_EPAM_CHN_CHN_CCL_DEU_CHN",
@@ -2262,7 +2225,7 @@
       2023,
       2024
     ],
-    "volume": 0.04598049837486457
+    "volume": 0.04507198228128461
   },
   {
     "edge_id": "edge_EPAM_CHN_CHN_MC_GBR_JPN",
@@ -2285,7 +2248,7 @@
       2023,
       2024
     ],
-    "volume": 0.08312026002166847
+    "volume": 0.08361018826135105
   },
   {
     "edge_id": "edge_EPAM_CHN_CHN_MC_ROU_JPN",
@@ -2312,7 +2275,7 @@
       2023,
       2024
     ],
-    "volume": 0.020910075839653305
+    "volume": 0.021638981173864893
   },
   {
     "edge_id": "edge_EPAM_CHN_CHN_SBDI_GBR_USA",
@@ -2336,7 +2299,7 @@
       2023,
       2024
     ],
-    "volume": 0.069534127843987
+    "volume": 0.0672203765227021
   },
   {
     "edge_id": "edge_EPAM_CHN_CHN_SBDI_CZE_USA",
@@ -2361,7 +2324,7 @@
       2023,
       2024
     ],
-    "volume": 0.028017334777898157
+    "volume": 0.02726467331118494
   },
   {
     "edge_id": "edge_EPAM_CHN_CHN_SISM_DEU_DEU",
@@ -2390,7 +2353,7 @@
       2023,
       2024
     ],
-    "volume": 0.038591549295774644
+    "volume": 0.036744186046511626
   },
   {
     "edge_id": "edge_EPAM_CHN_CHN_SC_GBR_JPN",
@@ -2403,7 +2366,7 @@
       2023,
       2024
     ],
-    "volume": 0.08312026002166847
+    "volume": 0.08361018826135105
   },
   {
     "edge_id": "edge_EPAM_CHN_CHN_PHC_CZE_JPN",
@@ -2432,7 +2395,7 @@
       2023,
       2024
     ],
-    "volume": 0.031657638136511373
+    "volume": 0.030852713178294574
   },
   {
     "edge_id": "edge_EPAM_CHN_CHN_PHC_DEU_JPN",
@@ -2461,7 +2424,7 @@
       2023,
       2024
     ],
-    "volume": 0.04697724810400867
+    "volume": 0.04660022148394241
   },
   {
     "edge_id": "edge_EPAM_CHN_CHN_PHC_GBR_JPN",
@@ -2483,7 +2446,7 @@
       2023,
       2024
     ],
-    "volume": 0.06875406283856988
+    "volume": 0.06753045404208194
   },
   {
     "edge_id": "edge_EMRE_GBR_GBR_HYP_GBR_GBR",
@@ -2492,7 +2455,7 @@
     "active_years": [
       2024
     ],
-    "volume": 0.5669555796316359
+    "volume": 0.7328903654485049
   },
   {
     "edge_id": "edge_EMRE_GBR_GBR_MRE_GBR_GBR",
@@ -2504,7 +2467,7 @@
       2023,
       2024
     ],
-    "volume": 0.6892307692307692
+    "volume": 0.7309413067552603
   },
   {
     "edge_id": "edge_EMRE_GBR_GBR_BWBW_GBR_GBR",
@@ -2516,7 +2479,7 @@
       2023,
       2024
     ],
-    "volume": 0.5799133261105092
+    "volume": 0.5827021040974529
   },
   {
     "edge_id": "edge_EMRE_GBR_GBR_GAL_GBR_GBR",
@@ -2528,7 +2491,7 @@
       2023,
       2024
     ],
-    "volume": 0.5669555796316359
+    "volume": 0.7328903654485049
   },
   {
     "edge_id": "edge_EMRE_GBR_GBR_JLRJ_GBR_GBR",
@@ -2540,7 +2503,7 @@
       2023,
       2024
     ],
-    "volume": 0.6175514626218852
+    "volume": 0.7506976744186047
   },
   {
     "edge_id": "edge_EMRE_GBR_GBR_MAGL_GBR_GBR",
@@ -2552,7 +2515,7 @@
       2023,
       2024
     ],
-    "volume": 0.38353196099674974
+    "volume": 0.5548172757475083
   },
   {
     "edge_id": "edge_NM_CHN_CAN_GMCL_CHN_CHN",
@@ -2581,7 +2544,7 @@
       2023,
       2024
     ],
-    "volume": 0.03687973997833153
+    "volume": 0.037541528239202655
   },
   {
     "edge_id": "edge_NM_THA_CAN_GMCL_CHN_CHN",
@@ -2607,7 +2570,7 @@
       2023,
       2024
     ],
-    "volume": 0.0068905742145178766
+    "volume": 0.008128460686600222
   },
   {
     "edge_id": "edge_CYMCL_CHN_CHN_GMCL_CHN_CHN",
@@ -2623,7 +2586,7 @@
       2023,
       2024
     ],
-    "volume": 0.08234019501625135
+    "volume": 0.08970099667774087
   },
   {
     "edge_id": "edge_GMCL_CHN_CHN_RBGBG_DEU_DEU",
@@ -2652,7 +2615,7 @@
       2023,
       2024
     ],
-    "volume": 0.028407367280606714
+    "volume": 0.03280177187153931
   },
   {
     "edge_id": "edge_GMCL_CHN_CHN_BFSCK_DEU_DEU",
@@ -2677,7 +2640,7 @@
       2023,
       2024
     ],
-    "volume": 0.03590465872156013
+    "volume": 0.03847176079734219
   },
   {
     "edge_id": "edge_GMCL_CHN_CHN_BFSCK_CZE_DEU",
@@ -2706,7 +2669,7 @@
       2023,
       2024
     ],
-    "volume": 0.02838569880823402
+    "volume": 0.030764119601328906
   },
   {
     "edge_id": "edge_GMCL_CHN_CHN_BFSCK_SVK_DEU",
@@ -2723,7 +2686,7 @@
       2023,
       2024
     ],
-    "volume": 0.028320693391115925
+    "volume": 0.02930232558139535
   },
   {
     "edge_id": "edge_GMCL_CHN_CHN_BFSCK_HUN_DEU",
@@ -2745,7 +2708,7 @@
       2023,
       2024
     ],
-    "volume": 0.01924160346695558
+    "volume": 0.02121816168327796
   },
   {
     "edge_id": "edge_GMCL_CHN_CHN_BFSCK_ESP_DEU",
@@ -2774,7 +2737,7 @@
       2023,
       2024
     ],
-    "volume": 0.006977248104008668
+    "volume": 0.008084163898117386
   },
   {
     "edge_id": "edge_GMCL_CHN_CHN_BFSCK_GBR_DEU",
@@ -2803,7 +2766,7 @@
       2023,
       2024
     ],
-    "volume": 0.0847670639219935
+    "volume": 0.08212624584717608
   },
   {
     "edge_id": "edge_GMCL_CHN_CHN_NC_FRA_JPN",
@@ -2819,7 +2782,7 @@
       2023,
       2024
     ],
-    "volume": 0.017789815817984833
+    "volume": 0.01805094130675526
   },
   {
     "edge_id": "edge_GMCL_CHN_CHN_WG_DEU_DEU",
@@ -2848,7 +2811,7 @@
       2023,
       2024
     ],
-    "volume": 0.042990249187432286
+    "volume": 0.04458471760797342
   },
   {
     "edge_id": "edge_GMCL_CHN_CHN_JE_ITA_CHN",
@@ -2877,7 +2840,7 @@
       2023,
       2024
     ],
-    "volume": 0.017356446370530878
+    "volume": 0.01805094130675526
   },
   {
     "edge_id": "edge_GMCL_CHN_CHN_JE_FRA_CHN",
@@ -2894,7 +2857,7 @@
       2023,
       2024
     ],
-    "volume": 0.04177681473456121
+    "volume": 0.03738648947951273
   },
   {
     "edge_id": "edge_GMCL_CHN_CHN_JE_DEU_CHN",
@@ -2923,7 +2886,7 @@
       2023,
       2024
     ],
-    "volume": 0.047757313109425784
+    "volume": 0.0491029900332226
   },
   {
     "edge_id": "edge_GMCL_CHN_CHN_JE_GBR_CHN",
@@ -2952,7 +2915,7 @@
       2023,
       2024
     ],
-    "volume": 0.027172264355362945
+    "volume": 0.029700996677740864
   },
   {
     "edge_id": "edge_GMCL_CHN_CHN_PHC_CZE_JPN",
@@ -2981,7 +2944,7 @@
       2023,
       2024
     ],
-    "volume": 0.033759479956663056
+    "volume": 0.03388704318936877
   },
   {
     "edge_id": "edge_GMCL_CHN_CHN_PHC_DEU_JPN",
@@ -3010,7 +2973,7 @@
       2023,
       2024
     ],
-    "volume": 0.044030335861321775
+    "volume": 0.04595791805094131
   },
   {
     "edge_id": "edge_GMCL_CHN_CHN_PHC_GBR_JPN",
@@ -3032,7 +2995,7 @@
       2023,
       2024
     ],
-    "volume": 0.062361863488624054
+    "volume": 0.06465116279069767
   },
   {
     "edge_id": "edge_GMCL_CHN_CHN_MIN_DEU_JPN",
@@ -3061,7 +3024,7 @@
       2023,
       2024
     ],
-    "volume": 0.028234019501625133
+    "volume": 0.026821705426356587
   },
   {
     "edge_id": "edge_GMCL_CHN_CHN_MIN_SVK_JPN",
@@ -3076,7 +3039,7 @@
       2023,
       2024
     ],
-    "volume": 0.027172264355362945
+    "volume": 0.029258028792912515
   },
   {
     "edge_id": "edge_HYP_GBR_GBR_GAL_GBR_GBR",
@@ -3115,7 +3078,7 @@
       2023,
       2024
     ],
-    "volume": 0.13664138678223187
+    "volume": 0.1426578073089701
   },
   {
     "edge_id": "edge_GAL_GBR_GBR_BMWAB_DEU_DEU",
@@ -3135,7 +3098,7 @@
       2023,
       2024
     ],
-    "volume": 0.39375947995666305
+    "volume": 0.4145071982281285
   },
   {
     "edge_id": "edge_GAL_GBR_GBR_POR_DEU_DEU",
@@ -3148,7 +3111,7 @@
       2023,
       2024
     ],
-    "volume": 0.423011917659805
+    "volume": 0.462547065337763
   },
   {
     "edge_id": "edge_GAL_GBR_GBR_JLRJ_GBR_GBR",
@@ -3175,7 +3138,7 @@
       2023,
       2024
     ],
-    "volume": 0.4361863488624052
+    "volume": 0.3760575858250277
   },
   {
     "edge_id": "edge_GPM_DEU_USA_SA_DEU_DEU",
@@ -3186,7 +3149,7 @@
       2023,
       2024
     ],
-    "volume": 0.3668039003250271
+    "volume": 0.3581395348837209
   },
   {
     "edge_id": "edge_GPM_DEU_USA_GAL_GBR_GBR",
@@ -3197,7 +3160,7 @@
       2023,
       2024
     ],
-    "volume": 0.4889274106175514
+    "volume": 0.44436323366555924
   },
   {
     "edge_id": "edge_JMRE_CHN_CHN_GM_NLD_NLD",
@@ -3222,7 +3185,7 @@
       2023,
       2024
     ],
-    "volume": 0.05157096424702059
+    "volume": 0.055991140642303434
   },
   {
     "edge_id": "edge_NY_CHN_CHN_GM_NLD_NLD",
@@ -3251,7 +3214,7 @@
       2023,
       2024
     ],
-    "volume": 0.04873239436619718
+    "volume": 0.05426356589147287
   },
   {
     "edge_id": "edge_ZKSHHTCL_CHN_CHN_GM_NLD_NLD",
@@ -3280,7 +3243,7 @@
       2023,
       2024
     ],
-    "volume": 0.052871072589382444
+    "volume": 0.05778516057585825
   },
   {
     "edge_id": "edge_GM_NLD_NLD_GM_GBR_NLD",
@@ -3309,7 +3272,7 @@
       2023,
       2024
     ],
-    "volume": 0.24660888407367282
+    "volume": 0.26232558139534884
   },
   {
     "edge_id": "edge_GM_NLD_NLD_GM_CZE_NLD",
@@ -3338,7 +3301,7 @@
       2023,
       2024
     ],
-    "volume": 0.27640303358613216
+    "volume": 0.27331118493909196
   },
   {
     "edge_id": "edge_GM_GBR_NLD_GM_FRA_NLD",
@@ -3367,7 +3330,7 @@
       2023,
       2024
     ],
-    "volume": 0.43980498374864574
+    "volume": 0.4390919158361019
   },
   {
     "edge_id": "edge_GM_CZE_NLD_GM_FRA_NLD",
@@ -3396,7 +3359,7 @@
       2023,
       2024
     ],
-    "volume": 0.34190682556879737
+    "volume": 0.32478405315614617
   },
   {
     "edge_id": "edge_GM_GBR_NLD_GM_DEU_NLD",
@@ -3423,7 +3386,7 @@
       2023,
       2024
     ],
-    "volume": 0.18903575297941494
+    "volume": 0.21410852713178294
   },
   {
     "edge_id": "edge_GM_CZE_NLD_GM_DEU_NLD",
@@ -3450,7 +3413,7 @@
       2023,
       2024
     ],
-    "volume": 0.24314192849404115
+    "volume": 0.224296788482835
   },
   {
     "edge_id": "edge_GM_GBR_NLD_F_GBR_GBR",
@@ -3478,7 +3441,7 @@
       2023,
       2024
     ],
-    "volume": 0.33956663055254604
+    "volume": 0.3188482834994463
   },
   {
     "edge_id": "edge_GM_GBR_NLD_MCL_GBR_GBR",
@@ -3507,7 +3470,7 @@
       2023,
       2024
     ],
-    "volume": 0.342795232936078
+    "volume": 0.3538205980066445
   },
   {
     "edge_id": "edge_CREMCLC_CHN_CHN_GRIAMCL_CHN_CHN",
@@ -3536,7 +3499,7 @@
       2023,
       2024
     ],
-    "volume": 0.14842903575297942
+    "volume": 0.17275747508305647
   },
   {
     "edge_id": "edge_GRIAMCL_CHN_CHN_LCML_GBR_GBR",
@@ -3565,7 +3528,7 @@
       2023,
       2024
     ],
-    "volume": 0.050444203683640304
+    "volume": 0.05083056478405316
   },
   {
     "edge_id": "edge_ITCL_CHN_CHN_HGDM_CHN_CHN",
@@ -3594,7 +3557,7 @@
       2023,
       2024
     ],
-    "volume": 0.22318526543878656
+    "volume": 0.22148394241417496
   },
   {
     "edge_id": "edge_CNREGHTCL_CHN_CHN_HGDM_CHN_CHN",
@@ -3623,7 +3586,7 @@
       2023,
       2024
     ],
-    "volume": 0.06736728060671722
+    "volume": 0.06983388704318937
   },
   {
     "edge_id": "edge_CREGC_CHN_CHN_HGDM_CHN_CHN",
@@ -3635,7 +3598,7 @@
       2023,
       2024
     ],
-    "volume": 0.1569664138678223
+    "volume": 0.09302325581395349
   },
   {
     "edge_id": "edge_HGDM_CHN_CHN_ECP_IRL_IRL",
@@ -3664,7 +3627,7 @@
       2023,
       2024
     ],
-    "volume": 0.08695557963163597
+    "volume": 0.08943521594684387
   },
   {
     "edge_id": "edge_HGDM_CHN_CHN_V_FRA_FRA",
@@ -3693,7 +3656,7 @@
       2023,
       2024
     ],
-    "volume": 0.03973997833152763
+    "volume": 0.042414174972314506
   },
   {
     "edge_id": "edge_HGDM_CHN_CHN_RBGBG_DEU_DEU",
@@ -3722,7 +3685,7 @@
       2023,
       2024
     ],
-    "volume": 0.033781148429035755
+    "volume": 0.03300110741971207
   },
   {
     "edge_id": "edge_HGDM_CHN_CHN_BI_PRT_USA",
@@ -3751,7 +3714,7 @@
       2023,
       2024
     ],
-    "volume": 0.016316359696641386
+    "volume": 0.020376522702104095
   },
   {
     "edge_id": "edge_HGDM_CHN_CHN_TES_DEU_USA",
@@ -3762,7 +3725,7 @@
       2023,
       2024
     ],
-    "volume": 0.025222101841820152
+    "volume": 0.023676633444075303
   },
   {
     "edge_id": "edge_HGDM_CHN_CHN_NC_FRA_JPN",
@@ -3778,7 +3741,7 @@
       2023,
       2024
     ],
-    "volume": 0.02457204767063922
+    "volume": 0.025802879291251385
   },
   {
     "edge_id": "edge_HGDM_CHN_CHN_BFSCK_DEU_DEU",
@@ -3803,7 +3766,7 @@
       2023,
       2024
     ],
-    "volume": 0.0419068255687974
+    "volume": 0.041550387596899226
   },
   {
     "edge_id": "edge_HGDM_CHN_CHN_BFSCK_CZE_DEU",
@@ -3832,7 +3795,7 @@
       2023,
       2024
     ],
-    "volume": 0.0323943661971831
+    "volume": 0.031915836101882616
   },
   {
     "edge_id": "edge_HGDM_CHN_CHN_BFSCK_SVK_DEU",
@@ -3849,7 +3812,7 @@
       2023,
       2024
     ],
-    "volume": 0.03447453954496208
+    "volume": 0.03178294573643411
   },
   {
     "edge_id": "edge_HGDM_CHN_CHN_BFSCK_HUN_DEU",
@@ -3871,7 +3834,7 @@
       2023,
       2024
     ],
-    "volume": 0.025525460455037917
+    "volume": 0.0240531561461794
   },
   {
     "edge_id": "edge_HGDM_CHN_CHN_BFSCK_ESP_DEU",
@@ -3900,7 +3863,7 @@
       2023,
       2024
     ],
-    "volume": 0.014777898158179849
+    "volume": 0.016035437430786267
   },
   {
     "edge_id": "edge_HGDM_CHN_CHN_BFSCK_GBR_DEU",
@@ -3929,7 +3892,7 @@
       2023,
       2024
     ],
-    "volume": 0.0838136511375948
+    "volume": 0.07869324473975638
   },
   {
     "edge_id": "edge_ILS_GBR_GBR_HYP_GBR_GBR",
@@ -3938,7 +3901,7 @@
     "active_years": [
       2024
     ],
-    "volume": 0.3450920910075839
+    "volume": 0.6019047619047618
   },
   {
     "edge_id": "edge_HYP_GBR_GBR_JLRJ_GBR_GBR",
@@ -3956,7 +3919,7 @@
     "active_years": [
       2024
     ],
-    "volume": 0.5966630552546046
+    "volume": 0.5046733111849391
   },
   {
     "edge_id": "edge_HYP_GBR_GBR_BENM_GBR_GBR",
@@ -3965,7 +3928,7 @@
     "active_years": [
       2024
     ],
-    "volume": 0.680931744312026
+    "volume": 0.8130232558139534
   },
   {
     "edge_id": "edge_HYP_GBR_GBR_SRIA_SWE_SWE",
@@ -3974,7 +3937,7 @@
     "active_years": [
       2024
     ],
-    "volume": 0.13664138678223187
+    "volume": 0.1426578073089701
   },
   {
     "edge_id": "edge_IIAMTASLU_CHN_ESP_IIAMTASLU_ESP_ESP",
@@ -3997,7 +3960,7 @@
       2023,
       2024
     ],
-    "volume": 0.020346695557963163
+    "volume": 0.027419712070874864
   },
   {
     "edge_id": "edge_MLDD_SVN_SVN_IIAMTASLU_ESP_ESP",
@@ -4021,7 +3984,7 @@
       2023,
       2024
     ],
-    "volume": 0.0314409534127844
+    "volume": 0.03882613510520488
   },
   {
     "edge_id": "edge_IIAMTASLU_ESP_ESP_CRFC_ITA_ITA",
@@ -4050,7 +4013,7 @@
       2023,
       2024
     ],
-    "volume": 0.03105092091007584
+    "volume": 0.035747508305647845
   },
   {
     "edge_id": "edge_IMBREMMCL_CHN_CHN_IMBREITCL_CHN_CHN",
@@ -4075,7 +4038,7 @@
       2023,
       2024
     ],
-    "volume": 0.30985915492957744
+    "volume": 0.33665559246954596
   },
   {
     "edge_id": "edge_ILS_GBR_GBR_BENM_GBR_GBR",
@@ -4088,7 +4051,7 @@
       2023,
       2024
     ],
-    "volume": 0.1391115926327194
+    "volume": 0.29058693244739753
   },
   {
     "edge_id": "edge_ILS_GBR_GBR_JLRJ_GBR_GBR",
@@ -4101,7 +4064,7 @@
       2023,
       2024
     ],
-    "volume": 0.4683423618634886
+    "volume": 0.6642081949058692
   },
   {
     "edge_id": "edge_VV_DEU_DEU_IT_GBR_GBR",
@@ -4111,7 +4074,7 @@
       2023,
       2024
     ],
-    "volume": 0.2850054171180932
+    "volume": 0.2996234772978959
   },
   {
     "edge_id": "edge_IT_GBR_GBR_LCML_GBR_GBR",
@@ -4121,7 +4084,7 @@
       2023,
       2024
     ],
-    "volume": 0.1713759479956663
+    "volume": 0.1205094130675526
   },
   {
     "edge_id": "edge_IT_GBR_GBR_VV_DEU_DEU",
@@ -4131,7 +4094,7 @@
       2023,
       2024
     ],
-    "volume": 0.2850054171180932
+    "volume": 0.2996234772978959
   },
   {
     "edge_id": "edge_IT_GBR_GBR_FE_DEU_DEU",
@@ -4141,7 +4104,7 @@
       2023,
       2024
     ],
-    "volume": 0.22322860238353195
+    "volume": 0.24775193798449613
   },
   {
     "edge_id": "edge_IT_GBR_GBR_FE_TUR_DEU",
@@ -4151,7 +4114,7 @@
       2023,
       2024
     ],
-    "volume": 0.16784398699891656
+    "volume": 0.16547065337763012
   },
   {
     "edge_id": "edge_IT_GBR_GBR_FE_GBR_DEU",
@@ -4160,7 +4123,7 @@
     "active_years": [
       2024
     ],
-    "volume": 0.15973997833152762
+    "volume": 0.12281284606866003
   },
   {
     "edge_id": "edge_ZIM_CHN_CHN_IMS_ITA_ITA",
@@ -4189,7 +4152,7 @@
       2023,
       2024
     ],
-    "volume": 0.02327193932827736
+    "volume": 0.02336655592469546
   },
   {
     "edge_id": "edge_PHML_GBR_JPN_IMS_ITA_ITA",
@@ -4218,7 +4181,7 @@
       2023,
       2024
     ],
-    "volume": 0.13778981581798483
+    "volume": 0.16077519379844962
   },
   {
     "edge_id": "edge_PHML_ITA_JPN_IMS_ITA_ITA",
@@ -4247,7 +4210,7 @@
       2023,
       2024
     ],
-    "volume": 0.1256771397616468
+    "volume": 0.12956810631229235
   },
   {
     "edge_id": "edge_MI_CHN_USA_IMS_ITA_ITA",
@@ -4270,7 +4233,7 @@
       2023,
       2024
     ],
-    "volume": 0.009924160346695557
+    "volume": 0.010719822812846069
   },
   {
     "edge_id": "edge_IMS_ITA_ITA_S_ITA_ITA",
@@ -4299,7 +4262,7 @@
       2023,
       2024
     ],
-    "volume": 0.07287107258938245
+    "volume": 0.06857142857142857
   },
   {
     "edge_id": "edge_DRPCL_CHN_CHN_JMCL_CHN_CHN",
@@ -4323,7 +4286,7 @@
       2023,
       2024
     ],
-    "volume": 0.06500541711809317
+    "volume": 0.06312292358803986
   },
   {
     "edge_id": "edge_GPMMCL_CHN_CHN_JMRE_CHN_CHN",
@@ -4339,7 +4302,7 @@
       2023,
       2024
     ],
-    "volume": 0.38894907908992415
+    "volume": 0.3743078626799557
   },
   {
     "edge_id": "edge_CREGC_CHN_CHN_JMRE_CHN_CHN",
@@ -4351,7 +4314,7 @@
       2023,
       2024
     ],
-    "volume": 0.38894907908992415
+    "volume": 0.3743078626799557
   },
   {
     "edge_id": "edge_GREG_CHN_CHN_JMRE_CHN_CHN",
@@ -4376,7 +4339,7 @@
       2023,
       2024
     ],
-    "volume": 0.38894907908992415
+    "volume": 0.3743078626799557
   },
   {
     "edge_id": "edge_JMRE_CHN_CHN_RBGBG_DEU_DEU",
@@ -4401,7 +4364,7 @@
       2023,
       2024
     ],
-    "volume": 0.02686890574214518
+    "volume": 0.038582502768549284
   },
   {
     "edge_id": "edge_JMRE_CHN_CHN_DI_SWE_USA",
@@ -4411,7 +4374,7 @@
       2023,
       2024
     ],
-    "volume": 0.020303358613217765
+    "volume": 0.02575858250276855
   },
   {
     "edge_id": "edge_JMRE_CHN_CHN_BCL_HUN_CHN",
@@ -4421,7 +4384,7 @@
       2023,
       2024
     ],
-    "volume": 0.020346695557963163
+    "volume": 0.027552602436323365
   },
   {
     "edge_id": "edge_JMRE_CHN_CHN_MG_ITA_CHN",
@@ -4446,7 +4409,7 @@
       2023,
       2024
     ],
-    "volume": 0.01592632719393283
+    "volume": 0.022635658914728685
   },
   {
     "edge_id": "edge_JMRE_CHN_CHN_TES_DEU_USA",
@@ -4457,7 +4420,7 @@
       2023,
       2024
     ],
-    "volume": 0.02745395449620802
+    "volume": 0.03415282392026578
   },
   {
     "edge_id": "edge_JMRE_CHN_CHN_VG_DEU_DEU",
@@ -4482,7 +4445,7 @@
       2023,
       2024
     ],
-    "volume": 0.029295774647887324
+    "volume": 0.03610188261351052
   },
   {
     "edge_id": "edge_JMRE_CHN_CHN_MAGL_GBR_GBR",
@@ -4507,7 +4470,7 @@
       2023,
       2024
     ],
-    "volume": 0.05698808234019502
+    "volume": 0.05583610188261351
   },
   {
     "edge_id": "edge_KREPF_AUS_AUS_LMSB_MYS_AUS",
@@ -4516,11 +4479,11 @@
     "active_years": [
       2024
     ],
-    "volume": 0.0018418201516793066
+    "volume": 0.0029678848283499447
   },
   {
-    "edge_id": "edge_RRER_GGY_GGY_LCML_GBR_GBR",
-    "source": "RRER_GGY_GGY",
+    "edge_id": "edge_RRER_BDI_BDI_LCML_GBR_GBR",
+    "source": "RRER_BDI_BDI",
     "target": "LCML_GBR_GBR",
     "active_years": [
       2017,
@@ -4532,7 +4495,7 @@
       2023,
       2024
     ],
-    "volume": 0.09016251354279523
+    "volume": 0.029324473975636766
   },
   {
     "edge_id": "edge_RA_NOR_NOR_LCML_GBR_GBR",
@@ -4541,7 +4504,7 @@
     "active_years": [
       2024
     ],
-    "volume": 0.04114842903575298
+    "volume": 0.05977851605758582
   },
   {
     "edge_id": "edge_C_FRA_FRA_LCML_GBR_GBR",
@@ -4555,7 +4518,7 @@
       2023,
       2024
     ],
-    "volume": 0.2834019501625135
+    "volume": 0.2709191583610188
   },
   {
     "edge_id": "edge_LCML_GBR_GBR_VV_DEU_DEU",
@@ -4584,7 +4547,7 @@
       2023,
       2024
     ],
-    "volume": 0.40689057421451785
+    "volume": 0.4047840531561462
   },
   {
     "edge_id": "edge_LCML_GBR_GBR_HYP_GBR_GBR",
@@ -4593,7 +4556,7 @@
     "active_years": [
       2024
     ],
-    "volume": 0.5828819068255688
+    "volume": 0.6984717607973422
   },
   {
     "edge_id": "edge_LRELM_AUS_AUS_RBGBG_DEU_DEU",
@@ -4614,7 +4577,7 @@
       2023,
       2024
     ],
-    "volume": 0.007973997833152764
+    "volume": 0.010232558139534885
   },
   {
     "edge_id": "edge_LRELM_AUS_AUS_KREPF_AUS_AUS",
@@ -4623,7 +4586,7 @@
     "active_years": [
       2024
     ],
-    "volume": 0.019111592632719394
+    "volume": 0.02336655592469546
   },
   {
     "edge_id": "edge_NPM_GBR_CAN_MB_DEU_DEU",
@@ -4633,7 +4596,7 @@
       2023,
       2024
     ],
-    "volume": 0.3379848320693391
+    "volume": 0.3547729789590255
   },
   {
     "edge_id": "edge_MB_DEU_DEU_MEL_BEL_BEL",
@@ -4662,7 +4625,7 @@
       2023,
       2024
     ],
-    "volume": 0.3515926327193933
+    "volume": 0.359734219269103
   },
   {
     "edge_id": "edge_MB_DEU_DEU_APSAP_CHE_CHE",
@@ -4691,7 +4654,7 @@
       2023,
       2024
     ],
-    "volume": 0.26782231852654387
+    "volume": 0.3144186046511628
   },
   {
     "edge_id": "edge_LCML_GBR_GBR_MLDD_SVN_SVN",
@@ -4715,7 +4678,7 @@
       2023,
       2024
     ],
-    "volume": 0.3275622968580715
+    "volume": 0.3378294573643411
   },
   {
     "edge_id": "edge_MLDD_SVN_SVN_MEL_BEL_BEL",
@@ -4739,7 +4702,7 @@
       2023,
       2024
     ],
-    "volume": 0.19850487540628386
+    "volume": 0.2073311184939092
   },
   {
     "edge_id": "edge_MLDD_SVN_SVN_ZFA_DEU_DEU",
@@ -4763,7 +4726,7 @@
       2023,
       2024
     ],
-    "volume": 0.13497291440953413
+    "volume": 0.1170985603543743
   },
   {
     "edge_id": "edge_MLDD_SVN_SVN_GAS_DNK_DNK",
@@ -4787,7 +4750,7 @@
       2023,
       2024
     ],
-    "volume": 0.08039003250270856
+    "volume": 0.07849390919158361
   },
   {
     "edge_id": "edge_MLDD_SVN_SVN_BCS_ITA_ITA",
@@ -4811,7 +4774,7 @@
       2023,
       2024
     ],
-    "volume": 0.04561213434452871
+    "volume": 0.053554817275747506
   },
   {
     "edge_id": "edge_MLDD_SVN_SVN_GAL_GBR_GBR",
@@ -4835,7 +4798,7 @@
       2023,
       2024
     ],
-    "volume": 0.29607800650054167
+    "volume": 0.3145736434108527
   },
   {
     "edge_id": "edge_HYP_GBR_GBR_MAGL_GBR_GBR",
@@ -4844,7 +4807,7 @@
     "active_years": [
       2024
     ],
-    "volume": 0.6221018418201517
+    "volume": 0.7328903654485049
   },
   {
     "edge_id": "edge_MRE_GBR_GBR_MAGL_GBR_GBR",
@@ -4856,7 +4819,7 @@
       2023,
       2024
     ],
-    "volume": 0.6901408450704225
+    "volume": 0.7436323366555925
   },
   {
     "edge_id": "edge_MAGL_GBR_GBR_SMDS_GBR_GBR",
@@ -4883,7 +4846,7 @@
       2023,
       2024
     ],
-    "volume": 0.12394366197183099
+    "volume": 0.16312292358803987
   },
   {
     "edge_id": "edge_MAGL_GBR_GBR_NEASL_ESP_ESP",
@@ -4900,7 +4863,7 @@
       2023,
       2024
     ],
-    "volume": 0.11820151679306608
+    "volume": 0.14199335548172756
   },
   {
     "edge_id": "edge_M_FRA_FRA_V_FRA_FRA",
@@ -4913,7 +4876,7 @@
       2023,
       2024
     ],
-    "volume": 0.16996749729144095
+    "volume": 0.13864894795127353
   },
   {
     "edge_id": "edge_BMSCL_CHN_DEU_MBG_DEU_DEU",
@@ -4930,7 +4893,7 @@
       2023,
       2024
     ],
-    "volume": 0.04418201516793066
+    "volume": 0.04449612403100775
   },
   {
     "edge_id": "edge_MBG_DEU_DEU_MEL_BEL_BEL",
@@ -4959,7 +4922,7 @@
       2023,
       2024
     ],
-    "volume": 0.2541711809317443
+    "volume": 0.33528239202657806
   },
   {
     "edge_id": "edge_MBG_DEU_DEU_BOUI_DEU_USA",
@@ -4988,7 +4951,7 @@
       2023,
       2024
     ],
-    "volume": 0.2803033586132178
+    "volume": 0.2696124031007752
   },
   {
     "edge_id": "edge_MBG_DEU_DEU_BOUI_HUN_USA",
@@ -5017,7 +4980,7 @@
       2023,
       2024
     ],
-    "volume": 0.19902491874322858
+    "volume": 0.1992248062015504
   },
   {
     "edge_id": "edge_MBG_DEU_DEU_RBGBG_DEU_DEU",
@@ -5046,7 +5009,7 @@
       2023,
       2024
     ],
-    "volume": 0.3190032502708559
+    "volume": 0.3228349944629014
   },
   {
     "edge_id": "edge_MBG_DEU_DEU_BFSCK_DEU_DEU",
@@ -5071,7 +5034,7 @@
       2023,
       2024
     ],
-    "volume": 0.3874756229685807
+    "volume": 0.40429678848283496
   },
   {
     "edge_id": "edge_MBG_DEU_DEU_BFSCK_CZE_DEU",
@@ -5100,7 +5063,7 @@
       2023,
       2024
     ],
-    "volume": 0.23947995666305524
+    "volume": 0.2510520487264673
   },
   {
     "edge_id": "edge_MBG_DEU_DEU_BFSCK_SVK_DEU",
@@ -5117,7 +5080,7 @@
       2023,
       2024
     ],
-    "volume": 0.2267822318526544
+    "volume": 0.2216168327796235
   },
   {
     "edge_id": "edge_MBG_DEU_DEU_BFSCK_HUN_DEU",
@@ -5139,7 +5102,7 @@
       2023,
       2024
     ],
-    "volume": 0.19083423618634884
+    "volume": 0.19512735326688813
   },
   {
     "edge_id": "edge_MBG_DEU_DEU_BFSCK_ESP_DEU",
@@ -5168,7 +5131,7 @@
       2023,
       2024
     ],
-    "volume": 0.12877573131094258
+    "volume": 0.11016611295681064
   },
   {
     "edge_id": "edge_MBG_DEU_DEU_BFSCK_GBR_DEU",
@@ -5197,7 +5160,7 @@
       2023,
       2024
     ],
-    "volume": 0.41664138678223184
+    "volume": 0.37410852713178294
   },
   {
     "edge_id": "edge_MBG_DEU_DEU_RBASBG_DEU_DEU",
@@ -5215,7 +5178,7 @@
       2023,
       2024
     ],
-    "volume": 0.322795232936078
+    "volume": 0.33931339977851604
   },
   {
     "edge_id": "edge_MBG_DEU_DEU_RBASBG_HUN_DEU",
@@ -5233,7 +5196,7 @@
       2023,
       2024
     ],
-    "volume": 0.1963596966413868
+    "volume": 0.19439645625692137
   },
   {
     "edge_id": "edge_HYP_GBR_GBR_MTGCK_DEU_DEU",
@@ -5242,7 +5205,7 @@
     "active_years": [
       2024
     ],
-    "volume": 0.4242686890574215
+    "volume": 0.45977851605758585
   },
   {
     "edge_id": "edge_LCML_GBR_GBR_MTGCK_DEU_DEU",
@@ -5254,7 +5217,7 @@
       2023,
       2024
     ],
-    "volume": 0.42201516793066085
+    "volume": 0.43698781838316725
   },
   {
     "edge_id": "edge_SRIA_SWE_SWE_MTGCK_DEU_DEU",
@@ -5266,7 +5229,7 @@
       2023,
       2024
     ],
-    "volume": 0.11664138678223185
+    "volume": 0.1215282392026578
   },
   {
     "edge_id": "edge_MLDD_SVN_SVN_MTGCK_DEU_DEU",
@@ -5278,7 +5241,7 @@
       2023,
       2024
     ],
-    "volume": 0.13417118093174432
+    "volume": 0.14737541528239204
   },
   {
     "edge_id": "edge_MTGCK_DEU_DEU_ZFA_CZE_DEU",
@@ -5290,7 +5253,7 @@
       2023,
       2024
     ],
-    "volume": 0.21774647887323942
+    "volume": 0.22575858250276856
   },
   {
     "edge_id": "edge_MTGCK_DEU_DEU_SEGCK_DEU_DEU",
@@ -5302,7 +5265,7 @@
       2023,
       2024
     ],
-    "volume": 0.2174864572047671
+    "volume": 0.23851605758582503
   },
   {
     "edge_id": "edge_MTGCK_DEU_DEU_BCS_ITA_ITA",
@@ -5314,7 +5277,7 @@
       2023,
       2024
     ],
-    "volume": 0.13074756229685808
+    "volume": 0.14420819490586934
   },
   {
     "edge_id": "edge_MTGCK_DEU_DEU_GAS_DNK_DNK",
@@ -5326,7 +5289,7 @@
       2023,
       2024
     ],
-    "volume": 0.13653304442036837
+    "volume": 0.14414174972314506
   },
   {
     "edge_id": "edge_MTGCK_DEU_DEU_GAS_GBR_DNK",
@@ -5338,7 +5301,7 @@
       2023,
       2024
     ],
-    "volume": 0.3100325027085591
+    "volume": 0.35882613510520484
   },
   {
     "edge_id": "edge_HYP_GBR_GBR_MRE_GBR_GBR",
@@ -5347,7 +5310,7 @@
     "active_years": [
       2024
     ],
-    "volume": 0.782361863488624
+    "volume": 0.7447840531561462
   },
   {
     "edge_id": "edge_ARL_GBR_GBR_MRE_GBR_GBR",
@@ -5359,7 +5322,7 @@
       2023,
       2024
     ],
-    "volume": 0.6552762730227519
+    "volume": 0.7233665559246956
   },
   {
     "edge_id": "edge_LCML_GBR_GBR_MRE_GBR_GBR",
@@ -5371,7 +5334,7 @@
       2023,
       2024
     ],
-    "volume": 0.6920910075839652
+    "volume": 0.7313399778516058
   },
   {
     "edge_id": "edge_MP_POL_POL_MRE_GBR_GBR",
@@ -5383,7 +5346,7 @@
       2023,
       2024
     ],
-    "volume": 0.13063921993499458
+    "volume": 0.13802879291251385
   },
   {
     "edge_id": "edge_IASL_ESP_ESP_MRE_GBR_GBR",
@@ -5392,7 +5355,7 @@
     "active_years": [
       2024
     ],
-    "volume": 0.09941495124593716
+    "volume": 0.10775193798449612
   },
   {
     "edge_id": "edge_MRE_GBR_GBR_AIL_GBR_GBR",
@@ -5404,7 +5367,7 @@
       2023,
       2024
     ],
-    "volume": 0.37308775731310945
+    "volume": 0.4994462901439646
   },
   {
     "edge_id": "edge_MRE_GBR_GBR_BWBW_GBR_GBR",
@@ -5416,7 +5379,7 @@
       2023,
       2024
     ],
-    "volume": 0.3384182015167931
+    "volume": 0.3412846068660022
   },
   {
     "edge_id": "edge_MRE_GBR_GBR_GAL_GBR_GBR",
@@ -5428,7 +5391,7 @@
       2023,
       2024
     ],
-    "volume": 0.782361863488624
+    "volume": 0.7447840531561462
   },
   {
     "edge_id": "edge_MRE_GBR_GBR_BENM_GBR_GBR",
@@ -5440,7 +5403,7 @@
       2023,
       2024
     ],
-    "volume": 0.7424052004333694
+    "volume": 0.7558803986710962
   },
   {
     "edge_id": "edge_MRE_GBR_GBR_JLRJ_GBR_GBR",
@@ -5452,7 +5415,7 @@
       2023,
       2024
     ],
-    "volume": 0.7702708559046587
+    "volume": 0.720531561461794
   },
   {
     "edge_id": "edge_MIMM_USA_USA_PHML_JPN_JPN",
@@ -5468,7 +5431,7 @@
       2023,
       2024
     ],
-    "volume": 0.00647887323943662
+    "volume": 0.006445182724252492
   },
   {
     "edge_id": "edge_MIMM_USA_USA_PHML_GBR_JPN",
@@ -5484,7 +5447,7 @@
       2023,
       2024
     ],
-    "volume": 0.012719393282773564
+    "volume": 0.01920265780730897
   },
   {
     "edge_id": "edge_MIMM_USA_USA_PHML_ITA_JPN",
@@ -5500,7 +5463,7 @@
       2023,
       2024
     ],
-    "volume": 0.005590465872156013
+    "volume": 0.005714285714285714
   },
   {
     "edge_id": "edge_NM_CHN_CAN_MS_DEU_DEU",
@@ -5529,7 +5492,7 @@
       2023,
       2024
     ],
-    "volume": 0.04067172264355363
+    "volume": 0.04456256921373201
   },
   {
     "edge_id": "edge_MS_DEU_DEU_CA_DEU_DEU",
@@ -5558,7 +5521,7 @@
       2023,
       2024
     ],
-    "volume": 0.2180065005417118
+    "volume": 0.26081949058693243
   },
   {
     "edge_id": "edge_MS_DEU_DEU_ZFA_CZE_DEU",
@@ -5587,7 +5550,7 @@
       2023,
       2024
     ],
-    "volume": 0.2010617551462622
+    "volume": 0.22469545957918052
   },
   {
     "edge_id": "edge_MS_DEU_DEU_ZFA_SVK_DEU",
@@ -5614,7 +5577,7 @@
       2023,
       2024
     ],
-    "volume": 0.13176598049837487
+    "volume": 0.15054263565891474
   },
   {
     "edge_id": "edge_MS_DEU_DEU_ZFA_DEU_DEU",
@@ -5643,7 +5606,7 @@
       2023,
       2024
     ],
-    "volume": 0.26253521126760565
+    "volume": 0.30015503875968996
   },
   {
     "edge_id": "edge_MS_DEU_DEU_P_DEU_DEU",
@@ -5655,7 +5618,7 @@
       2023,
       2024
     ],
-    "volume": 0.2950812567713976
+    "volume": 0.3137098560354374
   },
   {
     "edge_id": "edge_MS_DEU_DEU_MEL_BEL_BEL",
@@ -5684,7 +5647,7 @@
       2023,
       2024
     ],
-    "volume": 0.24923076923076923
+    "volume": 0.24987818383167218
   },
   {
     "edge_id": "edge_MICC_MMR_MMR_CMREG_CHN_CHN",
@@ -5706,7 +5669,7 @@
       2023,
       2024
     ],
-    "volume": 0.0476273022751896
+    "volume": 0.03550387596899225
   },
   {
     "edge_id": "edge_MICC_MMR_MMR_CSREG_CHN_CHN",
@@ -5724,7 +5687,7 @@
       2023,
       2024
     ],
-    "volume": 0.0476273022751896
+    "volume": 0.03550387596899225
   },
   {
     "edge_id": "edge_GKRENMCL_CHN_CHN_NM_CHN_CAN",
@@ -5753,7 +5716,7 @@
       2023,
       2024
     ],
-    "volume": 0.06773564463705309
+    "volume": 0.08407530454042082
   },
   {
     "edge_id": "edge_GQREGCL_CHN_CHN_NM_CHN_CAN",
@@ -5782,7 +5745,7 @@
       2023,
       2024
     ],
-    "volume": 0.06773564463705309
+    "volume": 0.08407530454042082
   },
   {
     "edge_id": "edge_NM_CHN_CAN_NPM_GBR_CAN",
@@ -5792,7 +5755,7 @@
       2023,
       2024
     ],
-    "volume": 0.06418201516793066
+    "volume": 0.0721594684385382
   },
   {
     "edge_id": "edge_GKRENMCL_CHN_CHN_NM_THA_CAN",
@@ -5818,7 +5781,7 @@
       2023,
       2024
     ],
-    "volume": 0.022730227518959915
+    "volume": 0.02188261351052049
   },
   {
     "edge_id": "edge_GQREGCL_CHN_CHN_NM_THA_CAN",
@@ -5844,7 +5807,7 @@
       2023,
       2024
     ],
-    "volume": 0.022730227518959915
+    "volume": 0.02188261351052049
   },
   {
     "edge_id": "edge_NM_THA_CAN_NPM_GBR_CAN",
@@ -5854,7 +5817,7 @@
       2023,
       2024
     ],
-    "volume": 0.04060671722643553
+    "volume": 0.04159468438538206
   },
   {
     "edge_id": "edge_TMMMCL_JPN_JPN_NPM_GBR_CAN",
@@ -5864,7 +5827,7 @@
       2023,
       2024
     ],
-    "volume": 0.044788732394366204
+    "volume": 0.05060908084163898
   },
   {
     "edge_id": "edge_EF_USA_USA_NPM_GBR_CAN",
@@ -5874,7 +5837,7 @@
       2023,
       2024
     ],
-    "volume": 0.020671722643553627
+    "volume": 0.02099667774086379
   },
   {
     "edge_id": "edge_EF_CAN_USA_NPM_GBR_CAN",
@@ -5884,7 +5847,7 @@
       2023,
       2024
     ],
-    "volume": 0.024962080173347778
+    "volume": 0.0293687707641196
   },
   {
     "edge_id": "edge_NPM_GBR_CAN_GAS_GBR_DNK",
@@ -5894,7 +5857,7 @@
       2023,
       2024
     ],
-    "volume": 0.622578548212351
+    "volume": 0.4491029900332226
   },
   {
     "edge_id": "edge_NPM_GBR_CAN_GAS_DNK_DNK",
@@ -5904,7 +5867,7 @@
       2023,
       2024
     ],
-    "volume": 0.0780281690140845
+    "volume": 0.08905869324473976
   },
   {
     "edge_id": "edge_NPM_GBR_CAN_RBGBG_DEU_DEU",
@@ -5914,7 +5877,7 @@
       2023,
       2024
     ],
-    "volume": 0.2838569880823402
+    "volume": 0.33009966777408634
   },
   {
     "edge_id": "edge_NNMG_CHN_CHN_NME_FRA_FRA",
@@ -5928,7 +5891,7 @@
       2023,
       2024
     ],
-    "volume": 0.02257854821235103
+    "volume": 0.017231450719822815
   },
   {
     "edge_id": "edge_NME_FRA_FRA_THY_DEU_DEU",
@@ -5942,7 +5905,7 @@
       2023,
       2024
     ],
-    "volume": 0.18626218851570964
+    "volume": 0.1867109634551495
   },
   {
     "edge_id": "edge_NME_FRA_FRA_SISM_DEU_DEU",
@@ -5956,7 +5919,7 @@
       2023,
       2024
     ],
-    "volume": 0.15690140845070422
+    "volume": 0.1703875968992248
   },
   {
     "edge_id": "edge_NME_FRA_FRA_RBGBG_DEU_DEU",
@@ -5970,7 +5933,7 @@
       2023,
       2024
     ],
-    "volume": 0.13976164680390032
+    "volume": 0.13539313399778516
   },
   {
     "edge_id": "edge_NME_FRA_FRA_CA_DEU_DEU",
@@ -5984,7 +5947,7 @@
       2023,
       2024
     ],
-    "volume": 0.17542795232936076
+    "volume": 0.18148394241417495
   },
   {
     "edge_id": "edge_NME_FRA_FRA_TES_DEU_USA",
@@ -5995,7 +5958,7 @@
       2023,
       2024
     ],
-    "volume": 0.169534127843987
+    "volume": 0.15949058693244741
   },
   {
     "edge_id": "edge_NME_FRA_FRA_BMWAB_DEU_DEU",
@@ -6009,7 +5972,7 @@
       2023,
       2024
     ],
-    "volume": 0.15263271939328277
+    "volume": 0.16205980066445183
   },
   {
     "edge_id": "edge_NME_FRA_FRA_SEA_DEU_DEU",
@@ -6023,7 +5986,7 @@
       2023,
       2024
     ],
-    "volume": 0.15263271939328277
+    "volume": 0.16205980066445183
   },
   {
     "edge_id": "edge_NME_FRA_FRA_SEA_ESP_DEU",
@@ -6037,7 +6000,7 @@
       2023,
       2024
     ],
-    "volume": 0.016988082340195016
+    "volume": 0.012823920265780732
   },
   {
     "edge_id": "edge_NME_FRA_FRA_SEA_DNK_DEU",
@@ -6051,7 +6014,7 @@
       2023,
       2024
     ],
-    "volume": 0.12933911159263273
+    "volume": 0.12861572535991142
   },
   {
     "edge_id": "edge_NME_FRA_FRA_SGRE_FRA_DNK",
@@ -6065,7 +6028,7 @@
       2023,
       2024
     ],
-    "volume": 0.1541495124593716
+    "volume": 0.14423034330011075
   },
   {
     "edge_id": "edge_NME_FRA_FRA_SGRE_DNK_DNK",
@@ -6079,7 +6042,7 @@
       2023,
       2024
     ],
-    "volume": 0.14190682556879738
+    "volume": 0.12511627906976744
   },
   {
     "edge_id": "edge_NME_FRA_FRA_SGRE_DEU_DNK",
@@ -6093,7 +6056,7 @@
       2023,
       2024
     ],
-    "volume": 0.1522860238353196
+    "volume": 0.15585825027685493
   },
   {
     "edge_id": "edge_NC_FRA_JPN_NC_ITA_JPN",
@@ -6109,7 +6072,7 @@
       2023,
       2024
     ],
-    "volume": 0.09516793066088841
+    "volume": 0.11446290143964563
   },
   {
     "edge_id": "edge_NC_FRA_JPN_NC_POL_JPN",
@@ -6125,7 +6088,7 @@
       2023,
       2024
     ],
-    "volume": 0.11739978331527627
+    "volume": 0.12978959025470654
   },
   {
     "edge_id": "edge_NC_FRA_JPN_NC_SVK_JPN",
@@ -6141,7 +6104,7 @@
       2023,
       2024
     ],
-    "volume": 0.09302275189599134
+    "volume": 0.09231450719822813
   },
   {
     "edge_id": "edge_NC_FRA_JPN_NC_DEU_JPN",
@@ -6157,7 +6120,7 @@
       2023,
       2024
     ],
-    "volume": 0.14595882990249187
+    "volume": 0.15763012181616834
   },
   {
     "edge_id": "edge_CNREGHTCL_CHN_CHN_NNMG_CHN_CHN",
@@ -6181,7 +6144,7 @@
       2023,
       2024
     ],
-    "volume": 0.05605633802816901
+    "volume": 0.060996677740863786
   },
   {
     "edge_id": "edge_CREGC_CHN_CHN_NNMG_CHN_CHN",
@@ -6193,7 +6156,7 @@
       2023,
       2024
     ],
-    "volume": 0.14028169014084507
+    "volume": 0.08361018826135105
   },
   {
     "edge_id": "edge_SRGCL_CHN_CHN_NY_CHN_CHN",
@@ -6222,7 +6185,7 @@
       2023,
       2024
     ],
-    "volume": 0.03776814734561213
+    "volume": 0.04079734219269104
   },
   {
     "edge_id": "edge_NY_CHN_CHN_VTGA_DEU_DEU",
@@ -6236,7 +6199,7 @@
       2023,
       2024
     ],
-    "volume": 0.03055254604550379
+    "volume": 0.029700996677740864
   },
   {
     "edge_id": "edge_NY_CHN_CHN_VTGA_HUN_DEU",
@@ -6248,7 +6211,7 @@
       2023,
       2024
     ],
-    "volume": 0.024398699891657636
+    "volume": 0.025337763012181616
   },
   {
     "edge_id": "edge_NY_CHN_CHN_VTGA_CZE_DEU",
@@ -6263,7 +6226,7 @@
       2023,
       2024
     ],
-    "volume": 0.029447453954496206
+    "volume": 0.03038759689922481
   },
   {
     "edge_id": "edge_NY_CHN_CHN_SA_DEU_DEU",
@@ -6285,7 +6248,7 @@
       2023,
       2024
     ],
-    "volume": 0.036771397616468034
+    "volume": 0.03415282392026578
   },
   {
     "edge_id": "edge_PGS_FRA_FRA_O_FRA_FRA",
@@ -6294,7 +6257,7 @@
     "active_years": [
       2024
     ],
-    "volume": 0.3694474539544962
+    "volume": 0.301218161683278
   },
   {
     "edge_id": "edge_CT_BEL_BEL_O_FRA_FRA",
@@ -6303,7 +6266,7 @@
     "active_years": [
       2024
     ],
-    "volume": 0.23874322860238353
+    "volume": 0.20925802879291253
   },
   {
     "edge_id": "edge_O_FRA_FRA_V_FRA_FRA",
@@ -6312,7 +6275,7 @@
     "active_years": [
       2024
     ],
-    "volume": 0.3694474539544962
+    "volume": 0.301218161683278
   },
   {
     "edge_id": "edge_O_FRA_FRA_MLDD_SVN_SVN",
@@ -6321,7 +6284,7 @@
     "active_years": [
       2024
     ],
-    "volume": 0.13648970747562297
+    "volume": 0.1426578073089701
   },
   {
     "edge_id": "edge_O_FRA_FRA_CRFC_ITA_ITA",
@@ -6330,7 +6293,7 @@
     "active_years": [
       2024
     ],
-    "volume": 0.14511375947995667
+    "volume": 0.12374307862679955
   },
   {
     "edge_id": "edge_DF_FRA_FRA_PGS_FRA_FRA",
@@ -6341,7 +6304,7 @@
       2023,
       2024
     ],
-    "volume": 0.23367280606717228
+    "volume": 0.22673311184939093
   },
   {
     "edge_id": "edge_CL_FRA_FRA_PGS_FRA_FRA",
@@ -6352,7 +6315,7 @@
       2023,
       2024
     ],
-    "volume": 0.1638353196099675
+    "volume": 0.13627906976744186
   },
   {
     "edge_id": "edge_O_FRA_FRA_PGS_FRA_FRA",
@@ -6361,7 +6324,7 @@
     "active_years": [
       2024
     ],
-    "volume": 0.3694474539544962
+    "volume": 0.301218161683278
   },
   {
     "edge_id": "edge_PGS_FRA_FRA_V_FRA_FRA",
@@ -6372,7 +6335,7 @@
       2023,
       2024
     ],
-    "volume": 0.3694474539544962
+    "volume": 0.301218161683278
   },
   {
     "edge_id": "edge_SECCL_JPN_JPN_PHML_JPN_JPN",
@@ -6401,7 +6364,7 @@
       2023,
       2024
     ],
-    "volume": 0.0533477789815818
+    "volume": 0.08910299003322258
   },
   {
     "edge_id": "edge_ZKSHHTCL_CHN_CHN_PHML_JPN_JPN",
@@ -6430,7 +6393,7 @@
       2023,
       2024
     ],
-    "volume": 0.030769230769230767
+    "volume": 0.024850498338870434
   },
   {
     "edge_id": "edge_NY_CHN_CHN_PHML_JPN_JPN",
@@ -6459,7 +6422,7 @@
       2023,
       2024
     ],
-    "volume": 0.02049837486457205
+    "volume": 0.02691029900332226
   },
   {
     "edge_id": "edge_PHML_JPN_JPN_PHML_GBR_JPN",
@@ -6488,7 +6451,7 @@
       2023,
       2024
     ],
-    "volume": 0.06463705308775732
+    "volume": 0.06626799557032116
   },
   {
     "edge_id": "edge_PHML_JPN_JPN_PHML_ITA_JPN",
@@ -6517,7 +6480,7 @@
       2023,
       2024
     ],
-    "volume": 0.023206933911159265
+    "volume": 0.023410852713178294
   },
   {
     "edge_id": "edge_PHML_JPN_JPN_SS_FRA_FRA",
@@ -6532,7 +6495,7 @@
       2023,
       2024
     ],
-    "volume": 0.0495557963163597
+    "volume": 0.0462015503875969
   },
   {
     "edge_id": "edge_PHML_JPN_JPN_SS_GBR_FRA",
@@ -6547,7 +6510,7 @@
       2023,
       2024
     ],
-    "volume": 0.08318526543878657
+    "volume": 0.07102990033222592
   },
   {
     "edge_id": "edge_PHML_JPN_JPN_TOSC_POL_JPN",
@@ -6574,7 +6537,7 @@
       2023,
       2024
     ],
-    "volume": 0.022231852654387867
+    "volume": 0.025780730897009968
   },
   {
     "edge_id": "edge_PHML_JPN_JPN_SECCL_DEU_JPN",
@@ -6603,7 +6566,7 @@
       2023,
       2024
     ],
-    "volume": 0.043466955579631636
+    "volume": 0.04425249169435216
   },
   {
     "edge_id": "edge_PHML_GBR_JPN_AL_DEU_JPN",
@@ -6632,7 +6595,7 @@
       2023,
       2024
     ],
-    "volume": 0.25939328277356444
+    "volume": 0.2961461794019934
   },
   {
     "edge_id": "edge_PHML_GBR_JPN_AL_FRA_JPN",
@@ -6655,7 +6618,7 @@
       2023,
       2024
     ],
-    "volume": 0.1658938244853738
+    "volume": 0.1699003322259136
   },
   {
     "edge_id": "edge_PHML_GBR_JPN_AL_ESP_JPN",
@@ -6684,7 +6647,7 @@
       2023,
       2024
     ],
-    "volume": 0.10091007583965331
+    "volume": 0.10210409745293467
   },
   {
     "edge_id": "edge_PHML_ITA_JPN_AL_DEU_JPN",
@@ -6713,7 +6676,7 @@
       2023,
       2024
     ],
-    "volume": 0.11263271939328277
+    "volume": 0.10059800664451828
   },
   {
     "edge_id": "edge_PHML_ITA_JPN_AL_FRA_JPN",
@@ -6736,7 +6699,7 @@
       2023,
       2024
     ],
-    "volume": 0.1371397616468039
+    "volume": 0.13831672203765227
   },
   {
     "edge_id": "edge_PHML_ITA_JPN_AL_ESP_JPN",
@@ -6765,7 +6728,7 @@
       2023,
       2024
     ],
-    "volume": 0.038938244853737806
+    "volume": 0.03632336655592469
   },
   {
     "edge_id": "edge_VML_AUS_AUS_RA_NOR_NOR",
@@ -6774,7 +6737,7 @@
     "active_years": [
       2024
     ],
-    "volume": 0.005178764897074756
+    "volume": 0.0049833887043189366
   },
   {
     "edge_id": "edge_RA_NOR_NOR_SA_DEU_DEU",
@@ -6783,7 +6746,7 @@
     "active_years": [
       2024
     ],
-    "volume": 0.09189599133261105
+    "volume": 0.06414174972314507
   },
   {
     "edge_id": "edge_RA_NOR_NOR_VV_DEU_DEU",
@@ -6792,7 +6755,7 @@
     "active_years": [
       2024
     ],
-    "volume": 0.0865438786565547
+    "volume": 0.0915171650055371
   },
   {
     "edge_id": "edge_RBGBG_DEU_DEU_RBGBG_GBR_DEU",
@@ -6821,36 +6784,7 @@
       2023,
       2024
     ],
-    "volume": 0.2694907908992416
-  },
-  {
-    "edge_id": "edge_AZLA_AUS_AUS_SECCL_JPN_JPN",
-    "source": "AZLA_AUS_AUS",
-    "target": "SECCL_JPN_JPN",
-    "active_years": [
-      2004,
-      2005,
-      2006,
-      2007,
-      2008,
-      2009,
-      2010,
-      2011,
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024
-    ],
-    "volume": 0.0025352112676056337
+    "volume": 0.30551495016611296
   },
   {
     "edge_id": "edge_SECCL_JPN_JPN_TMC_POL_JPN",
@@ -6879,7 +6813,7 @@
       2023,
       2024
     ],
-    "volume": 0.0294907908992416
+    "volume": 0.02894795127353267
   },
   {
     "edge_id": "edge_SECCL_JPN_JPN_SMC_HUN_JPN",
@@ -6908,7 +6842,7 @@
       2023,
       2024
     ],
-    "volume": 0.0285590465872156
+    "volume": 0.026710963455149502
   },
   {
     "edge_id": "edge_SECCL_JPN_JPN_SECCL_DEU_JPN",
@@ -6937,7 +6871,7 @@
       2023,
       2024
     ],
-    "volume": 0.04556879739978332
+    "volume": 0.045847176079734216
   },
   {
     "edge_id": "edge_SOL_FRA_BEL_SOL_BEL_BEL",
@@ -6948,7 +6882,7 @@
       2023,
       2024
     ],
-    "volume": 0.1741711809317443
+    "volume": 0.1611295681063123
   },
   {
     "edge_id": "edge_C_FRA_FRA_SOL_FRA_BEL",
@@ -6959,7 +6893,7 @@
       2023,
       2024
     ],
-    "volume": 0.1047020585048754
+    "volume": 0.11370985603543744
   },
   {
     "edge_id": "edge_LCML_GBR_GBR_SRIA_SWE_SWE",
@@ -6976,7 +6910,7 @@
       2023,
       2024
     ],
-    "volume": 0.07176598049837486
+    "volume": 0.08281284606866002
   },
   {
     "edge_id": "edge_T_ESP_ESP_SRIA_SWE_SWE",
@@ -6993,7 +6927,7 @@
       2023,
       2024
     ],
-    "volume": 0.10931744312026002
+    "volume": 0.09663344407530454
   },
   {
     "edge_id": "edge_SRIA_SWE_SWE_MLDD_SVN_SVN",
@@ -7010,7 +6944,7 @@
       2023,
       2024
     ],
-    "volume": 0.06520043336944745
+    "volume": 0.06325581395348837
   },
   {
     "edge_id": "edge_SRIA_SWE_SWE_KMTG_DEU_DEU",
@@ -7027,7 +6961,7 @@
       2023,
       2024
     ],
-    "volume": 0.05206933911159264
+    "volume": 0.05419712070874861
   },
   {
     "edge_id": "edge_SRIA_SWE_SWE_ZFA_CZE_DEU",
@@ -7044,7 +6978,7 @@
       2023,
       2024
     ],
-    "volume": 0.03124593716143012
+    "volume": 0.03375415282392027
   },
   {
     "edge_id": "edge_JBNM_CHN_CHN_SMMCL_JPN_JPN",
@@ -7067,7 +7001,7 @@
       2023,
       2024
     ],
-    "volume": 0.028515709642470206
+    "volume": 0.02812846068660022
   },
   {
     "edge_id": "edge_NDCL_JPN_JPN_SMMCL_JPN_JPN",
@@ -7096,7 +7030,7 @@
       2023,
       2024
     ],
-    "volume": 0.02435536294691224
+    "volume": 0.021794019933554818
   },
   {
     "edge_id": "edge_SMMCL_JPN_JPN_TMC_POL_JPN",
@@ -7125,7 +7059,7 @@
       2023,
       2024
     ],
-    "volume": 0.029534127843987002
+    "volume": 0.032713178294573646
   },
   {
     "edge_id": "edge_SMMCL_JPN_JPN_PHC_CZE_JPN",
@@ -7154,7 +7088,7 @@
       2023,
       2024
     ],
-    "volume": 0.03817984832069339
+    "volume": 0.037142857142857144
   },
   {
     "edge_id": "edge_SMMCL_JPN_JPN_PHC_DEU_JPN",
@@ -7183,7 +7117,7 @@
       2023,
       2024
     ],
-    "volume": 0.051744312026002166
+    "volume": 0.04916943521594684
   },
   {
     "edge_id": "edge_SMMCL_JPN_JPN_PHC_GBR_JPN",
@@ -7205,7 +7139,7 @@
       2023,
       2024
     ],
-    "volume": 0.07289274106175515
+    "volume": 0.07160575858250276
   },
   {
     "edge_id": "edge_SMMCL_JPN_JPN_DSCLDE_DEU_JPN",
@@ -7223,7 +7157,7 @@
       2023,
       2024
     ],
-    "volume": 0.045330444203683644
+    "volume": 0.049324473975636766
   },
   {
     "edge_id": "edge_SMMCL_JPN_JPN_MMCL_POL_JPN",
@@ -7239,7 +7173,7 @@
       2023,
       2024
     ],
-    "volume": 0.03161430119176598
+    "volume": 0.03441860465116279
   },
   {
     "edge_id": "edge_SMMCL_JPN_JPN_MURMCL_FIN_JPN",
@@ -7260,7 +7194,7 @@
       2023,
       2024
     ],
-    "volume": 0.01037919826652221
+    "volume": 0.009856035437430787
   },
   {
     "edge_id": "edge_SMMCL_JPN_JPN_LICL_POL_KOR",
@@ -7289,7 +7223,7 @@
       2023,
       2024
     ],
-    "volume": 0.029707475622968584
+    "volume": 0.03275747508305648
   },
   {
     "edge_id": "edge_LI_GBR_GBR_SL_GBR_GBR",
@@ -7300,7 +7234,7 @@
       2023,
       2024
     ],
-    "volume": 0.5761430119176598
+    "volume": 0.5687264673311184
   },
   {
     "edge_id": "edge_NFUM_GBR_GBR_SL_GBR_GBR",
@@ -7314,7 +7248,7 @@
       2023,
       2024
     ],
-    "volume": 0.681148429035753
+    "volume": 0.7685049833887043
   },
   {
     "edge_id": "edge_SECCL_JPN_JPN_TCTJMC_JPN_JPN",
@@ -7343,7 +7277,7 @@
       2023,
       2024
     ],
-    "volume": 0.09778981581798483
+    "volume": 0.11576965669988927
   },
   {
     "edge_id": "edge_NCICL_JPN_JPN_TCTJMC_JPN_JPN",
@@ -7372,7 +7306,7 @@
       2023,
       2024
     ],
-    "volume": 0.13217768147345613
+    "volume": 0.10852713178294573
   },
   {
     "edge_id": "edge_XTCL_CHN_CHN_TCTJMC_JPN_JPN",
@@ -7401,7 +7335,7 @@
       2023,
       2024
     ],
-    "volume": 0.01848320693391116
+    "volume": 0.01415282392026578
   },
   {
     "edge_id": "edge_TGRENMCL_CHN_CHN_TCTJMC_JPN_JPN",
@@ -7415,7 +7349,7 @@
       2023,
       2024
     ],
-    "volume": 0.048212351029252434
+    "volume": 0.02584717607973422
   },
   {
     "edge_id": "edge_GTRREHTMCL_CHN_CHN_TCTJMC_JPN_JPN",
@@ -7435,7 +7369,7 @@
       2023,
       2024
     ],
-    "volume": 0.02065005417118093
+    "volume": 0.017585825027685492
   },
   {
     "edge_id": "edge_TCTJMC_JPN_JPN_TMC_POL_JPN",
@@ -7464,7 +7398,7 @@
       2023,
       2024
     ],
-    "volume": 0.029534127843987002
+    "volume": 0.032713178294573646
   },
   {
     "edge_id": "edge_TCTJMC_JPN_JPN_TES_DEU_USA",
@@ -7475,7 +7409,7 @@
       2023,
       2024
     ],
-    "volume": 0.027258938244853738
+    "volume": 0.027286821705426356
   },
   {
     "edge_id": "edge_TCTJMC_JPN_JPN_BMWAB_DEU_DEU",
@@ -7495,7 +7429,7 @@
       2023,
       2024
     ],
-    "volume": 0.034344528710725894
+    "volume": 0.03541528239202658
   },
   {
     "edge_id": "edge_TCTJMC_JPN_JPN_NMCL_GBR_JPN",
@@ -7518,7 +7452,7 @@
       2023,
       2024
     ],
-    "volume": 0.02598049837486457
+    "volume": 0.030941306755260245
   },
   {
     "edge_id": "edge_TCTJMC_JPN_JPN_NO_FIN_FIN",
@@ -7547,7 +7481,7 @@
       2023,
       2024
     ],
-    "volume": 0.010465872156013
+    "volume": 0.010033222591362127
   },
   {
     "edge_id": "edge_TCTJMC_JPN_JPN_IC_GBR_JPN",
@@ -7576,7 +7510,7 @@
       2023,
       2024
     ],
-    "volume": 0.0676056338028169
+    "volume": 0.07198228128460686
   },
   {
     "edge_id": "edge_TCTJMC_JPN_JPN_SGRE_FRA_DNK",
@@ -7605,7 +7539,7 @@
       2023,
       2024
     ],
-    "volume": 0.05085590465872156
+    "volume": 0.050276854928017714
   },
   {
     "edge_id": "edge_TCTJMC_JPN_JPN_SGRE_DNK_DNK",
@@ -7634,7 +7568,7 @@
       2023,
       2024
     ],
-    "volume": 0.021950162513542797
+    "volume": 0.02600221483942414
   },
   {
     "edge_id": "edge_TCTJMC_JPN_JPN_SGRE_DEU_DNK",
@@ -7663,7 +7597,7 @@
       2023,
       2024
     ],
-    "volume": 0.02630552546045504
+    "volume": 0.031805094130675525
   },
   {
     "edge_id": "edge_TCTJMC_JPN_JPN_RCL_GBR_JPN",
@@ -7692,7 +7626,7 @@
       2023,
       2024
     ],
-    "volume": 0.04504875406283857
+    "volume": 0.07233665559246953
   },
   {
     "edge_id": "edge_TCTJMC_JPN_JPN_RCL_FRA_JPN",
@@ -7721,7 +7655,7 @@
       2023,
       2024
     ],
-    "volume": 0.035752979414951244
+    "volume": 0.03656699889258029
   },
   {
     "edge_id": "edge_TCTJMC_JPN_JPN_DC_CZE_JPN",
@@ -7750,7 +7684,7 @@
       2023,
       2024
     ],
-    "volume": 0.034734561213434455
+    "volume": 0.03887043189368771
   },
   {
     "edge_id": "edge_TCTJMC_JPN_JPN_DC_HUN_JPN",
@@ -7779,7 +7713,7 @@
       2023,
       2024
     ],
-    "volume": 0.028949079089924157
+    "volume": 0.029501661129568108
   },
   {
     "edge_id": "edge_TCTJMC_JPN_JPN_DC_ITA_JPN",
@@ -7804,7 +7738,7 @@
       2023,
       2024
     ],
-    "volume": 0.01759479956663055
+    "volume": 0.018338870431893688
   },
   {
     "edge_id": "edge_TCTJMC_JPN_JPN_DC_ESP_JPN",
@@ -7832,7 +7766,7 @@
       2023,
       2024
     ],
-    "volume": 0.017919826652221017
+    "volume": 0.017054263565891473
   },
   {
     "edge_id": "edge_TMC_POL_JPN_TMC_GBR_JPN",
@@ -7861,7 +7795,7 @@
       2023,
       2024
     ],
-    "volume": 0.1503791982665222
+    "volume": 0.1426356589147287
   },
   {
     "edge_id": "edge_TMC_POL_JPN_TMC_FRA_JPN",
@@ -7890,7 +7824,7 @@
       2023,
       2024
     ],
-    "volume": 0.290032502708559
+    "volume": 0.2958361018826135
   },
   {
     "edge_id": "edge_TMC_POL_JPN_TMC_CZE_JPN",
@@ -7918,7 +7852,7 @@
       2023,
       2024
     ],
-    "volume": 0.13742145178764897
+    "volume": 0.11754152823920266
   },
   {
     "edge_id": "edge_CM_CAN_CAN_VV_DEU_DEU",
@@ -7930,7 +7864,7 @@
       2023,
       2024
     ],
-    "volume": 0.03497291440953413
+    "volume": 0.032070874861572535
   },
   {
     "edge_id": "edge_VV_DEU_DEU_BENM_GBR_GBR",
@@ -7959,7 +7893,7 @@
       2023,
       2024
     ],
-    "volume": 0.44080173347778984
+    "volume": 0.4050719822812846
   },
   {
     "edge_id": "edge_VV_DEU_DEU_FE_DEU_DEU",
@@ -7979,7 +7913,7 @@
       2023,
       2024
     ],
-    "volume": 0.4347128927410618
+    "volume": 0.4411960132890365
   },
   {
     "edge_id": "edge_VV_DEU_DEU_FE_TUR_DEU",
@@ -7990,7 +7924,7 @@
       2023,
       2024
     ],
-    "volume": 0.060433369447453957
+    "volume": 0.05627906976744186
   },
   {
     "edge_id": "edge_VV_DEU_DEU_FE_GBR_DEU",
@@ -7999,7 +7933,7 @@
     "active_years": [
       2024
     ],
-    "volume": 0.3762513542795233
+    "volume": 0.3757918050941306
   },
   {
     "edge_id": "edge_VV_DEU_DEU_W_GBR_GBR",
@@ -8014,7 +7948,7 @@
       2023,
       2024
     ],
-    "volume": 0.2608017334777898
+    "volume": 0.27464008859357697
   },
   {
     "edge_id": "edge_CMREG_CHN_CHN_YZMMCL_CHN_CHN",
@@ -8036,7 +7970,7 @@
       2023,
       2024
     ],
-    "volume": 0.06548212351029252
+    "volume": 0.05306755260243633
   },
   {
     "edge_id": "edge_YZMMCL_CHN_CHN_SEA_DEU_DEU",
@@ -8065,7 +7999,7 @@
       2023,
       2024
     ],
-    "volume": 0.031527627302275193
+    "volume": 0.032270210409745294
   },
   {
     "edge_id": "edge_YZMMCL_CHN_CHN_SEA_ESP_DEU",
@@ -8094,7 +8028,7 @@
       2023,
       2024
     ],
-    "volume": 0.01323943661971831
+    "volume": 0.012890365448504984
   },
   {
     "edge_id": "edge_YZMMCL_CHN_CHN_SEA_DNK_DEU",
@@ -8123,7 +8057,7 @@
       2023,
       2024
     ],
-    "volume": 0.018981581798483207
+    "volume": 0.02039867109634552
   },
   {
     "edge_id": "edge_YZMMCL_CHN_CHN_VG_DEU_DEU",
@@ -8152,7 +8086,7 @@
       2023,
       2024
     ],
-    "volume": 0.029360780065005417
+    "volume": 0.028881506090808414
   },
   {
     "edge_id": "edge_YZMMCL_CHN_CHN_BFSCK_DEU_DEU",
@@ -8177,7 +8111,7 @@
       2023,
       2024
     ],
-    "volume": 0.04095341278439869
+    "volume": 0.04108527131782946
   },
   {
     "edge_id": "edge_YZMMCL_CHN_CHN_BFSCK_CZE_DEU",
@@ -8206,7 +8140,7 @@
       2023,
       2024
     ],
-    "volume": 0.03211267605633803
+    "volume": 0.03193798449612403
   },
   {
     "edge_id": "edge_YZMMCL_CHN_CHN_BFSCK_SVK_DEU",
@@ -8223,7 +8157,7 @@
       2023,
       2024
     ],
-    "volume": 0.03224268689057422
+    "volume": 0.027641196013289036
   },
   {
     "edge_id": "edge_YZMMCL_CHN_CHN_BFSCK_HUN_DEU",
@@ -8245,7 +8179,7 @@
       2023,
       2024
     ],
-    "volume": 0.02647887323943662
+    "volume": 0.024983388704318935
   },
   {
     "edge_id": "edge_YZMMCL_CHN_CHN_BFSCK_ESP_DEU",
@@ -8274,7 +8208,7 @@
       2023,
       2024
     ],
-    "volume": 0.01607800650054171
+    "volume": 0.014750830564784054
   },
   {
     "edge_id": "edge_YZMMCL_CHN_CHN_BFSCK_GBR_DEU",
@@ -8303,7 +8237,7 @@
       2023,
       2024
     ],
-    "volume": 0.0780715059588299
+    "volume": 0.07258028792912515
   },
   {
     "edge_id": "edge_YZMMCL_CHN_CHN_VWSAS_DNK_DNK",
@@ -8326,7 +8260,7 @@
       2023,
       2024
     ],
-    "volume": 0.019739978331527627
+    "volume": 0.021373200442967887
   },
   {
     "edge_id": "edge_YZMMCL_CHN_CHN_VWSAS_DEU_DNK",
@@ -8348,7 +8282,7 @@
       2023,
       2024
     ],
-    "volume": 0.025958829902491876
+    "volume": 0.026866002214839427
   },
   {
     "edge_id": "edge_YZMMCL_CHN_CHN_VWSAS_POL_DNK",
@@ -8368,7 +8302,7 @@
       2023,
       2024
     ],
-    "volume": 0.023986998916576383
+    "volume": 0.023676633444075303
   },
   {
     "edge_id": "edge_YZMMCL_CHN_CHN_TMC_POL_JPN",
@@ -8397,7 +8331,7 @@
       2023,
       2024
     ],
-    "volume": 0.029794149512459372
+    "volume": 0.029169435215946844
   },
   {
     "edge_id": "edge_YZMMCL_CHN_CHN_NMCL_GBR_JPN",
@@ -8420,7 +8354,7 @@
       2023,
       2024
     ],
-    "volume": 0.02751895991332611
+    "volume": 0.02662236987818383
   },
   {
     "edge_id": "edge_YZMMCL_CHN_CHN_FE_DEU_DEU",
@@ -8440,7 +8374,7 @@
       2023,
       2024
     ],
-    "volume": 0.050920910075839654
+    "volume": 0.05508305647840532
   },
   {
     "edge_id": "edge_YZMMCL_CHN_CHN_FE_TUR_DEU",
@@ -8451,7 +8385,7 @@
       2023,
       2024
     ],
-    "volume": 0.018916576381365114
+    "volume": 0.017408637873754153
   },
   {
     "edge_id": "edge_YZMMCL_CHN_CHN_FE_GBR_DEU",
@@ -8460,7 +8394,7 @@
     "active_years": [
       2024
     ],
-    "volume": 0.048602383531960995
+    "volume": 0.050121816168327796
   },
   {
     "edge_id": "edge_YZMMCL_CHN_CHN_HYUM_CZE_KOR",
@@ -8473,7 +8407,7 @@
       2023,
       2024
     ],
-    "volume": 0.032047670639219934
+    "volume": 0.03036544850498339
   },
   {
     "edge_id": "edge_YZMMCL_CHN_CHN_NC_FRA_JPN",
@@ -8489,7 +8423,7 @@
       2023,
       2024
     ],
-    "volume": 0.025113759479956664
+    "volume": 0.024894795127353268
   },
   {
     "edge_id": "edge_YZMMCL_CHN_CHN_SGRE_FRA_DNK",
@@ -8518,7 +8452,7 @@
       2023,
       2024
     ],
-    "volume": 0.046240520043336945
+    "volume": 0.04786267995570321
   },
   {
     "edge_id": "edge_YZMMCL_CHN_CHN_SGRE_DNK_DNK",
@@ -8547,7 +8481,7 @@
       2023,
       2024
     ],
-    "volume": 0.01982665222101842
+    "volume": 0.02053156146179402
   },
   {
     "edge_id": "edge_YZMMCL_CHN_CHN_SGRE_DEU_DNK",
@@ -8576,7 +8510,7 @@
       2023,
       2024
     ],
-    "volume": 0.026045503791982665
+    "volume": 0.02679955703211517
   },
   {
     "edge_id": "edge_YZMMCL_CHN_CHN_VC_SWE_SWE",
@@ -8590,7 +8524,7 @@
       2023,
       2024
     ],
-    "volume": 0.014647887323943662
+    "volume": 0.02186046511627907
   },
   {
     "edge_id": "edge_YZMMCL_CHN_CHN_LLEVC_GBR_GBR",
@@ -8606,7 +8540,7 @@
       2023,
       2024
     ],
-    "volume": 0.0780715059588299
+    "volume": 0.07258028792912515
   },
   {
     "edge_id": "edge_YZMMCL_CHN_CHN_VC_BEL_SWE",
@@ -8619,7 +8553,7 @@
       2023,
       2024
     ],
-    "volume": 0.06587215601300107
+    "volume": 0.058892580287929125
   },
   {
     "edge_id": "edge_ZFA_CZE_DEU_ZFA_DEU_DEU",
@@ -8648,7 +8582,7 @@
       2023,
       2024
     ],
-    "volume": 0.1885590465872156
+    "volume": 0.17054263565891473
   },
   {
     "edge_id": "edge_ZFA_CZE_DEU_ZFA_SVK_DEU",
@@ -8675,7 +8609,7 @@
       2023,
       2024
     ],
-    "volume": 0.12084507042253521
+    "volume": 0.1170985603543743
   },
   {
     "edge_id": "edge_ZFA_CZE_DEU_ZFA_SRB_DEU",
@@ -8690,7 +8624,7 @@
       2023,
       2024
     ],
-    "volume": 0.07404117009750813
+    "volume": 0.07313399778516058
   },
   {
     "edge_id": "edge_HGDM_CHN_CHN_ZIM_CHN_CHN",
@@ -8719,7 +8653,7 @@
       2023,
       2024
     ],
-    "volume": 0.22318526543878656
+    "volume": 0.22148394241417496
   },
   {
     "edge_id": "edge_ZIM_CHN_CHN_LS_FRA_JPN",
@@ -8748,7 +8682,7 @@
       2023,
       2024
     ],
-    "volume": 0.02457204767063922
+    "volume": 0.025802879291251385
   },
   {
     "edge_id": "edge_ZIM_CHN_CHN_LS_CZE_JPN",
@@ -8777,7 +8711,7 @@
       2023,
       2024
     ],
-    "volume": 0.032502708559046585
+    "volume": 0.032779623477297896
   },
   {
     "edge_id": "edge_ZIM_CHN_CHN_STE_NLD_NLD",
@@ -8789,7 +8723,7 @@
       2023,
       2024
     ],
-    "volume": 0.037464788732394366
+    "volume": 0.046423034330011076
   },
   {
     "edge_id": "edge_ZIM_CHN_CHN_VG_DEU_DEU",
@@ -8818,7 +8752,7 @@
       2023,
       2024
     ],
-    "volume": 0.027193932827735648
+    "volume": 0.02644518272425249
   },
   {
     "edge_id": "edge_ZIM_CHN_CHN_AOA_DEU_DEU",
@@ -8831,7 +8765,7 @@
       2023,
       2024
     ],
-    "volume": 0.03447453954496208
+    "volume": 0.03335548172757475
   },
   {
     "edge_id": "edge_ZIM_CHN_CHN_BI_PRT_USA",
@@ -8860,7 +8794,7 @@
       2023,
       2024
     ],
-    "volume": 0.016316359696641386
+    "volume": 0.020310077519379844
   },
   {
     "edge_id": "edge_CNREGHTCL_CHN_CHN_ZZMICL_CHN_CHN",
@@ -8883,7 +8817,7 @@
       2023,
       2024
     ],
-    "volume": 0.06756229685807151
+    "volume": 0.06983388704318937
   },
   {
     "edge_id": "edge_HGDM_CHN_CHN_ZZMICL_CHN_CHN",
@@ -8906,7 +8840,7 @@
       2023,
       2024
     ],
-    "volume": 0.22318526543878656
+    "volume": 0.22148394241417496
   },
   {
     "edge_id": "edge_ZZMICL_CHN_CHN_MG_ITA_CHN",
@@ -8929,7 +8863,7 @@
       2023,
       2024
     ],
-    "volume": 0.022881906825568798
+    "volume": 0.021373200442967887
   },
   {
     "edge_id": "edge_ZZMICL_CHN_CHN_WEAG_AUT_CHN",
@@ -8952,7 +8886,7 @@
       2023,
       2024
     ],
-    "volume": 0.03133261105092091
+    "volume": 0.029900332225913623
   },
   {
     "edge_id": "edge_ZZMICL_CHN_CHN_WEAG_DEU_CHN",
@@ -8975,7 +8909,7 @@
       2023,
       2024
     ],
-    "volume": 0.056966413867822314
+    "volume": 0.05297895902547066
   },
   {
     "edge_id": "edge_ZZMICL_CHN_CHN_WEAG_GBR_CHN",
@@ -8993,7 +8927,7 @@
       2023,
       2024
     ],
-    "volume": 0.054604550379198265
+    "volume": 0.05167220376522702
   },
   {
     "edge_id": "edge_ZZMICL_CHN_CHN_NC_FRA_JPN",
@@ -9009,7 +8943,7 @@
       2023,
       2024
     ],
-    "volume": 0.02457204767063922
+    "volume": 0.025802879291251385
   },
   {
     "edge_id": "edge_GKRENMCL_CHN_CHN_ZKSHHTCL_CHN_CHN",
@@ -9038,7 +8972,7 @@
       2023,
       2024
     ],
-    "volume": 0.08143011917659805
+    "volume": 0.08919158361018827
   },
   {
     "edge_id": "edge_JSREG_CHN_CHN_ZKSHHTCL_CHN_CHN",
@@ -9056,7 +8990,7 @@
       2023,
       2024
     ],
-    "volume": 0.08143011917659805
+    "volume": 0.08919158361018827
   },
   {
     "edge_id": "edge_GQREGCL_CHN_CHN_ZKSHHTCL_CHN_CHN",
@@ -9085,7 +9019,7 @@
       2023,
       2024
     ],
-    "volume": 0.08143011917659805
+    "volume": 0.08919158361018827
   },
   {
     "edge_id": "edge_ZSHJM_CHN_CHN_ZKSHHTCL_CHN_CHN",
@@ -9114,7 +9048,7 @@
       2023,
       2024
     ],
-    "volume": 0.048472372697724815
+    "volume": 0.05971207087486157
   },
   {
     "edge_id": "edge_NHMS_CHN_CHN_ZKSHHTCL_CHN_CHN",
@@ -9131,7 +9065,7 @@
       2023,
       2024
     ],
-    "volume": 0.03679306608884074
+    "volume": 0.03685492801771872
   },
   {
     "edge_id": "edge_CMNFM_CHN_CHN_ZKSHHTCL_CHN_CHN",
@@ -9160,7 +9094,7 @@
       2023,
       2024
     ],
-    "volume": 0.14842903575297942
+    "volume": 0.17275747508305647
   },
   {
     "edge_id": "edge_CSREG_CHN_CHN_ZKSHHTCL_CHN_CHN",
@@ -9178,7 +9112,7 @@
       2023,
       2024
     ],
-    "volume": 0.08143011917659805
+    "volume": 0.08919158361018827
   },
   {
     "edge_id": "edge_KMTG_DEU_DEU_ZKSHHTCL_CHN_CHN",
@@ -9207,7 +9141,7 @@
       2023,
       2024
     ],
-    "volume": 0.040411700975081254
+    "volume": 0.04591362126245847
   },
   {
     "edge_id": "edge_TII_USA_USA_ZKSHHTCL_CHN_CHN",
@@ -9236,7 +9170,7 @@
       2023,
       2024
     ],
-    "volume": 0.009035752979414951
+    "volume": 0.009700996677740863
   },
   {
     "edge_id": "edge_RNM_CHN_CHN_ZKSHHTCL_CHN_CHN",
@@ -9265,7 +9199,7 @@
       2023,
       2024
     ],
-    "volume": 0.07677139761646803
+    "volume": 0.06888150609080843
   },
   {
     "edge_id": "edge_ZKSHHTCL_CHN_CHN_KMTG_DEU_DEU",
@@ -9294,7 +9228,7 @@
       2023,
       2024
     ],
-    "volume": 0.040411700975081254
+    "volume": 0.04591362126245847
   },
   {
     "edge_id": "edge_ZKSHHTCL_CHN_CHN_VG_DEU_DEU",
@@ -9323,6 +9257,6 @@
       2023,
       2024
     ],
-    "volume": 0.028905742145178763
+    "volume": 0.029058693244739756
   }
 ]
