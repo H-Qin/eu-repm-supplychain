@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react'
 import { create } from 'zustand'
 import SupplyMap from './components/SupplyMap'
 import YearBar from './components/YearBar'
+import IndicatorsPanel from './components/IndicatorsPanel'
+import GeopoliticalPanel from './components/GeopoliticalPanel'
 import './styles.css'
 
 // Global store: selected year and selected node
@@ -31,6 +33,10 @@ export default function App() {
   const { year, setYear, selectedNode, selectedEdge, setSelectedNode, setSelectedEdge, clearSelection, selectedProcesses, toggleProcess, } = useStore()
   const [nodes, setNodes] = useState([])
   const [edges, setEdges] = useState([])
+  const [scenarioConfig, setScenarioConfig] = useState(
+    { 2025: null, 2026: null, 2027: null, 2028: null, 2029: null, 2030: null }
+  )
+  const [scenarioMagnitude, setScenarioMagnitude] = useState(0.05)
 
   useEffect(() => {
     async function load() {
@@ -54,7 +60,6 @@ export default function App() {
           />
         </div>
 
-        {/* Single centered column */}
         <div className="content">
           <SupplyMap
             year={year}
@@ -68,6 +73,15 @@ export default function App() {
             onToggleProcess={toggleProcess}
             onCloseSidebar={clearSelection}
           />
+          <div className="right-column">
+            <IndicatorsPanel scenarioConfig={scenarioConfig} scenarioMagnitude={scenarioMagnitude} />
+            <GeopoliticalPanel
+              scenarioConfig={scenarioConfig}
+              onConfigChange={(year, id) => setScenarioConfig(prev => ({ ...prev, [year]: id }))}
+              scenarioMagnitude={scenarioMagnitude}
+              onMagnitudeChange={setScenarioMagnitude}
+            />
+          </div>
         </div>
       </div>
     </div>

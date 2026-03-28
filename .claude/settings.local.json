@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /c/Users/Arthor/eu-repm-supplychain -type f -not -path */node_modules/* -not -path */.git/* -not -path */dist/*)",
+      "Bash(grep -E \"^recharts$|^d3$|^victory$|^nivo$|^chart\")",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(wc -l /c/Users/Arthor/eu-repm-supplychain/public/*.json)"
+    ]
+  }
+}

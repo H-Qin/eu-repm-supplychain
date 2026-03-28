@@ -1,28 +1,42 @@
 /* Base layout */
 html, body, #root { height: 100%; margin: 0; }
-.app { min-height: 100%; background: #ffffff; }
+.app {
+  min-height: 100%;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-/* Center the page and constrain width */
-.page { max-width: 100%; margin: 0 auto; padding: 0 16px; }
+/* Centered, width-capped page column */
+.page {
+  width: 100%;
+  max-width: 1600px;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
 
 /* Header */
 .topbar {
   display: flex; justify-content: space-between; align-items: center;
   padding: 16px; border-bottom: 1px solid #e5e7eb; background: #fff;
-  max-width: 95%;
-  margin: 0 auto;
 }
 .topbar h1 { margin: 0; font-size: 28px; font-weight: 700; color: #1f2937; }
 
-/* Single centered column */
-.content { display: block; }
+/* Side-by-side: map left, indicators panel right */
+.content {
+  display: flex;
+  align-items: stretch;
+  gap: 12px;
+  padding: 0 12px 0 0;
+}
 
-/* Map wrapper: centered "card" with tidy max-width */
+/* Map wrapper */
 .mapwrap {
   position: relative;
-  max-width: 95%;      /* use most of the screen width */
-  width: 100%;
-  margin: 18px auto;   /* centers the map */
+  flex: 1 1 0;
+  min-width: 0;
+  margin: 6px 0;
   border: 1px solid #e5e7eb;
   border-radius: 10px;
   overflow: hidden;
@@ -130,7 +144,264 @@ html, body, #root { height: 100%; margin: 0; }
   display: block;
 }
 
+/* Right column: contains Indicators panel + Geopolitical panel stacked */
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 320px;
+  min-width: 320px;
+  margin: 6px 0;
+  overflow: hidden;
+}
+
+/* Indicators panel */
+.indicators-panel {
+  flex: 0 0 auto;
+  overflow-y: visible;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  box-sizing: border-box;
+}
+.indicators-panel__header h2 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #1f2937;
+}
+.indicators-panel__dims {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+.ind-dim-tag {
+  font-size: 11px;
+  font-family: inherit;
+  font-weight: 600;
+  padding: 6px 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: #f9fafb;
+  color: #374151;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.ind-dim-tag:hover { background: #e0f2fe; border-color: #93c5fd; }
+.ind-dim-tag--active { background: #1e4f72; color: #fff; border-color: #1e4f72; }
+.indicators-panel__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.ind-tag {
+  font-size: 11px;
+  font-family: inherit;
+  padding: 3px 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 999px;
+  background: #f9fafb;
+  color: #374151;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.ind-tag:hover { background: #e0f2fe; border-color: #93c5fd; }
+.ind-tag--active { background: #3288bd; color: #fff; border-color: #3288bd; }
+.ind-chart-title {
+  font-size: 11px;
+  color: #6b7280;
+  margin: 0 0 4px 0;
+  text-align: center;
+  line-height: 1.4;
+}
+.ind-tooltip {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+.ind-tooltip__year { margin: 0; color: #6b7280; }
+.ind-tooltip__value { margin: 2px 0 0 0; font-weight: 700; color: #1f2937; }
+.ind-tooltip__ci { margin: 3px 0 0 0; font-size: 10px; color: #6b7280; }
+.ind-tooltip--forecast { border-color: #fed7aa; }
+.ind-tooltip__fc-badge {
+  font-size: 9px;
+  font-weight: 600;
+  background: #fff7ed;
+  color: #f97316;
+  border: 1px solid #fed7aa;
+  border-radius: 4px;
+  padding: 1px 4px;
+  vertical-align: middle;
+}
+
+/* Chart legend */
+.ind-chart-legend {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+.ind-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+  color: #6b7280;
+}
+.ind-legend-line {
+  display: inline-block;
+  width: 18px;
+  height: 2px;
+  flex-shrink: 0;
+}
+.ind-legend-line--hist { background: #3288bd; }
+.ind-legend-line--forecast {
+  background: repeating-linear-gradient(
+    90deg,
+    #f97316 0px, #f97316 5px,
+    transparent 5px, transparent 9px
+  );
+}
+.ind-legend-line--scenario {
+  background: repeating-linear-gradient(
+    90deg,
+    #0d9488 0px, #0d9488 3px,
+    transparent 3px, transparent 9px
+  );
+}
+.ind-legend-band {
+  display: inline-block;
+  width: 14px;
+  height: 10px;
+  background: rgba(249, 115, 22, 0.18);
+  border: 1px solid #f97316;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+.ind-geo-note {
+  margin: 4px 0 0 0;
+  font-size: 9px;
+  text-align: center;
+}
+.ind-geo-note--active { color: #0d9488; font-weight: 600; }
+.ind-geo-note--none   { color: #9ca3af; font-style: italic; }
+.ind-tooltip__scenario {
+  margin: 3px 0 0 0;
+  font-size: 10px;
+  color: #0d9488;
+  font-weight: 600;
+}
+.ind-method-note {
+  margin: 4px 0 0 0;
+  font-size: 9px;
+  color: #9ca3af;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Geopolitical scenarios panel */
+.geo-panel {
+  flex: 1 1 0;
+  min-height: 0;
+  overflow-y: auto;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  box-sizing: border-box;
+}
+.geo-panel__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.geo-panel__header h2 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #1f2937;
+}
+.geo-panel__clear {
+  font-size: 11px;
+  font-family: inherit;
+  cursor: pointer;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  background: #f9fafb;
+  color: #6b7280;
+  padding: 2px 7px;
+}
+.geo-panel__clear:hover { background: #fee2e2; border-color: #fca5a5; color: #b91c1c; }
+.geo-panel__years { display: flex; flex-direction: column; gap: 3px; }
+.geo-year-row { display: flex; align-items: center; gap: 8px; }
+.geo-year-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #374151;
+  width: 36px;
+  flex-shrink: 0;
+}
+.geo-year-row select {
+  flex: 1;
+  font-size: 11px;
+  font-family: inherit;
+  padding: 2px 5px;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  background: #f9fafb;
+  color: #374151;
+  cursor: pointer;
+}
+.geo-panel__magnitude { display: flex; flex-direction: column; gap: 4px; }
+.geo-panel__magnitude label { font-size: 11px; color: #6b7280; }
+.geo-panel__magnitude input[type=range] { width: 100%; }
+.geo-config-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 7px;
+  padding: 8px 10px;
+  background: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.geo-config-card__title { margin: 0; font-size: 12px; font-weight: 600; color: #1f2937; }
+.geo-config-card__conditions { display: flex; flex-wrap: wrap; gap: 4px; }
+.geo-cond-pill { font-size: 10px; padding: 2px 6px; border-radius: 999px; }
+.geo-cond-pill--on  { background: #d1fae5; color: #065f46; border: 1px solid #6ee7b7; }
+.geo-cond-pill--off { background: #f3f4f6; color: #9ca3af; border: 1px solid #e5e7eb; }
+.geo-config-card__outcomes { margin: 0; font-size: 10px; color: #6b7280; font-style: italic; }
+.geo-panel__note {
+  margin: 0;
+  font-size: 9px;
+  color: #9ca3af;
+  font-style: italic;
+  text-align: center;
+  line-height: 1.4;
+}
+
 /* Responsive */
+@media (max-width: 1100px) {
+  .content { flex-direction: column; align-items: stretch; padding: 0 12px; }
+  .right-column { width: 100%; min-width: 0; height: auto; overflow: visible; }
+  .indicators-panel { flex: 0 0 auto; }
+  .geo-panel { flex: 0 0 auto; overflow-y: visible; }
+  .mapwrap { width: 100%; margin: 6px 0; }
+}
 @media (max-width: 900px) {
   .range-wrap { width: 100%; }
   .sidebar-overlay { position: static; width: 100%; margin-top: 8px; }
