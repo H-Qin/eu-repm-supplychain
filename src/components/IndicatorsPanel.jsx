@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react'
 import {
   ComposedChart, Line, Area,
-  XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
+  XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceDot,
 } from 'recharts'
 import { INDICATORS, INDICATOR_META, DIMENSIONS } from '../data/indicatorsData'
 import { dampedHoltForecast } from '../utils/forecast'
@@ -76,7 +76,7 @@ const CustomTooltip = ({ active, payload, label, format }) => {
   return null
 }
 
-export default function IndicatorsPanel({ scenarioConfig, scenarioMagnitude }) {
+export default function IndicatorsPanel({ scenarioConfig, scenarioMagnitude, year }) {
   const [selectedDim, setSelectedDim]           = useState(DIMENSIONS[0].key)
   const [selectedIndicator, setSelectedIndicator] = useState(DIMENSIONS[0].indicators[0])
 
@@ -139,6 +139,32 @@ export default function IndicatorsPanel({ scenarioConfig, scenarioMagnitude }) {
 
   const activeChartData = scenarioData ?? chartData
 
+  const yDomain = useMemo(() => {
+    const vals = []
+    for (const d of activeChartData) {
+      if (d.value != null) vals.push(d.value)
+      if (d.forecast != null) vals.push(d.forecast)
+      if (d.scenarioForecast != null) vals.push(d.scenarioForecast)
+      if (d.lowerBase != null && d.bandWidth != null) {
+        vals.push(d.lowerBase)
+        vals.push(d.lowerBase + d.bandWidth)
+      }
+    }
+    if (vals.length === 0) return ['auto', 'auto']
+    const min = Math.min(...vals)
+    const max = Math.max(...vals)
+    const pad = (max - min) * 0.08 || Math.abs(max) * 0.05 || 1
+    return [min - pad, max + pad]
+  }, [activeChartData])
+
+  const yearDotPoint = useMemo(() => {
+    const d = activeChartData.find(p => p.year === year)
+    if (!d) return null
+    const y = d.value ?? d.scenarioForecast ?? d.forecast
+    if (y == null) return null
+    return { x: year, y }
+  }, [activeChartData, year])
+
   return (
     <div className="indicators-panel">
       <div className="indicators-panel__header">
@@ -175,8 +201,8 @@ export default function IndicatorsPanel({ scenarioConfig, scenarioMagnitude }) {
       <div className="indicators-panel__chart">
         <p className="ind-chart-title">{currentMeta.description}</p>
 
-        <ResponsiveContainer width="100%" height={170}>
-          <ComposedChart data={activeChartData} margin={{ top: 8, right: 15, bottom: 5, left: 0 }}>
+        <ResponsiveContainer width="100%" height={120}>
+          <ComposedChart data={activeChartData} margin={{ top: 8, right: 15, bottom: 0, left: 0 }}>
             <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
             <XAxis
               dataKey="year"
@@ -191,6 +217,8 @@ export default function IndicatorsPanel({ scenarioConfig, scenarioMagnitude }) {
               axisLine={false}
               width={58}
               tickFormatter={tickFormatter(currentMeta.format)}
+              domain={yDomain}
+              allowDataOverflow
             />
             <Tooltip
               content={<CustomTooltip format={currentMeta.format} />}
@@ -209,6 +237,7 @@ export default function IndicatorsPanel({ scenarioConfig, scenarioMagnitude }) {
               stroke="none"
               fill="transparent"
               isAnimationActive={false}
+              allowDataOverflow
             />
             <Area
               type="monotone"
@@ -218,6 +247,7 @@ export default function IndicatorsPanel({ scenarioConfig, scenarioMagnitude }) {
               fill="#f97316"
               fillOpacity={0.18}
               isAnimationActive={false}
+              allowDataOverflow
             />
 
             {/* Historical line (solid blue, 2004–2024) */}
@@ -254,6 +284,17 @@ export default function IndicatorsPanel({ scenarioConfig, scenarioMagnitude }) {
                 dot={false}
                 activeDot={{ r: 4, fill: '#0d9488', strokeWidth: 0 }}
                 isAnimationActive={false}
+              />
+            )}
+
+            {yearDotPoint && (
+              <ReferenceDot
+                x={yearDotPoint.x}
+                y={yearDotPoint.y}
+                r={5}
+                fill="#1e4f72"
+                stroke="#fff"
+                strokeWidth={2}
               />
             )}
           </ComposedChart>

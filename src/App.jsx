@@ -8,7 +8,7 @@ import './styles.css'
 
 // Global store: selected year and selected node
 const useStore = create((set) => ({
-  year: 2024,
+  year: 2020,
   setYear: (y) => set({ year: y }),
   selectedNode: null,
   selectedEdge: null,
@@ -74,7 +74,7 @@ export default function App() {
             onCloseSidebar={clearSelection}
           />
           <div className="right-column">
-            <IndicatorsPanel scenarioConfig={scenarioConfig} scenarioMagnitude={scenarioMagnitude} />
+            <IndicatorsPanel scenarioConfig={scenarioConfig} scenarioMagnitude={scenarioMagnitude} year={year} />
             <GeopoliticalPanel
               scenarioConfig={scenarioConfig}
               onConfigChange={(year, id) => setScenarioConfig(prev => ({ ...prev, [year]: id }))}
