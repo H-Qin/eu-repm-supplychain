@@ -5,7 +5,8 @@
       "Bash(grep -E \"^recharts$|^d3$|^victory$|^nivo$|^chart\")",
       "Bash(npm install:*)",
       "Bash(npm run:*)",
-      "Bash(wc -l /c/Users/Arthor/eu-repm-supplychain/public/*.json)"
+      "Bash(wc -l /c/Users/Arthor/eu-repm-supplychain/public/*.json)",
+      "Bash(gh repo:*)"
     ]
   }
 }
