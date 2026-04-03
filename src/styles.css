@@ -101,12 +101,85 @@ html, body, #root { height: 100%; margin: 0; }
   position: absolute;
   top: 60px;          /* drop below legend */
   right: 12px;
-  width: 320px;
-  max-width: 85%;
+  width: 400px;
+  max-width: 90%;
   z-index: 1100;
 }
-.sidebar { border-left: none; border: 1px solid #e5e7eb; padding: 12px; background: #fafafa; border-radius: 8px; }
+.sidebar {
+  border-left: none;
+  border: 1px solid #e5e7eb;
+  padding: 12px;
+  background: #fafafa;
+  border-radius: 8px;
+  max-height: 70vh;
+  overflow-y: auto;
+  font-size: 13px;
+}
+.sidebar h2 { font-size: 15px; font-weight: 700; color: #1f2937; margin: 0 24px 6px 0; }
+.sidebar h3 { font-size: 13px; font-weight: 600; color: #374151; margin: 8px 0 2px; }
+.sidebar p  { margin: 3px 0; color: #374151; }
 .sidebar .close { float: right; border: none; background: transparent; font-size: 20px; cursor: pointer; }
+
+/* Sidebar meta block */
+.sb-meta { border-bottom: 1px solid #e5e7eb; padding-bottom: 8px; margin-bottom: 8px; }
+.sb-meta p { margin: 3px 0; }
+
+/* Supply chain flow diagram */
+.sb-chain { margin-top: 4px; }
+.sb-chain__title {
+  margin: 0 0 8px 0;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b7280;
+}
+.sb-flow { display: flex; flex-direction: column; align-items: stretch; gap: 0; }
+.sb-flow__group { display: flex; flex-direction: column; gap: 4px; }
+.sb-flow__label {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #9ca3af;
+  margin-bottom: 2px;
+}
+.sb-flow__label--empty { font-style: italic; font-weight: 400; text-transform: none; }
+.sb-flow__arrow {
+  text-align: center;
+  font-size: 16px;
+  color: #9ca3af;
+  line-height: 1.4;
+  margin: 2px 0;
+}
+.sb-flow__node {
+  border-radius: 6px;
+  padding: 5px 8px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+}
+.sb-flow__node--supplier { border-color: #bfdbfe; background: #eff6ff; }
+.sb-flow__node--self     { border-color: #f97316; background: #fff7ed; font-weight: 600; }
+.sb-flow__node--customer { border-color: #bbf7d0; background: #f0fdf4; }
+
+/* Node name + loc inside flow nodes */
+.sb-node-name { display: flex; flex-direction: column; gap: 1px; font-size: 12px; font-weight: 600; color: #1f2937; }
+.sb-node-loc  { font-size: 11px; font-weight: 400; color: #6b7280; }
+.sb-node-procs { display: flex; flex-wrap: wrap; gap: 3px; margin-top: 2px; }
+
+/* Process pills */
+.sb-proc-pill {
+  font-size: 10px;
+  padding: 1px 5px;
+  border-radius: 999px;
+  background: #e0f2fe;
+  color: #0369a1;
+  border: 1px solid #bae6fd;
+  white-space: nowrap;
+}
+.sb-proc-pill--lg { font-size: 11px; padding: 2px 7px; }
+
+.sb-no-links { font-size: 12px; color: #9ca3af; font-style: italic; margin-top: 6px; }
 
 /* Year bar and clearer ticks */
 .yearbar { display: flex; align-items: center; gap: 16px; padding-top: 8px; }
@@ -147,8 +220,8 @@ html, body, #root { height: 100%; margin: 0; }
   display: flex;
   flex-direction: column;
   gap: 12px;
-  width: 600px;
-  min-width: 600px;
+  width: 550px;
+  min-width: 550px;
   margin: 6px 0;
   overflow: hidden;
 }

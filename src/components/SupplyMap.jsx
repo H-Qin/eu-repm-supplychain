@@ -321,13 +321,15 @@ export default function SupplyMap({ year, nodes, edges, selectedNode, selectedEd
         onToggleProcess={onToggleProcess}
       />
 
-      {/* Sidebar overlay on the right (still node-only for now) */}
+      {/* Sidebar overlay on the right */}
       {(selectedNode || selectedEdge) && (
         <div className="sidebar-overlay">
           <Sidebar
             node={selectedNode}
             edge={selectedEdge}
             nodes={nodes}
+            edges={edges}
+            year={year}
             onClose={onCloseSidebar}
           />
         </div>
