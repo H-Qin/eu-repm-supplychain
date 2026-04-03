@@ -52,7 +52,7 @@ export default function App() {
     <div className="app">
       <div className="page">
         <div className="topbar">
-          <h1>EU Rare-Earths (NdFeB) Permanent Magnet Supply Chain</h1>
+          <h1>European Rare-Earths (NdFeB) Permanent Magnet Supply Chain</h1>
           <YearBar
             year={year}
             setYear={setYear}
