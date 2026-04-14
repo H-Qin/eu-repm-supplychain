@@ -36,7 +36,7 @@ export default function App() {
   const [scenarioConfig, setScenarioConfig] = useState(
     { 2025: null, 2026: null, 2027: null, 2028: null, 2029: null, 2030: null }
   )
-  const [scenarioMagnitude, setScenarioMagnitude] = useState(0.05)
+  const scenarioMagnitude = 0.05
 
   useEffect(() => {
     async function load() {
@@ -78,8 +78,6 @@ export default function App() {
             <GeopoliticalPanel
               scenarioConfig={scenarioConfig}
               onConfigChange={(year, id) => setScenarioConfig(prev => ({ ...prev, [year]: id }))}
-              scenarioMagnitude={scenarioMagnitude}
-              onMagnitudeChange={setScenarioMagnitude}
             />
           </div>
         </div>
