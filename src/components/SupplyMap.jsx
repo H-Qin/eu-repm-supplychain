@@ -4,7 +4,6 @@ import { buildAdjMaps, buildCompleteChains } from '../utils/chainUtils'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import Legend from './Legend'
-import Sidebar from './Sidebar'
 import CurvedEdge from './CurvedEdge'
 
 function visibleInYear(item, year) {
@@ -341,19 +340,6 @@ export default function SupplyMap({ year, nodes, edges, selectedNode, selectedEd
         onToggleProcess={onToggleProcess}
       />
 
-      {/* Sidebar overlay on the right */}
-      {(selectedNode || selectedEdge) && (
-        <div className="sidebar-overlay">
-          <Sidebar
-            node={selectedNode}
-            edge={selectedEdge}
-            nodes={nodes}
-            edges={edges}
-            year={year}
-            onClose={onCloseSidebar}
-          />
-        </div>
-      )}
     </div>
   )
 }

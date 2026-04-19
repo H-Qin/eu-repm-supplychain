@@ -64,6 +64,10 @@ export function buildAdjMaps(edges, nodes, year) {
  * STRICTLY LESS than the current node's — ensures chains run P1→P2→…,
  * never sideways between nodes at the same process level.
  *
+ * Exception: P6 (Recycling) nodes are exempted from the level constraint because
+ * they sit at the end of the primary chain but supply recovered materials back into
+ * P2/P3, making them valid chain sources regardless of their process number.
+ *
  * @returns {string[][]}  Each array is a path [startId, …, sourceId] (start-first order).
  */
 export function findUpstreamPaths(startId, backward, sourceIds, nodeById, maxDepth = 12) {
@@ -77,8 +81,10 @@ export function findUpstreamPaths(startId, backward, sourceIds, nodeById, maxDep
       if (visited.has(prevId)) continue
       const prevNode = nodeById[prevId]
       if (!prevNode) continue
-      // Monotonic constraint: predecessor must be at a strictly lower process level
-      if (minProc(prevNode) >= currentLevel) continue
+      // P6 recycling nodes are allowed as predecessors regardless of level —
+      // they feed recovered material back into lower-level processes.
+      const prevIsP6 = (prevNode.process || []).includes(6)
+      if (!prevIsP6 && minProc(prevNode) >= currentLevel) continue
 
       path.push(prevId)
       visited.add(prevId)
@@ -105,6 +111,9 @@ export function findUpstreamPaths(startId, backward, sourceIds, nodeById, maxDep
  * Only follows edges where the successor's minimum process level is
  * STRICTLY GREATER than the current node's.
  *
+ * Exception: when the current node is P6 (Recycling), it may supply P2/P3 nodes
+ * with recovered materials, so the level constraint is lifted for P6 as source.
+ *
  * @returns {string[][]}  Each array is a path [startId, …, sinkId].
  */
 export function findDownstreamPaths(startId, forward, sinkIds, nodeById, maxDepth = 12) {
@@ -114,12 +123,14 @@ export function findDownstreamPaths(startId, forward, sinkIds, nodeById, maxDept
 
   function dfs(currentId, path, visited) {
     const currentLevel = minProc(nodeById[currentId])
+    // P6 recycling nodes may supply lower-level processes — lift the constraint for them.
+    const currentIsP6 = (nodeById[currentId]?.process || []).includes(6)
     for (const nextId of (forward.get(currentId) || [])) {
       if (visited.has(nextId)) continue
       const nextNode = nodeById[nextId]
       if (!nextNode) continue
-      // Monotonic constraint: successor must be at a strictly higher process level
-      if (minProc(nextNode) <= currentLevel) continue
+      // Monotonic constraint (skipped when current node is P6)
+      if (!currentIsP6 && minProc(nextNode) <= currentLevel) continue
 
       path.push(nextId)
       visited.add(nextId)

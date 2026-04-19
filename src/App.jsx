@@ -4,6 +4,7 @@ import SupplyMap from './components/SupplyMap'
 import YearBar from './components/YearBar'
 import IndicatorsPanel from './components/IndicatorsPanel'
 import GeopoliticalPanel from './components/GeopoliticalPanel'
+import Sidebar from './components/Sidebar'
 import './styles.css'
 
 // Global store: selected year and selected node
@@ -74,11 +75,24 @@ export default function App() {
             onCloseSidebar={clearSelection}
           />
           <div className="right-column">
-            <IndicatorsPanel scenarioConfig={scenarioConfig} scenarioMagnitude={scenarioMagnitude} year={year} />
-            <GeopoliticalPanel
-              scenarioConfig={scenarioConfig}
-              onConfigChange={(year, id) => setScenarioConfig(prev => ({ ...prev, [year]: id }))}
-            />
+            {(selectedNode || selectedEdge) ? (
+              <Sidebar
+                node={selectedNode}
+                edge={selectedEdge}
+                nodes={nodes}
+                edges={edges}
+                year={year}
+                onClose={clearSelection}
+              />
+            ) : (
+              <>
+                <IndicatorsPanel scenarioConfig={scenarioConfig} scenarioMagnitude={scenarioMagnitude} year={year} />
+                <GeopoliticalPanel
+                  scenarioConfig={scenarioConfig}
+                  onConfigChange={(year, id) => setScenarioConfig(prev => ({ ...prev, [year]: id }))}
+                />
+              </>
+            )}
           </div>
         </div>
       </div>
