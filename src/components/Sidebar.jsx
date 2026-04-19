@@ -1,4 +1,5 @@
 import { Fragment, useState } from 'react'
+import { buildAdjMaps, buildCompleteChains } from '../utils/chainUtils'
 
 const PROCESS_LABELS = {
   1: 'Raw Material Extraction',
@@ -11,101 +12,6 @@ const PROCESS_LABELS = {
 
 function processTag(proc) {
   return `P${proc}${PROCESS_LABELS[proc] ? ` · ${PROCESS_LABELS[proc]}` : ''}`
-}
-
-// ─── Graph utilities ─────────────────────────────────────────────────────────
-
-/**
- * Build forward/backward adjacency maps for the active year.
- * Also derives source nodes (no incoming edges) and sink nodes (no outgoing edges)
- * purely from graph structure — no hardcoded process numbers.
- */
-function buildAdjMaps(edges, nodes, year) {
-  const forward = new Map()
-  const backward = new Map()
-
-  const activeNodeIds = new Set(
-    nodes
-      .filter(n => Array.isArray(n.active_years) && n.active_years.includes(year))
-      .map(n => n.node_id)
-  )
-
-  const activeEdges = edges.filter(e =>
-    !year || (Array.isArray(e.active_years) && e.active_years.includes(year))
-  )
-  for (const e of activeEdges) {
-    if (!activeNodeIds.has(e.source) || !activeNodeIds.has(e.target)) continue
-    if (!forward.has(e.source)) forward.set(e.source, new Set())
-    forward.get(e.source).add(e.target)
-    if (!backward.has(e.target)) backward.set(e.target, new Set())
-    backward.get(e.target).add(e.source)
-  }
-
-  // Source: active node with no incoming edges in this year's graph
-  // Sink:   active node with no outgoing edges in this year's graph
-  const sourceIds = new Set()
-  const sinkIds = new Set()
-  for (const nodeId of activeNodeIds) {
-    if (!backward.has(nodeId)) sourceIds.add(nodeId)
-    if (!forward.has(nodeId)) sinkIds.add(nodeId)
-  }
-
-  return { forward, backward, sourceIds, sinkIds }
-}
-
-// ─── Complete-chain path finding ─────────────────────────────────────────────
-
-function findUpstreamPaths(startId, backward, sourceIds, maxDepth = 10) {
-  if (sourceIds.has(startId)) return [[startId]]
-  const results = []
-  function dfs(currentId, path, visited) {
-    for (const prevId of (backward.get(currentId) || [])) {
-      if (visited.has(prevId)) continue
-      path.push(prevId)
-      visited.add(prevId)
-      if (sourceIds.has(prevId)) results.push([...path])
-      else if (path.length < maxDepth) dfs(prevId, path, visited)
-      path.pop()
-      visited.delete(prevId)
-    }
-  }
-  dfs(startId, [startId], new Set([startId]))
-  if (results.length === 0) results.push([startId])
-  return results
-}
-
-function findDownstreamPaths(startId, forward, sinkIds, maxDepth = 10) {
-  if (sinkIds.has(startId)) return [[startId]]
-  const results = []
-  function dfs(currentId, path, visited) {
-    for (const nextId of (forward.get(currentId) || [])) {
-      if (visited.has(nextId)) continue
-      path.push(nextId)
-      visited.add(nextId)
-      if (sinkIds.has(nextId)) results.push([...path])
-      else if (path.length < maxDepth) dfs(nextId, path, visited)
-      path.pop()
-      visited.delete(nextId)
-    }
-  }
-  dfs(startId, [startId], new Set([startId]))
-  if (results.length === 0) results.push([startId])
-  return results
-}
-
-function buildCompleteChains(selectedId, forward, backward, sourceIds, sinkIds) {
-  const upPaths = findUpstreamPaths(selectedId, backward, sourceIds)
-  const downPaths = findDownstreamPaths(selectedId, forward, sinkIds)
-  const seen = new Set()
-  const chains = []
-  for (const up of upPaths) {
-    for (const down of downPaths) {
-      const chain = [...[...up].reverse(), ...down.slice(1)]
-      const key = chain.join('|')
-      if (!seen.has(key)) { seen.add(key); chains.push(chain) }
-    }
-  }
-  return chains
 }
 
 // ─── Structural Resilience Index ─────────────────────────────────────────────
@@ -286,7 +192,7 @@ export default function Sidebar({ node, edge, nodes, edges, year, onClose }) {
   let resCtx = null
   if (node && Array.isArray(edges) && Array.isArray(nodes)) {
     const { forward, backward, sourceIds, sinkIds } = buildAdjMaps(edges, nodes, year)
-    chains = buildCompleteChains(node.node_id, forward, backward, sourceIds, sinkIds)
+    chains = buildCompleteChains(node.node_id, forward, backward, sourceIds, sinkIds, nodeById)
     resCtx = buildResilienceContext(forward, backward, nodes, year, nodeById, sinkIds)
   }
 

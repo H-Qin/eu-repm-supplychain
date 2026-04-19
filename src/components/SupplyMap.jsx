@@ -1,5 +1,6 @@
 import { MapContainer, TileLayer, CircleMarker, Popup, Polyline, Marker, SVGOverlay, useMapEvents } from 'react-leaflet'
-import { useRef, Fragment } from 'react'
+import { useRef, Fragment, useMemo } from 'react'
+import { buildAdjMaps, buildCompleteChains } from '../utils/chainUtils'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import Legend from './Legend'
@@ -205,18 +206,37 @@ export default function SupplyMap({ year, nodes, edges, selectedNode, selectedEd
   const selectedNodeId = selectedNode?.node_id || null
   const selectedEdgeId = selectedEdge?.edge_id || null
 
+  // Build a (source|target) → edge_id lookup for chain edge highlighting
+  const edgeByPair = useMemo(() => {
+    const m = new Map()
+    for (const e of visibleEdges) m.set(`${e.source}|${e.target}`, e.edge_id)
+    return m
+  }, [visibleEdges])
+
+  // Compute chain-based highlights when a node is selected
+  const chainHighlights = useMemo(() => {
+    if (!selectedNodeId || !nodes.length || !edges.length) return null
+    const { forward, backward, sourceIds, sinkIds } = buildAdjMaps(edges, nodes, year)
+    const chains = buildCompleteChains(selectedNodeId, forward, backward, sourceIds, sinkIds, nodeById)
+    const nodeIds = new Set()
+    const edgeIds = new Set()
+    for (const chain of chains) {
+      for (const nid of chain) nodeIds.add(nid)
+      for (let i = 0; i < chain.length - 1; i++) {
+        const eid = edgeByPair.get(`${chain[i]}|${chain[i + 1]}`)
+        if (eid) edgeIds.add(eid)
+      }
+    }
+    return { nodeIds, edgeIds }
+  }, [selectedNodeId, nodes, edges, year, edgeByPair, nodeById])
+
   const highlightedNodeIds = new Set()
   const highlightedEdgeIds = new Set()
 
-  if (selectedNodeId) {
-    highlightedNodeIds.add(selectedNodeId)
-    visibleEdges.forEach((e) => {
-      if (e.source === selectedNodeId || e.target === selectedNodeId) {
-        highlightedEdgeIds.add(e.edge_id)
-        highlightedNodeIds.add(e.source)
-        highlightedNodeIds.add(e.target)
-      }
-    })
+  if (selectedNodeId && chainHighlights) {
+    // Highlight all nodes and edges that are part of any complete chain through the selected node
+    for (const id of chainHighlights.nodeIds) highlightedNodeIds.add(id)
+    for (const id of chainHighlights.edgeIds) highlightedEdgeIds.add(id)
   } else if (selectedEdgeId) {
     const baseEdge = visibleEdges.find((e) => e.edge_id === selectedEdgeId)
     if (baseEdge) {
