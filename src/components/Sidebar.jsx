@@ -1,3 +1,5 @@
+import { Fragment, useState } from 'react'
+
 const PROCESS_LABELS = {
   1: 'Raw Material Extraction',
   2: 'Alloy & Powder Production',
@@ -7,61 +9,288 @@ const PROCESS_LABELS = {
   6: 'Recycling & Circular Recovery',
 }
 
-// P4 and P5 are potential end-of-chain; only show "no customers" note for P1/2/3/6
-function isTerminalNode(node) {
-  const procs = Array.isArray(node.process) ? node.process : []
-  return procs.length > 0 && procs.every(p => p === 4 || p === 5)
-}
-
 function processTag(proc) {
   return `P${proc}${PROCESS_LABELS[proc] ? ` · ${PROCESS_LABELS[proc]}` : ''}`
 }
 
-function NodeInfo({ node }) {
+function isSourceNode(node) {
+  return (node.process || []).some(p => p === 1 || p === 2)
+}
+
+function isSinkNode(node) {
+  return (node.process || []).some(p => p === 4 || p === 5 || p === 6)
+}
+
+// ─── Graph utilities ─────────────────────────────────────────────────────────
+
+function buildAdjMaps(edges, nodeById, year) {
+  const forward = new Map()
+  const backward = new Map()
+  const activeEdges = edges.filter(e =>
+    !year || (Array.isArray(e.active_years) && e.active_years.includes(year))
+  )
+  for (const e of activeEdges) {
+    if (!nodeById[e.source] || !nodeById[e.target]) continue
+    if (!forward.has(e.source)) forward.set(e.source, new Set())
+    forward.get(e.source).add(e.target)
+    if (!backward.has(e.target)) backward.set(e.target, new Set())
+    backward.get(e.target).add(e.source)
+  }
+  return { forward, backward }
+}
+
+// ─── Complete-chain path finding ─────────────────────────────────────────────
+
+function findUpstreamPaths(startId, backward, nodeById, maxDepth = 10) {
+  const startNode = nodeById[startId]
+  if (!startNode) return [[startId]]
+  if (isSourceNode(startNode)) return [[startId]]
+  const results = []
+  function dfs(currentId, path, visited) {
+    for (const prevId of (backward.get(currentId) || [])) {
+      if (visited.has(prevId)) continue
+      const prevNode = nodeById[prevId]
+      if (!prevNode) continue
+      path.push(prevId)
+      visited.add(prevId)
+      if (isSourceNode(prevNode)) results.push([...path])
+      else if (path.length < maxDepth) dfs(prevId, path, visited)
+      path.pop()
+      visited.delete(prevId)
+    }
+  }
+  dfs(startId, [startId], new Set([startId]))
+  if (results.length === 0) results.push([startId])
+  return results
+}
+
+function findDownstreamPaths(startId, forward, nodeById, maxDepth = 10) {
+  const startNode = nodeById[startId]
+  if (!startNode) return [[startId]]
+  if (isSinkNode(startNode)) return [[startId]]
+  const results = []
+  function dfs(currentId, path, visited) {
+    for (const nextId of (forward.get(currentId) || [])) {
+      if (visited.has(nextId)) continue
+      const nextNode = nodeById[nextId]
+      if (!nextNode) continue
+      path.push(nextId)
+      visited.add(nextId)
+      if (isSinkNode(nextNode)) results.push([...path])
+      else if (path.length < maxDepth) dfs(nextId, path, visited)
+      path.pop()
+      visited.delete(nextId)
+    }
+  }
+  dfs(startId, [startId], new Set([startId]))
+  if (results.length === 0) results.push([startId])
+  return results
+}
+
+function buildCompleteChains(selectedId, forward, backward, nodeById) {
+  const upPaths = findUpstreamPaths(selectedId, backward, nodeById)
+  const downPaths = findDownstreamPaths(selectedId, forward, nodeById)
+  const seen = new Set()
+  const chains = []
+  for (const up of upPaths) {
+    for (const down of downPaths) {
+      const chain = [...[...up].reverse(), ...down.slice(1)]
+      const key = chain.join('|')
+      if (!seen.has(key)) { seen.add(key); chains.push(chain) }
+    }
+  }
+  return chains
+}
+
+// ─── Structural Resilience Index ─────────────────────────────────────────────
+//
+// Three node-level indicators, each normalised to [0, 1]:
+//
+//  1. In-degree (ID) — for every non-source node n_i (i > 0):
+//       id_i = inDegree(n_i) / maxInDegree_in_graph
+//     Chain ID = mean(id_i).  Captures upstream supply redundancy.
+//
+//  2. Supply Substitutability (SS) — for every non-terminal node n_i (i < k):
+//       alts_i = (# active nodes sharing a process with n_i that have ≥1 outgoing edge) − 1
+//       ss_i   = alts_i / maxAlts_across_all_process_types
+//     Chain SS = mean(ss_i).  Captures how replaceable each chain node is.
+//
+//  3. Reachability (R) — for every non-terminal node n_i (i < k):
+//       r_i = (# P4/P5/P6 sink nodes reachable from n_i via BFS) / maxReachable_in_graph
+//     Chain R = mean(r_i).  Captures downstream market access breadth.
+//
+//  SRI = (ID + SS + R) / 3
+
+/**
+ * Precompute graph-level statistics needed for resilience scoring.
+ * Called once per sidebar open (per clicked node × year).
+ */
+function buildResilienceContext(forward, backward, nodes, year, nodeById) {
+  const activeNodes = nodes.filter(n =>
+    Array.isArray(n.active_years) && n.active_years.includes(year)
+  )
+
+  // --- In-degree ---
+  const inDegreeMap = new Map()
+  for (const n of activeNodes) inDegreeMap.set(n.node_id, 0)
+  for (const [targetId, sources] of backward) {
+    if (inDegreeMap.has(targetId)) inDegreeMap.set(targetId, sources.size)
+  }
+  const maxInDegree = Math.max(1, ...inDegreeMap.values())
+
+  // --- Supply substitutability pool ---
+  // For each process code p, collect active nodes with that process AND at least one outgoing edge.
+  // These are the potential substitutes for a node playing role p in a chain.
+  const processPools = new Map() // process → Set<nodeId>
+  for (const n of activeNodes) {
+    const hasOut = (forward.get(n.node_id) || new Set()).size > 0
+    if (!hasOut) continue
+    for (const p of (n.process || [])) {
+      if (!processPools.has(p)) processPools.set(p, new Set())
+      processPools.get(p).add(n.node_id)
+    }
+  }
+  // Largest pool size across all process types (used as denominator)
+  const maxPoolSize = Math.max(1, ...[...processPools.values()].map(s => s.size))
+
+  // --- Reachability ---
+  const sinkIds = new Set(activeNodes.filter(isSinkNode).map(n => n.node_id))
+
+  // Lazy BFS cache: nodeId → count of P4/P5/P6 sinks reachable from that node
+  const reachCache = new Map()
+
+  // First pass: find the maximum reachable-sink count across all active nodes.
+  // We compute this upfront so we can normalise properly.
+  let maxReachable = 1
+  for (const n of activeNodes) {
+    const visited = new Set([n.node_id])
+    const queue = [n.node_id]
+    let count = 0
+    while (queue.length) {
+      const cur = queue.shift()
+      if (sinkIds.has(cur)) count++
+      for (const nxt of (forward.get(cur) || [])) {
+        if (!visited.has(nxt)) { visited.add(nxt); queue.push(nxt) }
+      }
+    }
+    reachCache.set(n.node_id, count)
+    if (count > maxReachable) maxReachable = count
+  }
+
+  function reachabilityScore(nodeId) {
+    return (reachCache.get(nodeId) ?? 0) / maxReachable
+  }
+
+  return { inDegreeMap, maxInDegree, processPools, maxPoolSize, sinkIds, reachabilityScore }
+}
+
+/**
+ * Compute the three sub-scores and the composite SRI for one complete chain.
+ * @param {string[]} chain   Ordered array of node IDs from source to sink.
+ * @param {object}   ctx     Resilience context from buildResilienceContext().
+ * @param {object}   nodeById
+ * @returns {{ sri, id, ss, r }}  All values in [0, 1].
+ */
+function computeChainResilience(chain, ctx, nodeById) {
+  const { inDegreeMap, maxInDegree, processPools, maxPoolSize, sinkIds, reachabilityScore } = ctx
+
+  const idScores = []
+  const ssScores = []
+  const rScores  = []
+
+  chain.forEach((nodeId, i) => {
+    const n = nodeById[nodeId]
+    if (!n) return
+
+    // In-degree: every node except the first (source has no upstream)
+    if (i > 0) {
+      idScores.push((inDegreeMap.get(nodeId) ?? 0) / maxInDegree)
+    }
+
+    // Supply substitutability + Reachability: every node except the last (sink is the endpoint)
+    if (i < chain.length - 1) {
+      // SS — how many other active nodes share this node's process role(s) and can pass supply on
+      const procs = n.process || []
+      if (procs.length > 0) {
+        const alts = Math.max(
+          0,
+          Math.max(...procs.map(p => (processPools.get(p)?.size ?? 0) - 1)) // -1 excludes self
+        )
+        ssScores.push(alts / Math.max(1, maxPoolSize - 1))
+      } else {
+        ssScores.push(0)
+      }
+
+      // R — fraction of total reachable downstream market accessible from this node
+      if (!sinkIds.has(nodeId)) {
+        rScores.push(reachabilityScore(nodeId))
+      }
+    }
+  })
+
+  const avg = arr => arr.length > 0 ? arr.reduce((a, b) => a + b, 0) / arr.length : 0
+
+  const id  = avg(idScores)
+  const ss  = avg(ssScores)
+  const r   = avg(rScores)
+  const sri = (id + ss + r) / 3
+
+  return { sri, id, ss, r }
+}
+
+// ─── Helpers ─────────────────────────────────────────────────────────────────
+
+function sriLevel(score) {
+  if (score >= 0.6) return 'high'
+  if (score >= 0.35) return 'mid'
+  return 'low'
+}
+
+const pct = v => Math.round(v * 100)
+
+// ─── Sub-components ──────────────────────────────────────────────────────────
+
+function ResilienceBar({ label, tooltip, value }) {
   return (
-    <span className="sb-node-name">
-      {node.company_name}
-      <span className="sb-node-loc">
-        {node.city ? `${node.city}, ` : ''}{node['country_branch/plant'] || ''}
-      </span>
-      {Array.isArray(node.process) && node.process.length > 0 && (
-        <span className="sb-node-procs">
-          {node.process.map(p => (
-            <span key={p} className="sb-proc-pill">{processTag(p)}</span>
-          ))}
-        </span>
-      )}
-    </span>
+    <div className="sb-res-bar-row" title={tooltip}>
+      <span className="sb-res-bar-label">{label}</span>
+      <div className="sb-res-bar-track">
+        <div className="sb-res-bar-fill" style={{ width: `${pct(value)}%` }} />
+      </div>
+      <span className="sb-res-bar-val">{pct(value)}</span>
+    </div>
   )
 }
 
+const CHAIN_PAGE_SIZE = 10
+
+// ─── Main component ───────────────────────────────────────────────────────────
+
 export default function Sidebar({ node, edge, nodes, edges, year, onClose }) {
+  const [showAll, setShowAll] = useState(false)
+
   if (!node && !edge) return null
 
   const nodeById = Array.isArray(nodes)
     ? Object.fromEntries(nodes.map(n => [n.node_id, n]))
     : {}
 
-  // For node view: filter edges active in the selected year that connect to this node
-  let suppliers = []
-  let customers = []
+  // Build chains + resilience context once per render
+  let chains = []
+  let resCtx = null
   if (node && Array.isArray(edges)) {
-    const activeEdges = edges.filter(e =>
-      !year || (Array.isArray(e.active_years) && e.active_years.includes(year))
-    )
-    suppliers = activeEdges
-      .filter(e => e.target === node.node_id && nodeById[e.source])
-      .map(e => nodeById[e.source])
-    customers = activeEdges
-      .filter(e => e.source === node.node_id && nodeById[e.target])
-      .map(e => nodeById[e.target])
+    const { forward, backward } = buildAdjMaps(edges, nodeById, year)
+    chains = buildCompleteChains(node.node_id, forward, backward, nodeById)
+    resCtx = buildResilienceContext(forward, backward, nodes, year, nodeById)
   }
+
+  const displayedChains = showAll ? chains : chains.slice(0, CHAIN_PAGE_SIZE)
 
   return (
     <aside className="sidebar">
       <button className="close" onClick={onClose}>×</button>
 
-      {/* NODE VIEW */}
+      {/* ── NODE VIEW ─────────────────────────────────────────────────── */}
       {node && (
         <>
           <h2 style={{ marginBottom: 2 }}>{node.company_name}</h2>
@@ -85,88 +314,105 @@ export default function Sidebar({ node, edge, nodes, edges, year, onClose }) {
             )}
           </div>
 
-          {(suppliers.length > 0 || customers.length > 0) && (
-            <div className="sb-chain">
-              <p className="sb-chain__title">
-                Supply chain connections{year ? ` in ${year}` : ''}
+          {chains.length > 0 ? (
+            <div className="sb-chains">
+              <p className="sb-chains__title">
+                Complete supply chains in {year}
+                <span className="sb-chains__count"> — {chains.length} chain{chains.length !== 1 ? 's' : ''}</span>
               </p>
 
-              {/* Flow diagram */}
-              <div className="sb-flow">
-                {/* Suppliers */}
-                {suppliers.length > 0 ? (
-                  <div className="sb-flow__group">
-                    <div className="sb-flow__label">Suppliers</div>
-                    {suppliers.map(s => (
-                      <div key={s.node_id} className="sb-flow__node sb-flow__node--supplier">
-                        <NodeInfo node={s} />
-                      </div>
-                    ))}
-                  </div>
-                ) : (
-                  <div className="sb-flow__group">
-                    <div className="sb-flow__label sb-flow__label--empty">No suppliers in {year}</div>
-                  </div>
-                )}
+              {displayedChains.map((chain, i) => {
+                const res = resCtx ? computeChainResilience(chain, resCtx, nodeById) : null
+                const level = res ? sriLevel(res.sri) : 'mid'
 
-                {/* Arrow down */}
-                <div className="sb-flow__arrow">↓</div>
+                return (
+                  <div key={i} className="sb-chain-block">
+                    {/* Node badge row */}
+                    <div className="sb-chain-row">
+                      {chain.map((nodeId, j) => {
+                        const n = nodeById[nodeId]
+                        if (!n) return null
+                        const isSelf = nodeId === node.node_id
+                        return (
+                          <Fragment key={nodeId + '-' + j}>
+                            {j > 0 && <span className="sb-chain-arrow">›</span>}
+                            <div className={`sb-chain-badge ${isSelf ? 'sb-chain-badge--self' : ''}`}>
+                              <span className="sb-chain-badge__name">{n.company_name}</span>
+                              <span className="sb-chain-badge__proc">
+                                {(n.process || []).map(p => `P${p}`).join('/')}
+                                {n['country_branch/plant'] ? ` · ${n['country_branch/plant']}` : ''}
+                              </span>
+                            </div>
+                          </Fragment>
+                        )
+                      })}
+                    </div>
 
-                {/* This node */}
-                <div className="sb-flow__group">
-                  <div className="sb-flow__node sb-flow__node--self">
-                    <NodeInfo node={node} />
-                  </div>
-                </div>
-
-                {/* Arrow down + Customers — omitted for pure P4/P5 nodes with no customers */}
-                {(customers.length > 0 || !isTerminalNode(node)) && (
-                  <>
-                    <div className="sb-flow__arrow">↓</div>
-
-                    {customers.length > 0 ? (
-                      <div className="sb-flow__group">
-                        <div className="sb-flow__label">Customers</div>
-                        {customers.map(c => (
-                          <div key={c.node_id} className="sb-flow__node sb-flow__node--customer">
-                            <NodeInfo node={c} />
-                          </div>
-                        ))}
-                      </div>
-                    ) : (
-                      <div className="sb-flow__group">
-                        <div className="sb-flow__label sb-flow__label--empty">
-                          No customer information collected/available in {year}
+                    {/* Resilience scores */}
+                    {res && (
+                      <div className="sb-resilience">
+                        <div className="sb-resilience__header">
+                          <span className="sb-resilience__label">Structural Resilience Index</span>
+                          <span className={`sb-sri-badge sb-sri-badge--${level}`}>
+                            {pct(res.sri)}
+                          </span>
+                        </div>
+                        <div className="sb-res-bars">
+                          <ResilienceBar
+                            label="ID"
+                            tooltip="In-degree: average number of active suppliers per chain node, relative to the most-supplied node in the network. Higher = more upstream redundancy."
+                            value={res.id}
+                          />
+                          <ResilienceBar
+                            label="SS"
+                            tooltip="Supply Substitutability: average share of process-equivalent alternative suppliers available for each chain node. Higher = easier to reroute supply if a node fails."
+                            value={res.ss}
+                          />
+                          <ResilienceBar
+                            label="R"
+                            tooltip="Reachability: average fraction of downstream end-use markets reachable from each chain node, relative to the best-connected node in the network. Higher = broader market access."
+                            value={res.r}
+                          />
                         </div>
                       </div>
                     )}
-                  </>
-                )}
+                  </div>
+                )
+              })}
+
+              {chains.length > CHAIN_PAGE_SIZE && (
+                <button className="sb-show-more" onClick={() => setShowAll(v => !v)}>
+                  {showAll
+                    ? 'Show less'
+                    : `Show ${chains.length - CHAIN_PAGE_SIZE} more chain${chains.length - CHAIN_PAGE_SIZE !== 1 ? 's' : ''}`}
+                </button>
+              )}
+
+              {/* Legend */}
+              <div className="sb-res-legend">
+                <strong>SRI indicators:</strong>
+                {' '}ID = In-degree · SS = Supply Substitutability · R = Reachability
+                <br />
+                Score 0–100; higher is more resilient.
+                <span className="sb-sri-badge sb-sri-badge--high" style={{marginLeft:4}}>≥60 High</span>
+                <span className="sb-sri-badge sb-sri-badge--mid"  style={{marginLeft:4}}>35–59 Mid</span>
+                <span className="sb-sri-badge sb-sri-badge--low"  style={{marginLeft:4}}>&#60;35 Low</span>
               </div>
             </div>
-          )}
-
-          {suppliers.length === 0 && customers.length === 0 && (
-            <p className="sb-no-links">
-              {isTerminalNode(node)
-                ? `No supply chain links active in ${year}.`
-                : `No customer information collected/available in ${year}.`}
-            </p>
+          ) : (
+            <p className="sb-no-links">No complete supply chains found in {year}.</p>
           )}
         </>
       )}
 
-      {/* EDGE VIEW */}
+      {/* ── EDGE VIEW ─────────────────────────────────────────────────── */}
       {edge && (
         <>
           <h2>Flow details</h2>
-
           {Array.isArray(edge.active_years) && (
             <p><strong>Years active:</strong> {edge.active_years.join(', ')}</p>
           )}
-
           <hr />
-
           <h3>From</h3>
           {nodeById[edge.source] ? (
             <p>
@@ -177,7 +423,6 @@ export default function Sidebar({ node, edge, nodes, edges, year, onClose }) {
           ) : (
             <p>(Unknown node ID: {edge.source})</p>
           )}
-
           <h3>To</h3>
           {nodeById[edge.target] ? (
             <p>
