@@ -3,16 +3,6 @@
  * Used by Sidebar (chain display + SRI) and SupplyMap (chain highlighting).
  */
 
-// ─── Helpers ─────────────────────────────────────────────────────────────────
-
-/**
- * The primary process level of a node: its minimum process code.
- * Used to enforce monotonic traversal (supply always flows to higher levels).
- */
-export function minProc(node) {
-  const p = node?.process || []
-  return p.length > 0 ? Math.min(...p) : 0
-}
 
 // ─── Graph construction ───────────────────────────────────────────────────────
 
@@ -59,16 +49,13 @@ export function buildAdjMaps(edges, nodes, year) {
 // ─── Path finding ─────────────────────────────────────────────────────────────
 
 /**
- * DFS upstream from startId to graph-structural source nodes.
- * Only follows edges where the predecessor's minimum process level is
- * STRICTLY LESS than the current node's — ensures chains run P1→P2→…,
- * never sideways between nodes at the same process level.
+ * DFS upstream from startId to graph-structural source nodes (nodes with no
+ * incoming edges in the active year).  No process-level ordering is assumed —
+ * the real NdFeB supply chain has legitimate same-level and cross-level flows
+ * (e.g. P2 alloy producer → P2/P3 integrated producer → P4 motor maker).
+ * Cycles are prevented by the `visited` set; depth is capped at `maxDepth`.
  *
- * Exception: P6 (Recycling) nodes are exempted from the level constraint because
- * they sit at the end of the primary chain but supply recovered materials back into
- * P2/P3, making them valid chain sources regardless of their process number.
- *
- * @returns {string[][]}  Each array is a path [startId, …, sourceId] (start-first order).
+ * @returns {string[][]}  Each entry is [startId, …, sourceId] (start-first).
  */
 export function findUpstreamPaths(startId, backward, sourceIds, nodeById, maxDepth = 12) {
   if (sourceIds.has(startId)) return [[startId]]
@@ -76,15 +63,9 @@ export function findUpstreamPaths(startId, backward, sourceIds, nodeById, maxDep
   const results = []
 
   function dfs(currentId, path, visited) {
-    const currentLevel = minProc(nodeById[currentId])
     for (const prevId of (backward.get(currentId) || [])) {
       if (visited.has(prevId)) continue
-      const prevNode = nodeById[prevId]
-      if (!prevNode) continue
-      // P6 recycling nodes are allowed as predecessors regardless of level —
-      // they feed recovered material back into lower-level processes.
-      const prevIsP6 = (prevNode.process || []).includes(6)
-      if (!prevIsP6 && minProc(prevNode) >= currentLevel) continue
+      if (!nodeById[prevId]) continue
 
       path.push(prevId)
       visited.add(prevId)
@@ -101,20 +82,16 @@ export function findUpstreamPaths(startId, backward, sourceIds, nodeById, maxDep
   }
 
   dfs(startId, [startId], new Set([startId]))
-  // Fallback: if no complete upstream path found, treat the node itself as the start
   if (results.length === 0) results.push([startId])
   return results
 }
 
 /**
- * DFS downstream from startId to graph-structural sink nodes.
- * Only follows edges where the successor's minimum process level is
- * STRICTLY GREATER than the current node's.
+ * DFS downstream from startId to graph-structural sink nodes (nodes with no
+ * outgoing edges in the active year).  Same rationale as findUpstreamPaths —
+ * no process ordering assumed.
  *
- * Exception: when the current node is P6 (Recycling), it may supply P2/P3 nodes
- * with recovered materials, so the level constraint is lifted for P6 as source.
- *
- * @returns {string[][]}  Each array is a path [startId, …, sinkId].
+ * @returns {string[][]}  Each entry is [startId, …, sinkId].
  */
 export function findDownstreamPaths(startId, forward, sinkIds, nodeById, maxDepth = 12) {
   if (sinkIds.has(startId)) return [[startId]]
@@ -122,15 +99,9 @@ export function findDownstreamPaths(startId, forward, sinkIds, nodeById, maxDept
   const results = []
 
   function dfs(currentId, path, visited) {
-    const currentLevel = minProc(nodeById[currentId])
-    // P6 recycling nodes may supply lower-level processes — lift the constraint for them.
-    const currentIsP6 = (nodeById[currentId]?.process || []).includes(6)
     for (const nextId of (forward.get(currentId) || [])) {
       if (visited.has(nextId)) continue
-      const nextNode = nodeById[nextId]
-      if (!nextNode) continue
-      // Monotonic constraint (skipped when current node is P6)
-      if (!currentIsP6 && minProc(nextNode) <= currentLevel) continue
+      if (!nodeById[nextId]) continue
 
       path.push(nextId)
       visited.add(nextId)
@@ -155,8 +126,8 @@ export function findDownstreamPaths(startId, forward, sinkIds, nodeById, maxDept
 
 /**
  * Build all complete chains that pass through selectedId.
- * A chain runs from a graph-structural source to a graph-structural sink,
- * respecting monotonically increasing process levels at every step.
+ * A chain runs from a graph-structural source (no incoming edges) to a
+ * graph-structural sink (no outgoing edges) in the active year's graph.
  *
  * @returns {string[][]}  Deduplicated list of chains (arrays of node IDs, source→sink).
  */
