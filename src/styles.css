@@ -51,6 +51,7 @@ html, body, #root { height: 100%; margin: 0; }
   font-size: 11px;
   max-width: 320px;
   line-height: 1.4;
+  color: #1f2937;
 }
 .legend-row {
   display: flex;
@@ -815,11 +816,14 @@ html, body, #root { height: 100%; margin: 0; }
     grid-template-columns: 1fr;
   }
 
-  /* Legend overlay: smaller on mobile */
+  /* Legend overlay: compact on mobile — hide long descriptions, show labels only */
   .legend {
-    font-size: 10px;
+    font-size: 11px;
     padding: 7px 9px;
-    max-width: 200px;
+    max-width: 175px;
+  }
+  .legend-desc {
+    display: none;
   }
   .legend-right {
     top: 8px;

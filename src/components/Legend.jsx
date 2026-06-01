@@ -26,7 +26,7 @@ export default function Legend({ className = 'legend', selectedProcesses = [], o
               style={{ background: process.color }}
             />
             <span>
-              <strong>{process.label}:</strong> {process.description}
+              <strong>{process.label}:</strong> <span className="legend-desc">{process.description}</span>
             </span>
           </div>
         )
