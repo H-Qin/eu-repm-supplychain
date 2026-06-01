@@ -816,14 +816,11 @@ html, body, #root { height: 100%; margin: 0; }
     grid-template-columns: 1fr;
   }
 
-  /* Legend overlay: compact on mobile — hide long descriptions, show labels only */
+  /* Legend overlay: smaller on mobile */
   .legend {
-    font-size: 11px;
+    font-size: 10px;
     padding: 7px 9px;
-    max-width: 175px;
-  }
-  .legend-desc {
-    display: none;
+    max-width: 200px;
   }
   .legend-right {
     top: 8px;
