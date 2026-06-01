@@ -37,6 +37,7 @@ export default function App() {
   const [scenarioConfig, setScenarioConfig] = useState(
     { 2025: null, 2026: null, 2027: null, 2028: null, 2029: null, 2030: null }
   )
+  const [mobileTab, setMobileTab] = useState('map')
   const scenarioMagnitude = 0.05
 
   useEffect(() => {
@@ -48,6 +49,15 @@ export default function App() {
     }
     load()
   }, [])
+
+  useEffect(() => {
+    if (selectedNode || selectedEdge) setMobileTab('detail')
+  }, [selectedNode, selectedEdge])
+
+  function handleClearSelection() {
+    clearSelection()
+    setMobileTab('map')
+  }
 
   return (
     <div className="app">
@@ -62,39 +72,68 @@ export default function App() {
         </div>
 
         <div className="content">
-          <SupplyMap
-            year={year}
-            nodes={nodes}
-            edges={edges}
-            selectedNode={selectedNode}
-            selectedEdge={selectedEdge}
-            selectedProcesses={selectedProcesses}
-            onSelectNode={setSelectedNode}
-            onSelectEdge={setSelectedEdge}
-            onToggleProcess={toggleProcess}
-            onCloseSidebar={clearSelection}
-          />
+          <div className={`map-panel${mobileTab === 'map' ? ' tab-active' : ''}`}>
+            <SupplyMap
+              year={year}
+              nodes={nodes}
+              edges={edges}
+              selectedNode={selectedNode}
+              selectedEdge={selectedEdge}
+              selectedProcesses={selectedProcesses}
+              onSelectNode={setSelectedNode}
+              onSelectEdge={setSelectedEdge}
+              onToggleProcess={toggleProcess}
+              onCloseSidebar={handleClearSelection}
+            />
+          </div>
           <div className="right-column">
             {(selectedNode || selectedEdge) ? (
-              <Sidebar
-                node={selectedNode}
-                edge={selectedEdge}
-                nodes={nodes}
-                edges={edges}
-                year={year}
-                onClose={clearSelection}
-              />
+              <div className={`mobile-panel${mobileTab === 'detail' ? ' tab-active' : ''}`}>
+                <Sidebar
+                  node={selectedNode}
+                  edge={selectedEdge}
+                  nodes={nodes}
+                  edges={edges}
+                  year={year}
+                  onClose={handleClearSelection}
+                />
+              </div>
             ) : (
               <>
-                <IndicatorsPanel scenarioConfig={scenarioConfig} scenarioMagnitude={scenarioMagnitude} year={year} />
-                <GeopoliticalPanel
-                  scenarioConfig={scenarioConfig}
-                  onConfigChange={(year, id) => setScenarioConfig(prev => ({ ...prev, [year]: id }))}
-                />
+                <div className={`mobile-panel${mobileTab === 'indicators' ? ' tab-active' : ''}`}>
+                  <IndicatorsPanel scenarioConfig={scenarioConfig} scenarioMagnitude={scenarioMagnitude} year={year} />
+                </div>
+                <div className={`mobile-panel${mobileTab === 'scenarios' ? ' tab-active' : ''}`}>
+                  <GeopoliticalPanel
+                    scenarioConfig={scenarioConfig}
+                    onConfigChange={(year, id) => setScenarioConfig(prev => ({ ...prev, [year]: id }))}
+                  />
+                </div>
               </>
             )}
           </div>
         </div>
+
+        <nav className="tab-bar">
+          <button
+            className={`tab-bar__btn${mobileTab === 'map' ? ' tab-bar__btn--active' : ''}`}
+            onClick={() => setMobileTab('map')}
+          >Map</button>
+          <button
+            className={`tab-bar__btn${mobileTab === 'indicators' ? ' tab-bar__btn--active' : ''}`}
+            onClick={() => setMobileTab('indicators')}
+          >Indicators</button>
+          <button
+            className={`tab-bar__btn${mobileTab === 'scenarios' ? ' tab-bar__btn--active' : ''}`}
+            onClick={() => setMobileTab('scenarios')}
+          >Scenarios</button>
+          {(selectedNode || selectedEdge) && (
+            <button
+              className={`tab-bar__btn${mobileTab === 'detail' ? ' tab-bar__btn--active' : ''}`}
+              onClick={() => setMobileTab('detail')}
+            >Detail</button>
+          )}
+        </nav>
       </div>
     </div>
   )
