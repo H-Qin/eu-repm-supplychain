@@ -5,9 +5,6 @@ import {
 } from 'recharts'
 import { INDICATORS, INDICATOR_META, DIMENSIONS } from '../data/indicatorsData'
 import { dampedHoltForecast } from '../utils/forecast'
-import { getIndicatorEffect } from '../data/geopoliticalData'
-
-const FORECAST_YEARS = [2025, 2026, 2027, 2028, 2029, 2030]
 
 function formatValue(value, format) {
   if (value == null) return '—'
@@ -28,9 +25,6 @@ const CustomTooltip = ({ active, payload, label, format }) => {
 
   const hasActual   = byKey.value    != null
   const hasForecast = byKey.forecast != null && byKey.lowerBase != null
-  const hasScenario = byKey.scenarioForecast != null &&
-                      byKey.forecast != null &&
-                      Math.abs(byKey.scenarioForecast - byKey.forecast) > 1e-10
 
   if (hasActual && !hasForecast) {
     return (
@@ -64,11 +58,6 @@ const CustomTooltip = ({ active, payload, label, format }) => {
             95% PI: {formatValue(lower, format)} – {formatValue(upper, format)}
           </p>
         )}
-        {hasScenario && (
-          <p className="ind-tooltip__scenario">
-            Scenario: {formatValue(byKey.scenarioForecast, format)}
-          </p>
-        )}
       </div>
     )
   }
@@ -76,7 +65,7 @@ const CustomTooltip = ({ active, payload, label, format }) => {
   return null
 }
 
-export default function IndicatorsPanel({ scenarioConfig, scenarioMagnitude, year }) {
+export default function IndicatorsPanel({ year }) {
   const [selectedDim, setSelectedDim]           = useState(DIMENSIONS[0].key)
   const [selectedIndicator, setSelectedIndicator] = useState(DIMENSIONS[0].indicators[0])
 
@@ -89,62 +78,16 @@ export default function IndicatorsPanel({ scenarioConfig, scenarioMagnitude, yea
     [selectedIndicator]
   )
 
-  // Find all "application events": the first time a config appears within each 3-year window.
-  // Selecting the same config in Y+1 or Y+2 is still within the window → no new application.
-  // After the window expires (Y+3+), the same config selected again is a new application.
-  // Each application permanently shifts the forecast baseline for all subsequent years.
-  const applicationEvents = useMemo(() => {
-    if (!scenarioConfig) return []
-    const events = []
-    for (const year of FORECAST_YEARS) {
-      const configId = scenarioConfig?.[year]
-      if (!configId) continue
-      const alreadyActive = events.some(e => e.configId === configId && year - e.year <= 2)
-      if (!alreadyActive) events.push({ year, configId })
-    }
-    return events
-  }, [scenarioConfig])
-
-  // Scenario-adjusted data: cumulative product of all application event factors up to each year.
-  // Changes are permanent — once applied they persist to all later years even without a config set.
-  const scenarioData = useMemo(() => {
-    if (!scenarioConfig || applicationEvents.length === 0) return null
-    return chartData.map(d => {
-      if (d.year === 2024) return { ...d, scenarioForecast: d.value }  // bridge anchor
-      if (d.forecast == null) return { ...d, scenarioForecast: null }  // historical
-
-      const cumulativeFactor = applicationEvents
-        .filter(e => e.year <= d.year)
-        .reduce((acc, e) => {
-          const effect = getIndicatorEffect(e.configId, selectedIndicator)
-          return effect !== 0 ? acc * (1 + effect * scenarioMagnitude) : acc
-        }, 1)
-
-      return {
-        ...d,
-        scenarioForecast: cumulativeFactor !== 1 ? d.forecast * cumulativeFactor : d.forecast,
-      }
-    })
-  }, [chartData, applicationEvents, scenarioMagnitude, selectedIndicator])
-
-  const hasAnyConfig = FORECAST_YEARS.some(y => scenarioConfig?.[y] != null)
-  const hasScenarioEffect = applicationEvents.some(e =>
-    getIndicatorEffect(e.configId, selectedIndicator) !== 0
-  )
-
   function handleDimClick(dim) {
     setSelectedDim(dim.key)
     setSelectedIndicator(dim.indicators[0])
   }
 
-  const activeChartData = scenarioData ?? chartData
-
   const yDomain = useMemo(() => {
     const vals = []
-    for (const d of activeChartData) {
+    for (const d of chartData) {
       if (d.value != null) vals.push(d.value)
       if (d.forecast != null) vals.push(d.forecast)
-      if (d.scenarioForecast != null) vals.push(d.scenarioForecast)
       if (d.lowerBase != null && d.bandWidth != null) {
         vals.push(d.lowerBase)
         vals.push(d.lowerBase + d.bandWidth)
@@ -155,15 +98,15 @@ export default function IndicatorsPanel({ scenarioConfig, scenarioMagnitude, yea
     const max = Math.max(...vals)
     const pad = (max - min) * 0.08 || Math.abs(max) * 0.05 || 1
     return [min - pad, max + pad]
-  }, [activeChartData])
+  }, [chartData])
 
   const yearDotPoint = useMemo(() => {
-    const d = activeChartData.find(p => p.year === year)
+    const d = chartData.find(p => p.year === year)
     if (!d) return null
-    const y = d.value ?? d.scenarioForecast ?? d.forecast
+    const y = d.value ?? d.forecast
     if (y == null) return null
     return { x: year, y }
-  }, [activeChartData, year])
+  }, [chartData, year])
 
   return (
     <div className="indicators-panel">
@@ -202,7 +145,7 @@ export default function IndicatorsPanel({ scenarioConfig, scenarioMagnitude, yea
         <p className="ind-chart-title">{currentMeta.description}</p>
 
         <ResponsiveContainer width="100%" height={120}>
-          <ComposedChart data={activeChartData} margin={{ top: 8, right: 15, bottom: 0, left: 0 }}>
+          <ComposedChart data={chartData} margin={{ top: 8, right: 15, bottom: 0, left: 0 }}>
             <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
             <XAxis
               dataKey="year"
@@ -273,20 +216,6 @@ export default function IndicatorsPanel({ scenarioConfig, scenarioMagnitude, yea
               isAnimationActive={false}
             />
 
-            {/* Scenario forecast line (dashed teal, 2024–2030) — only when scenarios are set */}
-            {scenarioData && (
-              <Line
-                type="monotone"
-                dataKey="scenarioForecast"
-                stroke="#0d9488"
-                strokeWidth={2}
-                strokeDasharray="3 6"
-                dot={false}
-                activeDot={{ r: 4, fill: '#0d9488', strokeWidth: 0 }}
-                isAnimationActive={false}
-              />
-            )}
-
             {yearDotPoint && (
               <ReferenceDot
                 x={yearDotPoint.x}
@@ -314,22 +243,7 @@ export default function IndicatorsPanel({ scenarioConfig, scenarioMagnitude, yea
             <span className="ind-legend-band" />
             95% PI
           </span>
-          {hasAnyConfig && (
-            <span className="ind-legend-item">
-              <span className="ind-legend-line ind-legend-line--scenario" />
-              Geo. scenario
-            </span>
-          )}
         </div>
-
-        {/* Geopolitical influence note */}
-        {hasAnyConfig && (
-          <p className={`ind-geo-note ${hasScenarioEffect ? 'ind-geo-note--active' : 'ind-geo-note--none'}`}>
-            {hasScenarioEffect
-              ? '↕ Geopolitical scenario applied to this indicator'
-              : 'No identified geopolitical influence on this indicator'}
-          </p>
-        )}
 
         <p className="ind-method-note">
           Damped Holt's ETS(A,Ad,N); α, β, φ fitted by minimising SSE

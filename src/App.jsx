@@ -3,7 +3,6 @@ import { create } from 'zustand'
 import SupplyMap from './components/SupplyMap'
 import YearBar from './components/YearBar'
 import IndicatorsPanel from './components/IndicatorsPanel'
-import GeopoliticalPanel from './components/GeopoliticalPanel'
 import Sidebar from './components/Sidebar'
 import './styles.css'
 
@@ -34,11 +33,7 @@ export default function App() {
   const { year, setYear, selectedNode, selectedEdge, setSelectedNode, setSelectedEdge, clearSelection, selectedProcesses, toggleProcess, } = useStore()
   const [nodes, setNodes] = useState([])
   const [edges, setEdges] = useState([])
-  const [scenarioConfig, setScenarioConfig] = useState(
-    { 2025: null, 2026: null, 2027: null, 2028: null, 2029: null, 2030: null }
-  )
   const [mobileTab, setMobileTab] = useState('map')
-  const scenarioMagnitude = 0.05
 
   useEffect(() => {
     async function load() {
@@ -99,17 +94,9 @@ export default function App() {
                 />
               </div>
             ) : (
-              <>
-                <div className={`mobile-panel${mobileTab === 'indicators' ? ' tab-active' : ''}`}>
-                  <IndicatorsPanel scenarioConfig={scenarioConfig} scenarioMagnitude={scenarioMagnitude} year={year} />
-                </div>
-                <div className={`mobile-panel${mobileTab === 'scenarios' ? ' tab-active' : ''}`}>
-                  <GeopoliticalPanel
-                    scenarioConfig={scenarioConfig}
-                    onConfigChange={(year, id) => setScenarioConfig(prev => ({ ...prev, [year]: id }))}
-                  />
-                </div>
-              </>
+              <div className={`mobile-panel${mobileTab === 'indicators' ? ' tab-active' : ''}`}>
+                <IndicatorsPanel year={year} />
+              </div>
             )}
           </div>
         </div>
@@ -123,10 +110,6 @@ export default function App() {
             className={`tab-bar__btn${mobileTab === 'indicators' ? ' tab-bar__btn--active' : ''}`}
             onClick={() => setMobileTab('indicators')}
           >Indicators</button>
-          <button
-            className={`tab-bar__btn${mobileTab === 'scenarios' ? ' tab-bar__btn--active' : ''}`}
-            onClick={() => setMobileTab('scenarios')}
-          >Scenarios</button>
           {(selectedNode || selectedEdge) && (
             <button
               className={`tab-bar__btn${mobileTab === 'detail' ? ' tab-bar__btn--active' : ''}`}
