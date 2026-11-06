@@ -120,6 +120,7 @@ export default function IndicatorsPanel({ year }) {
           <button
             key={dim.key}
             className={`ind-dim-tag${selectedDim === dim.key ? ' ind-dim-tag--active' : ''}`}
+            aria-pressed={selectedDim === dim.key}
             onClick={() => handleDimClick(dim)}
           >
             {dim.label}
@@ -133,6 +134,7 @@ export default function IndicatorsPanel({ year }) {
           <button
             key={ind.key}
             className={`ind-tag${selectedIndicator === ind.key ? ' ind-tag--active' : ''}`}
+            aria-pressed={selectedIndicator === ind.key}
             onClick={() => setSelectedIndicator(ind.key)}
           >
             {ind.label}
@@ -144,90 +146,92 @@ export default function IndicatorsPanel({ year }) {
       <div className="indicators-panel__chart">
         <p className="ind-chart-title">{currentMeta.description}</p>
 
-        <ResponsiveContainer width="100%" height={120}>
-          <ComposedChart data={chartData} margin={{ top: 8, right: 15, bottom: 0, left: 0 }}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
-            <XAxis
-              dataKey="year"
-              tick={{ fontSize: 10, fill: '#6b7280' }}
-              tickLine={false}
-              axisLine={{ stroke: '#e5e7eb' }}
-              ticks={[2004, 2010, 2016, 2022, 2030]}
-            />
-            <YAxis
-              tick={{ fontSize: 10, fill: '#6b7280' }}
-              tickLine={false}
-              axisLine={false}
-              width={58}
-              tickFormatter={tickFormatter(currentMeta.format)}
-              domain={yDomain}
-              allowDataOverflow
-            />
-            <Tooltip
-              content={<CustomTooltip format={currentMeta.format} />}
-              cursor={{ stroke: '#9ca3af', strokeWidth: 1, strokeDasharray: '3 3' }}
-            />
-
-            {/*
-              95% Prediction Interval band using stacked Areas:
-              - Area 1 (lowerBase, transparent): invisible fill from 0 → lower bound
-              - Area 2 (bandWidth, orange):      visible fill from lower bound → upper bound
-            */}
-            <Area
-              type="monotone"
-              dataKey="lowerBase"
-              stackId="ci"
-              stroke="none"
-              fill="transparent"
-              isAnimationActive={false}
-              allowDataOverflow
-            />
-            <Area
-              type="monotone"
-              dataKey="bandWidth"
-              stackId="ci"
-              stroke="none"
-              fill="#f97316"
-              fillOpacity={0.18}
-              isAnimationActive={false}
-              allowDataOverflow
-            />
-
-            {/* Historical line (solid blue, 2004–2024) */}
-            <Line
-              type="monotone"
-              dataKey="value"
-              stroke="#3288bd"
-              strokeWidth={2}
-              dot={false}
-              activeDot={{ r: 4, fill: '#3288bd', strokeWidth: 0 }}
-              isAnimationActive={false}
-            />
-
-            {/* Base forecast line (dashed orange, 2024–2030) */}
-            <Line
-              type="monotone"
-              dataKey="forecast"
-              stroke="#f97316"
-              strokeWidth={2}
-              strokeDasharray="5 4"
-              dot={false}
-              activeDot={{ r: 4, fill: '#f97316', strokeWidth: 0 }}
-              isAnimationActive={false}
-            />
-
-            {yearDotPoint && (
-              <ReferenceDot
-                x={yearDotPoint.x}
-                y={yearDotPoint.y}
-                r={5}
-                fill="#1e4f72"
-                stroke="#fff"
-                strokeWidth={2}
+        <div className="indicators-panel__plot">
+          <ResponsiveContainer width="100%" height="100%">
+            <ComposedChart data={chartData} margin={{ top: 8, right: 15, bottom: 0, left: 0 }}>
+              <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
+              <XAxis
+                dataKey="year"
+                tick={{ fontSize: 12, fill: '#6b7280' }}
+                tickLine={false}
+                axisLine={{ stroke: '#e5e7eb' }}
+                ticks={[2004, 2010, 2016, 2022, 2030]}
               />
-            )}
-          </ComposedChart>
-        </ResponsiveContainer>
+              <YAxis
+                tick={{ fontSize: 12, fill: '#6b7280' }}
+                tickLine={false}
+                axisLine={false}
+                width={70}
+                tickFormatter={tickFormatter(currentMeta.format)}
+                domain={yDomain}
+                allowDataOverflow
+              />
+              <Tooltip
+                content={<CustomTooltip format={currentMeta.format} />}
+                cursor={{ stroke: '#9ca3af', strokeWidth: 1, strokeDasharray: '3 3' }}
+              />
+
+              {/*
+                95% Prediction Interval band using stacked Areas:
+                - Area 1 (lowerBase, transparent): invisible fill from 0 → lower bound
+                - Area 2 (bandWidth, orange):      visible fill from lower bound → upper bound
+              */}
+              <Area
+                type="monotone"
+                dataKey="lowerBase"
+                stackId="ci"
+                stroke="none"
+                fill="transparent"
+                isAnimationActive={false}
+                allowDataOverflow
+              />
+              <Area
+                type="monotone"
+                dataKey="bandWidth"
+                stackId="ci"
+                stroke="none"
+                fill="#f97316"
+                fillOpacity={0.18}
+                isAnimationActive={false}
+                allowDataOverflow
+              />
+
+              {/* Historical line (solid blue, 2004–2024) */}
+              <Line
+                type="monotone"
+                dataKey="value"
+                stroke="#3288bd"
+                strokeWidth={2}
+                dot={false}
+                activeDot={{ r: 4, fill: '#3288bd', strokeWidth: 0 }}
+                isAnimationActive={false}
+              />
+
+              {/* Base forecast line (dashed orange, 2024–2030) */}
+              <Line
+                type="monotone"
+                dataKey="forecast"
+                stroke="#f97316"
+                strokeWidth={2}
+                strokeDasharray="5 4"
+                dot={false}
+                activeDot={{ r: 4, fill: '#f97316', strokeWidth: 0 }}
+                isAnimationActive={false}
+              />
+
+              {yearDotPoint && (
+                <ReferenceDot
+                  x={yearDotPoint.x}
+                  y={yearDotPoint.y}
+                  r={5}
+                  fill="#1e4f72"
+                  stroke="#fff"
+                  strokeWidth={2}
+                />
+              )}
+            </ComposedChart>
+          </ResponsiveContainer>
+        </div>
 
         {/* Chart legend */}
         <div className="ind-chart-legend">
